@@ -4,12 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
-    "build": "node --check server.js",
-    "lint": "node --check server.js"
+    "dev": "npm run build && node server.js",
+    "start": "npm run build && node server.js",
+    "build": "esbuild src/firebase-tracker.ts --bundle --format=iife --outfile=assets/firebase-tracker.js --minify",
+    "lint": "tsc --noEmit && node --check server.js && eslint firestore.rules"
   },
   "dependencies": {
-    "express": "^4.21.2"
+    "@firebase/eslint-plugin-security-rules": "^0.0.2",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.15.0",
+    "express": "^4.21.2",
+    "firebase": "^13.4.0",
+    "typescript": "^7.0.2"
   }
 }

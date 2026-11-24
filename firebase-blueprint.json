@@ -1,0 +1,144 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Authenticated user profile storing identity and contact info isolated per user.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Firebase Auth UID",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Verified user email address",
+          "maxLength": 160
+        },
+        "displayName": {
+          "type": "string",
+          "description": "User display name",
+          "maxLength": 120
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Profile creation server timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Profile update server timestamp"
+        }
+      },
+      "required": ["uid", "email", "displayName", "createdAt", "updatedAt"]
+    },
+    "TrackerProject": {
+      "title": "TrackerProject",
+      "description": "Persisted execution tracking state for one of the 57 Master Project Tracker items.",
+      "type": "object",
+      "properties": {
+        "projectId": {
+          "type": "string",
+          "description": "Project code (A01 through F07)",
+          "minLength": 3,
+          "maxLength": 10,
+          "pattern": "^[A-F][0-9]{2}$"
+        },
+        "ownerId": {
+          "type": "string",
+          "description": "UID of the user who owns this tracker record",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "status": {
+          "type": "string",
+          "description": "Current execution status of the project",
+          "enum": [
+            "Chưa cập nhật",
+            "Chưa bắt đầu",
+            "Đang thực hiện",
+            "Hoàn thành",
+            "Tạm dừng"
+          ]
+        },
+        "owner": {
+          "type": "string",
+          "description": "Assigned person in charge",
+          "maxLength": 120
+        },
+        "note": {
+          "type": "string",
+          "description": "Progress notes for the project",
+          "maxLength": 500
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Record creation server timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Record update server timestamp"
+        }
+      },
+      "required": ["projectId", "ownerId", "status", "owner", "note", "createdAt", "updatedAt"]
+    },
+    "TrackerPreferences": {
+      "title": "TrackerPreferences",
+      "description": "Persisted checklist tasks and budget simulation settings for a user.",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "description": "UID of the user who owns these preferences",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "budget": {
+          "type": "number",
+          "description": "Annual budget simulation amount in million VND"
+        },
+        "weights": {
+          "type": "array",
+          "description": "8 budget category percentage weights"
+        },
+        "completedTasks": {
+          "type": "array",
+          "description": "List of completed priority task indices (0-19)"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Record creation server timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Record update server timestamp"
+        }
+      },
+      "required": ["ownerId", "budget", "weights", "completedTasks", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Private user profile documents keyed by Firebase Auth UID."
+    },
+    "/users/{userId}/trackerProjects/{projectId}": {
+      "schema": { "$ref": "#/entities/TrackerProject" },
+      "description": "Per-user persisted state for Master Project Tracker items."
+    },
+    "/users/{userId}/trackerMeta/{metaId}": {
+      "schema": { "$ref": "#/entities/TrackerPreferences" },
+      "description": "Per-user persisted checklist and budget simulation state (doc ID: preferences)."
+    }
+  }
+}
