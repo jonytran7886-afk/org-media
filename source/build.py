@@ -1,10 +1,7 @@
 from pathlib import Path
-import re, json, html, mistune, base64
+import re, json, html, mistune
 from bs4 import BeautifulSoup
 root=Path(__file__).resolve().parent; out=root.parent
-logo_uri='data:image/png;base64,'+base64.b64encode((out/'assets/organic-vietnam-symbol.png').read_bytes()).decode('ascii')
-brand_identity="<div class=\"hero-identity\"><img class=\"hero-logo\" src=\"{logo_uri}\" alt=\"Organic Việt Nam\" width=\"64\" height=\"60\"><div>ORGANIC VIỆT NAM<small>NÔNG NGHIỆP · THỰC PHẨM · CÔNG NGHỆ</small></div></div>"
-brand_identity=brand_identity.replace('{logo_uri}',logo_uri)
 esc=html.escape
 md=mistune.create_markdown(escape=False,plugins=['table'])
 def cards(items,cls='cards',caption=''):
@@ -87,7 +84,7 @@ for i in range(1,len(chunks),2):
 assert len(projects)==57, len(projects)
 assert sum(len([h for h in s['headings'] if h['level']==2]) for s in sections)==50
 (root/'data.json').write_text(json.dumps({'sections':sections,'intro':intro,'projects':projects,'search':search,'budgetnames':budgetnames,'weights':weights},ensure_ascii=False))
-(root/'dashboard.html').write_text('''<div class="hero">'''+brand_identity+'''<div class="eyebrow">STRATEGY OFFICE / 2027</div><h1>Chiến lược truyền thông<br>tổng thể 2027</h1><p>Kiến tạo hệ sinh thái giá trị</p><div class="hero-meta">Organic Việt Nam &nbsp; / &nbsp; ADIGO &nbsp; · &nbsp; V2.0 Final</div><div class="hero-actions"><a href="#p1" class="btn primary">Đọc chiến lược →</a><a href="#all" class="btn ghost">Toàn văn tài liệu</a></div><div class="hero-art"><div></div><div></div><div></div><span>2027</span></div></div>
+(root/'dashboard.html').write_text('''<div class="hero"><div class="eyebrow">STRATEGY OFFICE / 2027</div><h1>Chiến lược truyền thông<br>tổng thể 2027</h1><p>Kiến tạo hệ sinh thái giá trị</p><div class="hero-meta">Organic Việt Nam &nbsp; / &nbsp; ADIGO &nbsp; · &nbsp; V2.0 Final</div><div class="hero-actions"><a href="#p1" class="btn primary">Đọc chiến lược →</a><a href="#all" class="btn ghost">Toàn văn tài liệu</a></div><div class="hero-art"><div></div><div></div><div></div><span>2027</span></div></div>
 <div class="metricgrid">'''+''.join(f'<a class="metric" href="{u}"><small>{t}</small><strong>{v}</strong><span>{s} ↗</span></a>' for v,t,s,u in [('12','Phần chiến lược','50 mục','#all'),('10','Trụ cột','Truyền thông tích hợp','#p4'),('11','Chiến dịch','Lộ trình 4 quý','#p6/m27'),('57','Dự án','6 nhóm quản trị','#tracker')])+'''</div>
 <div class="dashboard-grid"><section class="panel"><div class="panel-head"><div><div class="eyebrow">01 / BUSINESS ARCHITECTURE</div><h2>Kiến trúc hệ sinh thái</h2></div><a href="#p2" class="textlink">Chi tiết →</a></div>'''+ecosystem(True)+'''</section><section class="panel"><div class="panel-head"><div><div class="eyebrow">02 / STRATEGIC GOALS</div><h2>6 mục tiêu chiến lược</h2></div><a class="textlink" href="#p1/m3">Chi tiết →</a></div>'''+widgets['goals']+'''</section></div>
 <section class="panel"><div class="panel-head"><div><div class="eyebrow">03 / VALUE CREATION</div><h2>Chuỗi giá trị tích hợp</h2></div><a href="#p2/m6" class="textlink">Mô hình tạo giá trị →</a></div>'''+chain()+'''</section>
