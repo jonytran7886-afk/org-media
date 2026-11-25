@@ -737,7 +737,7 @@ const appBundleCode = appResult.outputFiles[0].text.replace(/<\/script/gi, '<\\/
 const indexPath = path.join(outDir, 'index.html');
 let indexHtml = fs.readFileSync(indexPath, 'utf8');
 
-const styleCss = fs.readFileSync(path.join(root, 'style.css'), 'utf8').trim();
+const styleCss = fs.readFileSync(path.join(root, 'style.css'), 'utf8').trim() + '\n' + fs.readFileSync(path.join(root, 'modules/ai-assistant/ai-chat.css'), 'utf8').trim();
 const dataJsonSafe = JSON.stringify(dataObj).replace(/<\/script/gi, '<\\/script');
 
 const fontTags =

@@ -4,6 +4,7 @@ import { $ } from './shared/utils.js';
 import { initFirebaseSync } from './shared/data-service.js';
 import { initSearch, openSearch, closeSearch } from './shared/search.js';
 import { initNavigation, closeNav, render } from './shared/navigation.js';
+import { initAIAssistant } from './modules/ai-assistant/ai-chat.js';
 
 initFirebaseSync();
 initSearch();
@@ -22,3 +23,4 @@ document.addEventListener('keydown', (e) => {
 });
 
 render();
+initAIAssistant();

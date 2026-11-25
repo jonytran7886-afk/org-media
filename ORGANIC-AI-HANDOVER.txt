@@ -1,0 +1,181 @@
+ORGANIC AI V1.0 – BÀN GIAO
+Ngày: 25/11/2026
+
+1. Kiến trúc và phạm vi
+
+Nút Trợ lý AI trên header mở sidebar riêng, không rời trang đọc. Desktop
+chia vùng nội dung và trợ lý; tablet dùng drawer; mobile dùng toàn màn hình.
+Chiều rộng có thể kéo/chỉnh bằng bàn phím; có mở rộng, đóng và hội thoại mới.
+Trạng thái mở/chiều rộng được giữ trong sessionStorage. Hội thoại nằm trong
+bộ nhớ phiên, không lưu localStorage hay Firestore; giữ khi chuyển route.
+Tải lại trang bắt đầu hội thoại mới. Server giữ tối đa số phiên/TTL cấu hình.
+
+Frontend -> POST /api/ai/chat -> xác thực Firebase ID token -> Knowledge
+Service -> truy xuất heading/đoạn liên quan -> OpenAI SDK Responses API ->
+SSE delta/done/source -> Markdown đã làm sạch bằng DOMPurify.
+Không có tool ghi tài liệu, cập nhật công việc hoặc thực thi mã.
+
+GET /api/ai/status chỉ báo có/không cấu hình, không trả Key hoặc kho nguồn.
+POST /api/ai/chat nhận message, conversationId, currentDocumentId,
+currentSectionId, scope; optional selectedText phải khớp nguồn đã đăng ký.
+Authorization: Bearer <Firebase ID token>. Yêu cầu tài khoản đã xác minh email
+thuộc cùng Firebase project; có thể giới hạn thêm domain ở biến môi trường.
+Không có cơ chế bỏ qua xác thực ở production. Giới hạn IP trước xác thực,
+giới hạn người dùng, tổng request đồng thời, request/ngày và token/ngày.
+
+2. Mã nguồn
+
+Tạo mới:
+- server/ai/ai-config.js: cấu hình và giới hạn.
+- server/ai/document-parser.js: parser Markdown/HTML/PDF/DOCX, kiểm tra đường dẫn.
+- server/ai/knowledge-service.js: dựng chỉ mục từ registry, trạng thái nguồn.
+- server/ai/retrieval-service.js: tìm kiếm tiếng Việt có/không dấu, lọc phạm vi/phiên bản.
+- server/ai/ai-prompt.js: quy tắc nguồn, trạng thái, bảo mật, chỉ đọc.
+- server/ai/openai-service.js: OpenAI Responses, store:false, SSE, hủy request.
+- server/ai/ai-routes.js: auth, phiên, giới hạn, streaming và lỗi tiếng Việt.
+- scripts/build-knowledge.mjs: tạo server/.cache/knowledge-index.json.
+- source/modules/ai-assistant/ai-chat.js: chat UI, Markdown, lựa chọn văn bản.
+- source/modules/ai-assistant/ai-chat.css: responsive/split layout.
+- source/modules/ai-assistant/ai-context.js: ngữ cảnh và gợi ý theo tài liệu.
+- source/shared/ai-client.js: Firebase token và đọc SSE.
+- tests/ai.test.mjs: kiểm thử server và hợp đồng SDK qua HTTP cục bộ.
+- .env.example, .gitignore và tài liệu bàn giao này.
+
+Chỉnh sửa:
+- server.js: mount endpoint, nạp .env cục bộ và giới hạn đường dẫn static công khai.
+- src/firebase-tracker.ts: lấy Firebase ID token từ tài khoản hiện tại.
+- source/app.js: khởi tạo AI sau ứng dụng.
+- source/build.mjs: ghép CSS AI vào HTML standalone.
+- scripts/build.mjs: tự chạy lập chỉ mục sau build.
+- source/data/documents.json: thêm aiEnabled và isCurrentVersion, không sao chép registry.
+- package.json/package-lock.json: SDK chính thức và parser/sanitizer.
+- README.txt: liên kết bàn giao.
+- index.html, source/data.json, assets/firebase-tracker.js: build output.
+
+3. Nguồn đã lập chỉ mục
+
+282 đoạn từ 3 tài liệu:
+- DOC-CORP-PROFILE / OVN-CORP-01: bài Giới thiệu Organic Việt Nam,
+  source/data/about-company.md; Bản dự thảo. Heading con liên kết mục cha.
+- DOC-STR-COM-2027-V21 / OVN-COM-STR-2027: V2.1, Chờ phê duyệt.
+  Nội dung chương/mục và trường kế hoạch được build từ source/strategy.md,
+  source/plan-meta.json vào source/data.json. Không đọc dữ liệu cá nhân Firestore.
+- DOC-STR-COM-2027-V20: HTML gốc toan-van.html, Đã thay thế.
+  Chỉ dùng khi hỏi rõ bản cũ/so sánh hoặc đang đọc chính bản lưu trữ.
+
+Không lập chỉ mục:
+- 2 tài nguyên hình ảnh logo/banner: không có nội dung văn bản để hỏi đáp.
+- 9 mục chờ nguồn: nội quy lao động, quy chế làm việc, bảo mật/tài sản,
+  chính sách nhân sự, quy trình kiểm duyệt, Brand Guidelines, biểu mẫu,
+  kiến thức sản phẩm gà, cơ cấu tổ chức.
+- assets/OrganicVN_TT_V1.pdf chưa được đăng ký/bật AI, không tự động gửi ra ngoài.
+- API Key, file cấu hình xác thực, source code nghiệp vụ và trạng thái công việc cá nhân.
+
+Không yêu cầu người dùng tải lại tài liệu đã có. Cờ aiEnabled là chấp thuận
+sử dụng nguồn đó cho dịch vụ AI ngoài; chỉ bật sau khi chủ tài liệu cho phép.
+
+4. Cấu hình và chạy
+
+Trên môi trường triển khai, vào Environment/Secrets của dịch vụ Node hiện tại:
+- Thêm OPENAI_API_KEY dưới dạng Secret, giá trị Key dự án OpenAI.
+- OPENAI_MODEL mặc định gpt-5.4-mini; thay bằng ID model Responses API mà
+  dự án có quyền dùng, không cần sửa code. Chọn model theo chất lượng tiếng
+  Việt, độ trễ và chi phí; không chọn tên model tùy ý chưa được cấp quyền.
+- OPENAI_MAX_OUTPUT_TOKENS mặc định 1500. Model có reasoning có thể cần
+  tăng giới hạn nếu phản hồi thường xuyên bị ngắt vì hết token.
+- FIREBASE_PROJECT_ID phải khớp Firebase project của frontend hiện tại.
+- AI_ALLOWED_EMAIL_DOMAINS có thể điền danh sách domain nội bộ, ngăn cách dấu phẩy.
+
+Không nhập Key vào chat, frontend, Firestore, tệp public hoặc Git.
+Nếu chạy cục bộ, sao chép .env.example thành .env và điền Key ở máy riêng.
+.env bị Git bỏ qua. Node runtime hỗ trợ process.loadEnvFile sẽ nạp tệp này.
+Môi trường hosting ưu tiên Secrets thật; khởi động lại/redeploy sau khi thay biến.
+
+Các biến giới hạn trong .env.example:
+AI_RETRIEVAL_CHUNKS=6 (tối đa 8)
+AI_MAX_CONTEXT_CHARS=24000
+AI_MAX_QUESTION_CHARS=2000
+AI_REQUESTS_PER_MINUTE=12
+AI_MAX_CONCURRENT=3
+AI_MAX_DAILY_REQUESTS=500
+AI_DAILY_TOKEN_BUDGET=1000000
+AI_TIMEOUT_MS=90000
+AI_SESSION_TTL_MS=1800000
+AI_HISTORY_TURNS=4
+AI_MAX_SESSIONS=500
+
+Cài dependencies: npm ci
+Runtime yêu cầu Node.js >=22.13.0 (SDK và parser hiện tại).
+Build và lập chỉ mục: npm run build
+Chỉ lập lại chỉ mục sau khi dữ liệu nguồn đã build: node scripts/build-knowledge.mjs
+Chạy: npm start
+Kiểm thử backend: node --test tests/ai.test.mjs
+Kiểm tra TypeScript và lint: npm run lint
+
+Không có Key: giao diện báo “Trợ lý AI chưa được cấu hình.”; không có trả lời mẫu.
+Sau khi cấu hình: đăng nhập tài khoản Firebase đã xác minh, mở tài liệu,
+nhấn Trợ lý AI và gửi câu hỏi. Kiểm tra câu trả lời và nguồn trước khi dùng.
+
+5. Đồng bộ nguồn mới
+
+Thêm/cập nhật cùng registry source/data/documents.json; không tạo registry thứ hai.
+Giữ documentId/documentCode duy nhất; cập nhật version, status, updatedAt,
+contentPath hoặc filePath, readerKind, internalRoute nếu có.
+Đặt aiEnabled:true chỉ khi có quyền gửi nội dung tới OpenAI; đặt
+isCurrentVersion:false cho bản bị thay thế.
+Chạy npm run build để cập nhật trang đọc, nội dung và chỉ mục đồng bộ.
+Runtime kiểm tra mtime registry và các nguồn được phép; tự dựng lại cache khi thay đổi.
+V2.1 dùng nội dung generated nên phải chạy build khi sửa Markdown/plan-meta.
+Xóa/disable registry thì nguồn bị loại khỏi chỉ mục khi build hoặc refresh tiếp theo.
+
+Markdown chia theo heading; bảng giữ dạng có cấu trúc. HTML loại script/style/menu.
+PDF trích xuất text và số trang; không OCR. PDF ảnh không trích được text được báo
+no_extractable_text, không tuyên bố đã đọc. DOCX dùng mammoth raw text.
+Parser giới hạn 30MB/file, 500 trang/PDF; không đọc đường dẫn tùy ý từ request.
+Chỉ mục và sổ ngân sách ở server/.cache, bị Git bỏ qua và không được phục vụ HTTP.
+
+6. Trích dẫn, phiên bản và bảo mật
+
+Retrieval gửi 4–8 đoạn phù hợp (mặc định 6) trong giới hạn ký tự; không gửi cả kho.
+Tài liệu đang đọc chỉ dùng trong phạm vi đó; không tự mở rộng sang tài liệu khác.
+Mã S1/S2... do backend cấp cho từng lượt. Backend chỉ trả nguồn thật được dẫn
+trong câu trả lời; đường dẫn do registry/parser tạo, không lấy URL do model viết.
+Nếu model không trả mã nguồn hợp lệ, câu trả lời cuối báo chưa xác minh được nguồn.
+Markdown được sanitize, không chạy script/HTML sự kiện và không mở URL do model tạo.
+Click nguồn giữ hội thoại; đổi tài liệu/phạm vi sẽ không đưa lịch sử nguồn cũ vào prompt mới.
+Chọn văn bản -> Hỏi AI/Giải thích/Tóm tắt chỉ điền nội dung; người dùng nhấn Gửi để gửi.
+Dừng/hủy làm abort request đến upstream; không tự retry gây chi phí.
+Log chỉ có thời gian, model, token và trạng thái; không log câu hỏi, tài liệu hay Key.
+
+7. Kết quả kiểm thử và giới hạn
+
+- Build thành công; TypeScript/lint thành công.
+- 10 kiểm thử Node đạt: registry/chunk ổn định, path traversal, dấu/không dấu, phạm vi,
+  phiên bản, nguồn thiếu, Key thiếu, auth, input, SSE, nguồn giả, lịch sử,
+  phiên sở hữu, giới hạn request/ngày, rate limit, lỗi upstream và abort.
+- Hợp đồng OpenAI SDK Responses streaming được kiểm tra bằng server HTTP cục bộ:
+  model cấu hình, store:false, stream:true, max_output_tokens và usage events.
+- Trình duyệt Edge: 1920/1366/768/390px, split/drawer/fullscreen, đóng mở khôi phục
+  layout, contextual scope, no-Key state, nguồn giữ hội thoại, hội thoại mới,
+  chọn văn bản phải xác nhận, Markdown XSS, và endpoint static chặn file server/index.
+- Dữ liệu nghiệp vụ/chiến lược không đổi; Firestore rules và logic ghi dữ liệu giữ nguyên.
+
+Chưa thực hiện câu trả lời OpenAI thật hoặc đo chất lượng model thực tế vì chưa có API Key.
+Test dùng fixture chỉ trong môi trường kiểm thử; production không có trả lời giả.
+Chưa thể kiểm chứng trọn luồng Firebase ID token thực tế trên hosting bằng tài khoản người dùng.
+Sau cấu hình Secrets cần smoke test đăng nhập, câu hỏi, nguồn, hạn mức và quyền model.
+Retrieval V1 là từ khóa/heading, chưa phải semantic/vector search; có thể bỏ lỡ diễn đạt khác.
+Không có OCR hoặc đọc nội dung hình ảnh, không tự đăng ký tài liệu chưa được phép.
+Tài liệu dự thảo không được xem là quy định có hiệu lực.
+
+Giới hạn chi phí V1 là cho một Node instance. Token budget dùng dự trữ bảo thủ
+(UTF-8 bytes input + max output), có thể dừng sớm hơn chi phí token thực tế.
+Sổ ngân sách phải ở volume bền vững nếu muốn giữ qua redeploy. Triển khai nhiều
+replica cần shared limiter/budget store trước khi mở rộng. Đồng thời đặt ngân sách
+và cảnh báo trên OpenAI project; ứng dụng không thay thế billing controls của nhà cung cấp.
+Lịch sử chỉ ở RAM và hết TTL khi restart; .cache không chứa hội thoại hay API Key.
+
+Tài liệu OpenAI chính thức đã đối chiếu:
+https://developers.openai.com/api/docs/quickstart
+https://developers.openai.com/api/docs/guides/streaming-responses
+https://developers.openai.com/api/docs/models/gpt-5.4-mini

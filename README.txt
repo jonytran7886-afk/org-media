@@ -52,3 +52,5 @@ II. HƯỚNG DẪN QUẢN TRỊ & CẬP NHẬT DỮ LIỆU
 - Khởi chạy server nội bộ (cổng 3000):
   `npm start`
 - Tệp `index.html` sau khi build là bản độc lập hoàn chỉnh để deploy tĩnh (Cloudflare Workers / hosting tĩnh) hoặc chạy qua Express (`server.js`). Tệp `toan-van.html` được giữ nguyên làm bản lưu trữ đối chiếu V2.0 Final.
+
+ORGANIC AI V1.0: xem ORGANIC-AI-HANDOVER.txt và .env.example để cấu hình Secrets, model, lập chỉ mục và chạy kiểm thử. API Key chỉ dùng phía backend.

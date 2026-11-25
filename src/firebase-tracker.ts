@@ -222,6 +222,9 @@ class FirebaseTrackerBridge {
   private updateSyncState(patch: Partial<TrackerSyncState>) {
     this.syncState = { ...this.syncState, ...patch };
     this.callbacks?.onSyncStateChange(this.syncState);
+    if ('user' in patch) {
+      window.dispatchEvent(new CustomEvent('ovn-auth-changed', { detail: { uid: this.syncState.user?.uid || null } }));
+    }
   }
 
   getSyncState(): TrackerSyncState {
@@ -417,6 +420,10 @@ class FirebaseTrackerBridge {
     } catch (error) {
       console.error('Sign out failed:', error);
     }
+  }
+
+  async getAIAuthToken(): Promise<string | null> {
+    return auth.currentUser ? auth.currentUser.getIdToken() : null;
   }
 
   async saveProject(projectId: string, record: ProjectRecord): Promise<boolean> {

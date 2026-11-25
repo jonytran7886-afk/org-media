@@ -42,3 +42,4 @@ if (markerRe.test(html)) {
 
 fs.writeFileSync(indexFile, nextHtml, 'utf8');
 console.log(`Built ${path.relative(rootDir, outFile)} and inlined into index.html (${bundleCode.length} bytes).`);
+execFileSync(process.execPath, [path.join(rootDir, 'scripts', 'build-knowledge.mjs')], { stdio: 'inherit' });

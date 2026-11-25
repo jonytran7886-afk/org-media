@@ -21,7 +21,9 @@
       "DOC-STR-COM-2027-V20",
       "DOC-BRAND-LOGO-OVN",
       "DOC-BRAND-BANNER-2027"
-    ]
+    ],
+    "aiEnabled": true,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-STR-COM-2027-V20",
@@ -43,7 +45,9 @@
     "requiredReading": false,
     "relatedDocumentIds": [
       "DOC-STR-COM-2027-V21"
-    ]
+    ],
+    "aiEnabled": true,
+    "isCurrentVersion": false
   },
   {
     "id": "DOC-BRAND-LOGO-OVN",
@@ -66,7 +70,9 @@
     "relatedDocumentIds": [
       "DOC-BRAND-BANNER-2027",
       "DOC-BRAND-GUIDELINES"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-BRAND-BANNER-2027",
@@ -89,7 +95,9 @@
     "relatedDocumentIds": [
       "DOC-BRAND-LOGO-OVN",
       "DOC-STR-COM-2027-V21"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-CORP-PROFILE",
@@ -111,7 +119,9 @@
     "requiredReading": true,
     "relatedDocumentIds": [
       "DOC-STR-COM-2027-V21"
-    ]
+    ],
+    "aiEnabled": true,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-HR-RULES",
@@ -134,7 +144,9 @@
     "relatedDocumentIds": [
       "DOC-HR-WORK-REG",
       "DOC-HR-SECURITY"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-HR-WORK-REG",
@@ -156,7 +168,9 @@
     "requiredReading": true,
     "relatedDocumentIds": [
       "DOC-HR-RULES"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-HR-SECURITY",
@@ -178,7 +192,9 @@
     "requiredReading": true,
     "relatedDocumentIds": [
       "DOC-HR-RULES"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-HR-POLICY",
@@ -200,7 +216,9 @@
     "requiredReading": true,
     "relatedDocumentIds": [
       "DOC-HR-RULES"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-COM-PROC",
@@ -222,7 +240,9 @@
     "requiredReading": false,
     "relatedDocumentIds": [
       "DOC-STR-COM-2027-V21"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-BRAND-GUIDELINES",
@@ -245,7 +265,9 @@
     "relatedDocumentIds": [
       "DOC-BRAND-LOGO-OVN",
       "DOC-STR-COM-2027-V21"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-FORM-PROPOSAL",
@@ -267,7 +289,9 @@
     "requiredReading": false,
     "relatedDocumentIds": [
       "DOC-HR-WORK-REG"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-TRN-CHICKEN-01",
@@ -289,7 +313,9 @@
     "requiredReading": true,
     "relatedDocumentIds": [
       "DOC-STR-COM-2027-V21"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   },
   {
     "id": "DOC-CORP-ORG-DECISION",
@@ -311,6 +337,8 @@
     "requiredReading": false,
     "relatedDocumentIds": [
       "DOC-HR-WORK-REG"
-    ]
+    ],
+    "aiEnabled": false,
+    "isCurrentVersion": true
   }
 ]

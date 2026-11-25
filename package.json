@@ -3,18 +3,28 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": { "node": ">=22.13.0" },
   "scripts": {
     "dev": "npm run build && node server.js",
     "start": "npm run build && node server.js",
     "build": "node scripts/build.mjs",
+    "knowledge:build": "node scripts/build-knowledge.mjs",
+    "test:ai": "node --test tests/ai.test.mjs",
     "lint": "tsc --noEmit && node --check server.js && node --check scripts/build.mjs && eslint firestore.rules"
   },
   "dependencies": {
     "@firebase/eslint-plugin-security-rules": "^0.0.2",
+    "cheerio": "^1.2.0",
+    "dompurify": "^3.5.0",
     "esbuild": "^0.28.2",
     "eslint": "^10.15.0",
     "express": "^4.21.2",
     "firebase": "^13.4.0",
+    "firebase-admin": "^14.5.1",
+    "mammoth": "^1.13.0",
+    "marked": "^18.3.0",
+    "openai": "^7.64.0",
+    "pdfjs-dist": "^6.5.438",
     "typescript": "^7.0.2"
   }
 }
