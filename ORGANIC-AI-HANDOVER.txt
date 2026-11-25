@@ -112,7 +112,8 @@ Chạy: npm start
 Kiểm thử backend: node --test tests/ai.test.mjs
 Kiểm tra TypeScript và lint: npm run lint
 
-Không có Key: giao diện báo “Trợ lý AI chưa được cấu hình.”; không có trả lời mẫu.
+Không có Key: khi gửi câu hỏi, giao diện báo “Trợ lý AI chưa được cấu hình.”;
+không có trả lời mẫu, không hiển thị lỗi cố định khi chưa gửi câu hỏi.
 Sau khi cấu hình: đăng nhập tài khoản Firebase đã xác minh, mở tài liệu,
 nhấn Trợ lý AI và gửi câu hỏi. Kiểm tra câu trả lời và nguồn trước khi dùng.
 
@@ -137,7 +138,10 @@ Chỉ mục và sổ ngân sách ở server/.cache, bị Git bỏ qua và không
 6. Trích dẫn, phiên bản và bảo mật
 
 Retrieval gửi 4–8 đoạn phù hợp (mặc định 6) trong giới hạn ký tự; không gửi cả kho.
-Tài liệu đang đọc chỉ dùng trong phạm vi đó; không tự mở rộng sang tài liệu khác.
+Giao diện mặc định dùng scope:auto, tự ưu tiên tài liệu/chương đang đọc rồi
+kết hợp nguồn liên quan trong kho được phép. Không còn dropdown chọn phạm vi,
+câu hỏi gợi ý hoặc các nút hành động trong chatbox. Các scope cũ vẫn được backend
+hỗ trợ cho tương thích; current_document vẫn giới hạn chặt trong tài liệu đó.
 Mã S1/S2... do backend cấp cho từng lượt. Backend chỉ trả nguồn thật được dẫn
 trong câu trả lời; đường dẫn do registry/parser tạo, không lấy URL do model viết.
 Nếu model không trả mã nguồn hợp lệ, câu trả lời cuối báo chưa xác minh được nguồn.
@@ -150,7 +154,7 @@ Log chỉ có thời gian, model, token và trạng thái; không log câu hỏi
 7. Kết quả kiểm thử và giới hạn
 
 - Build thành công; TypeScript/lint thành công.
-- 10 kiểm thử Node đạt: registry/chunk ổn định, path traversal, dấu/không dấu, phạm vi,
+- 11 kiểm thử Node đạt: registry/chunk ổn định, path traversal, dấu/không dấu, phạm vi,
   phiên bản, nguồn thiếu, Key thiếu, auth, input, SSE, nguồn giả, lịch sử,
   phiên sở hữu, giới hạn request/ngày, rate limit, lỗi upstream và abort.
 - Hợp đồng OpenAI SDK Responses streaming được kiểm tra bằng server HTTP cục bộ:
@@ -179,3 +183,12 @@ Tài liệu OpenAI chính thức đã đối chiếu:
 https://developers.openai.com/api/docs/quickstart
 https://developers.openai.com/api/docs/guides/streaming-responses
 https://developers.openai.com/api/docs/models/gpt-5.4-mini
+
+Cập nhật UI tối giản ngày 25/11/2026:
+Chatbox chỉ còn header, hội thoại và composer tự giãn với một nút icon gửi/dừng.
+Frontend không gọi status ở mỗi lần tải trang; lỗi kết nối chỉ xuất hiện khi gửi.
+Kiểm tra website đang chạy: https://document.organicvn.com/api/ai/status trả 404.
+Backend Node trong repo có endpoint này và POST /api/ai/chat; cần triển khai
+đúng phiên bản Node service và route/proxy /api/ai/* trên hosting hiện tại.
+Chỉ cấu hình API Key không sửa được lỗi 404 do endpoint chưa tồn tại trên hosting.
+Không tự thay đổi hạ tầng hosting ngoài repository trong lần cập nhật này.

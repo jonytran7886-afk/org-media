@@ -35,6 +35,11 @@ test('accent-insensitive retrieval, current scope, current version, comparison a
  assert.equal(retrieve(index,{...question,currentDocumentId:'DOC-HR-RULES'},config).chunks.length,0);
  assert.equal(retrieve(index,{message:'zzzxqv888',scope:'all_documents'},config).chunks.length,0);
 });
+test('automatic context prefers current reading while allowing relevant cross-document retrieval',()=>{
+ const automatic=retrieve(index,{...question,scope:'auto',message:'Tóm tắt phần này'},config);assert(automatic.chunks.length);assert.equal(automatic.chunks[0].documentId,'DOC-CORP-PROFILE');
+ const cross=retrieve(index,{...question,scope:'auto',message:'Giải thích 10 trụ cột chiến lược truyền thông 2027'},config);assert(cross.chunks.some(c=>c.documentId==='DOC-STR-COM-2027-V21'));
+ const home=retrieve(index,{scope:'auto',message:'ADIGO có vai trò gì?'},config);assert(home.chunks.length);assert(home.chunks.every(c=>c.isCurrentVersion));
+});
 test('unconfigured status and chat never simulate a model',async t=>{const s=await appServer(t,{config:{apiKey:''}});assert.equal((await (await fetch(s.base+'/api/ai/status')).json()).configured,false);assert.equal((await s.post()).status,503);assert.equal(s.calls.length,0);});
 test('authentication, strict scope and payload validation',async t=>{const s=await appServer(t);assert.equal((await s.post(question,null)).status,401);assert.equal((await s.post(question,'invalid')).status,401);assert.equal((await s.post({...question,currentDocumentId:'../../.env'})).status,400);assert.equal((await s.post({...question,message:'x'.repeat(4001)})).status,400);assert.equal((await s.post({...question,selectedText:'not from the source'})).status,400);assert.equal(s.calls.length,0);});
 test('SSE uses trusted citations; context change clears history; session ownership enforced',async t=>{
