@@ -21,14 +21,49 @@ function syncPreferencesSoon(){
 function fmtTime(ts){if(!ts)return '';const d=new Date(ts);return d.toLocaleTimeString('vi-VN',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}
 function renderCloudBar(){
   const bar=$('#cloud-sync-bar');
+  const topAuth=$('#topbar-auth');
+  const sideAuth=$('#sidebar-auth');
   const dashNote=$('#dash-sync-note');
+  const dashActions=$('#dash-auth-actions');
   if(!fb){
     if(bar){bar.className='cloud-bar offline';bar.innerHTML='<div class="cloud-info"><span class="cloud-dot"></span><span>Đang lưu cục bộ trên trình duyệt này.</span></div>'}
+    if(topAuth)topAuth.innerHTML='';
+    if(sideAuth){sideAuth.className='cloud-side offline';sideAuth.innerHTML='<div class="cloud-side-head"><span class="cloud-dot"></span><span class="cloud-side-title">Lưu cục bộ</span></div>'}
     return;
   }
   const st=fb.getSyncState();
+  const stateClass=st.user?(st.syncing?'syncing':'online'):'offline';
+  const userLabel=st.user?(st.user.displayName||st.user.email||'Tài khoản Google'):'';
+  if(topAuth){
+    if(!st.user){
+      topAuth.innerHTML='<button type="button" class="btn small primary" id="topbar-signin-btn">Đăng nhập để lưu</button>';
+      $('#topbar-signin-btn',topAuth).onclick=()=>fb.signIn();
+    }else{
+      topAuth.innerHTML=`<span class="auth-chip" title="${esc(st.user.email||userLabel)}"><span class="cloud-dot"></span><span class="auth-name">${esc(userLabel)}</span></span><button type="button" class="btn small" id="topbar-signout-btn">Đăng xuất</button>`;
+      $('#topbar-signout-btn',topAuth).onclick=()=>fb.signOut();
+    }
+  }
+  if(sideAuth){
+    sideAuth.className=`cloud-side ${stateClass}`;
+    if(!st.user){
+      sideAuth.innerHTML='<div class="cloud-side-head"><span class="cloud-dot"></span><span class="cloud-side-title">Chế độ cục bộ</span></div><small>Đăng nhập để lưu & đồng bộ giữa các thiết bị.</small><button type="button" class="btn small primary" id="side-signin-btn">Đăng nhập Google để lưu</button>';
+      $('#side-signin-btn',sideAuth).onclick=()=>fb.signIn();
+    }else{
+      const subTxt=st.syncing?'Đang lưu lên Cloud…':(st.lastSavedAt?`Đã lưu lúc ${fmtTime(st.lastSavedAt)}`:'Đã kết nối Cloud');
+      sideAuth.innerHTML=`<div class="cloud-side-head"><span class="cloud-dot"></span><span class="cloud-side-title" title="${esc(st.user.email||userLabel)}">${esc(userLabel)}</span></div><small>${esc(subTxt)}</small><button type="button" class="btn small" id="side-signout-btn">Đăng xuất</button>`;
+      $('#side-signout-btn',sideAuth).onclick=()=>fb.signOut();
+    }
+  }
   if(dashNote){
-    dashNote.textContent=st.user?`Đã đồng bộ Cloud (${st.user.email||st.user.displayName||'Google'}).`:'Trạng thái do người dùng nhập. Đăng nhập Google tại Tracker để lưu và đồng bộ lên Cloud.';
+    dashNote.textContent=st.user?`Đã đồng bộ Cloud (${st.user.email||st.user.displayName||'Google'}).`:'Trạng thái do người dùng nhập. Đăng nhập Google để lưu vĩnh viễn và đồng bộ lên Cloud.';
+  }
+  if(dashActions){
+    if(!st.user){
+      dashActions.innerHTML='<button type="button" class="btn primary" id="dash-signin-btn">Đăng nhập Google để lưu Cloud</button><a class="btn" href="#p10/m44">Checklist 20 nhiệm vụ cấp thiết →</a>';
+      $('#dash-signin-btn',dashActions).onclick=()=>fb.signIn();
+    }else{
+      dashActions.innerHTML='<a class="btn primary" href="#tracker">Cập nhật trạng thái Tracker →</a><a class="btn" href="#p10/m44">Checklist 20 nhiệm vụ cấp thiết →</a>';
+    }
   }
   if(!bar)return;
   if(!st.user){
@@ -37,7 +72,6 @@ function renderCloudBar(){
     $('#cloud-signin',bar).onclick=()=>fb.signIn();
     return;
   }
-  const stateClass=st.syncing?'syncing':'online';
   const statusTxt=st.syncing?'Đang lưu lên Cloud…':(st.error?'Lỗi đồng bộ Cloud — dữ liệu vẫn giữ cục bộ':(st.lastSavedAt?`Đã lưu Cloud lúc ${fmtTime(st.lastSavedAt)}`:'Đã kết nối Cloud (Firestore)'));
   bar.className=`cloud-bar ${stateClass}`;
   bar.innerHTML=`<div class="cloud-info"><span class="cloud-dot"></span><span><strong>${esc(st.user.email||st.user.displayName||'Tài khoản Google')}</strong> · ${esc(statusTxt)}</span></div><div class="cloud-actions"><button type="button" class="btn small" id="cloud-save-all">Lưu tất cả</button><button type="button" class="btn small" id="cloud-signout">Đăng xuất</button></div>`;
@@ -135,6 +169,7 @@ if(fb){
     onToast:(msg)=>toast(msg)
   });
 }
+renderCloudBar();
 const short=['Bối cảnh & định hướng','Kiến trúc hệ sinh thái','Đối tượng & thị trường','10 trụ cột truyền thông','Nội dung & sáng tạo','Lộ trình triển khai','Tổ chức & quản trị','Ngân sách','KPI & đánh giá','Danh mục dự án','Điều hành Giám đốc','Tổng kết chiến lược','Phụ lục & phê duyệt'];
 const groups=['A · Chiến lược & quản trị','B · Thương hiệu & nhận diện','C · Sản phẩm & thương mại','D · Digital & nội dung','E · Báo chí & sự kiện','F · Danh tiếng & nội bộ'];
 const statuses=['Chưa cập nhật','Chưa bắt đầu','Đang thực hiện','Hoàn thành','Tạm dừng'];

@@ -391,7 +391,16 @@ class FirebaseTrackerBridge {
       return cred.user;
     } catch (error) {
       console.error('Sign in failed:', error);
-      this.callbacks?.onToast('Đăng nhập Google không thành công hoặc đã bị hủy.');
+      const code = (error as { code?: string })?.code || '';
+      if (code === 'auth/popup-blocked') {
+        this.callbacks?.onToast(
+          'Trình duyệt đã chặn cửa sổ đăng nhập Google. Vui lòng bật cho phép pop-up và thử lại.'
+        );
+      } else if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request') {
+        this.callbacks?.onToast('Bạn đã đóng cửa sổ đăng nhập Google.');
+      } else {
+        this.callbacks?.onToast('Đăng nhập Google không thành công. Vui lòng thử lại.');
+      }
       return null;
     }
   }
