@@ -1,3 +1,4 @@
+import { renderFeaturedStrategy, renderFocusTimeline } from './featured-strategy.js';
 'use strict';
 
 import { esc } from '../../shared/utils.js';
@@ -190,6 +191,36 @@ export function renderHomePage(hostEl) {
         </div>
       </section>
 
+      ${renderFeaturedStrategy({ department: departments.find(d => d.id === 'truyen-thong'), banner: 'assets/images/banners/organicvn-strategy-banner-2027.webp?v=2' })}
+
+      <section class="wp-home-card-panel wp-home-focus-panel" aria-labelledby="home-plans-title">
+        <div class="wp-home-panel-head">
+          <h2 id="home-plans-title">Kế hoạch trọng tâm sắp tới</h2>
+          <a href="#strategies/group" class="wp-home-inline-link">Xem kế hoạch →</a>
+        </div>
+
+        ${renderFocusTimeline()}
+
+        <div class="wp-home-horizon-block">
+          <div class="wp-home-horizon-grid" role="tablist" aria-label="Mốc kế hoạch sắp tới">
+            ${[7, 15, 30]
+              .map((days) => {
+                const count = horizonMap[days].length;
+                const isActive = activeHorizon === days;
+                return `
+                  <button type="button" role="tab" aria-selected="${isActive}" class="wp-home-horizon-card ${isActive ? 'active' : ''}" data-home-horizon="${days}">
+                    <strong>${days} ngày tới</strong>
+                    <span>${count > 0 ? `Xem ${count} công việc` : 'Chưa có mốc đến hạn'}</span>
+                  </button>`;
+              })
+              .join('')}
+          </div>
+          <div id="home-upcoming-list" class="wp-home-upcoming-wrap">
+            ${renderHorizonListHtml(activeHorizon)}
+          </div>
+        </div>
+      </section>
+
       <section class="wp-home-section" aria-labelledby="home-quick-title">
         <div class="wp-home-head">
           <div class="wp-home-head-text">
@@ -289,56 +320,10 @@ export function renderHomePage(hostEl) {
         </div>
       </section>
 
-      <section class="wp-home-card-panel wp-home-focus-panel" aria-labelledby="home-plans-title">
-        <div class="wp-home-panel-head">
-          <h2 id="home-plans-title">Kế hoạch trọng tâm</h2>
-          <a href="#strategies/group" class="wp-home-inline-link">Xem kế hoạch →</a>
-        </div>
-
-        <a href="#departments/truyen-thong" class="wp-home-milestone-row">
-          <div class="wp-home-cal-badge" aria-hidden="true">
-            <span class="wp-home-cal-label">THÁNG</span>
-            <strong class="wp-home-cal-num">01</strong>
-            <span class="wp-home-cal-year">2027</span>
-          </div>
-          <div class="wp-home-milestone-body">
-            <h3>${esc(milestone.title || 'Tháng 01/2027 – Ra mắt và thương mại hóa sản phẩm gà Organic Việt Nam')}</h3>
-            <p>${esc(milestone.prepWindow || 'Tháng 11–12/2026: Chuẩn bị nền tảng thương hiệu, truyền thông thị trường và điều kiện phục vụ ra mắt.')}</p>
-            <div class="wp-home-row-meta">
-              <span>Phòng ban: Truyền thông, Kinh doanh, Sản xuất, Chuỗi cung ứng</span>
-              <span aria-hidden="true">·</span>
-              <span>${esc(milestone.status || 'Đang chuẩn bị tiền ra mắt')}</span>
-              <span aria-hidden="true">·</span>
-              <span>Chiến lược Truyền thông V2.1 (Chờ phê duyệt)</span>
-            </div>
-          </div>
-          <span class="wp-home-doc-chevron" aria-hidden="true">${HOME_ICONS.chevronRight}</span>
-        </a>
-
-        <div class="wp-home-horizon-block">
-          <div class="wp-home-horizon-grid" role="tablist" aria-label="Mốc kế hoạch sắp tới">
-            ${[7, 15, 30]
-              .map((days) => {
-                const count = horizonMap[days].length;
-                const isActive = activeHorizon === days;
-                return `
-                  <button type="button" role="tab" aria-selected="${isActive}" class="wp-home-horizon-card ${isActive ? 'active' : ''}" data-home-horizon="${days}">
-                    <strong>${days} ngày tới</strong>
-                    <span>${count > 0 ? `Xem ${count} công việc` : 'Chưa có mốc đến hạn'}</span>
-                  </button>`;
-              })
-              .join('')}
-          </div>
-          <div id="home-upcoming-list" class="wp-home-upcoming-wrap">
-            ${renderHorizonListHtml(activeHorizon)}
-          </div>
-        </div>
-      </section>
-
       <section class="wp-home-section" aria-labelledby="home-depts-title">
         <div class="wp-home-head">
           <div class="wp-home-head-text">
-            <h2 id="home-depts-title">Không gian phòng ban</h2>
+            <h2 id="home-depts-title">Không gian các phòng ban</h2>
             <p class="wp-home-subtitle">Truy cập không gian làm việc, chiến lược và tài liệu theo từng đơn vị.</p>
           </div>
           <a href="#departments" class="wp-home-inline-link">Xem tất cả →</a>
@@ -357,7 +342,7 @@ export function renderHomePage(hostEl) {
                   <h3>${esc(d.name)}</h3>
                   <p>${esc(d.summary)}</p>
                   <div class="wp-home-dept-meta">
-                    <span>${esc(d.strategyStatus)}</span>
+                    <span>${esc(d.hasStrategyData ? d.strategyStatus : 'Chưa cập nhật')}</span>
                     ${pCount !== null ? `<span>· ${pCount} dự án</span>` : ''}
                   </div>
                 </a>`;
@@ -366,22 +351,7 @@ export function renderHomePage(hostEl) {
         </div>
       </section>
 
-      <section class="wp-home-onboard-banner" aria-labelledby="home-onboard-title">
-        <div class="wp-home-onboard-content">
-          <h2 id="home-onboard-title">Bắt đầu hành trình cùng Organic Việt Nam</h2>
-          <p>Tìm hiểu doanh nghiệp, nội quy, quy chế và phương thức làm việc thông qua lộ trình hội nhập.</p>
-          <div class="wp-home-row-meta">
-            <span>${
-              obDone > 0
-                ? `Tiến độ hội nhập: ${obDone}/${obTotal} bước (${obPct}%)`
-                : `Lộ trình ${obTotal} bước liên kết trực tiếp tới thư viện tài liệu`
-            }</span>
-          </div>
-        </div>
-        <div class="wp-home-onboard-action">
-          <a href="#onboarding" class="btn primary">${esc(obBtnLabel)} →</a>
-        </div>
-      </section>
+
     </div>
   `;
 
