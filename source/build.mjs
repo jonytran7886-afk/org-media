@@ -154,7 +154,16 @@ function readJson(filePath) {
 }
 
 const planMeta = readJson(path.join(root, 'plan-meta.json'));
+const aboutMarkdown = fs.readFileSync(path.join(dataDir, 'about-company.md'), 'utf8');
+const aboutSections = [...aboutMarkdown.matchAll(/^## (\d{2})\. (.+)\r?\n([\s\S]*?)(?=^## \d{2}\. |$(?![\s\S]))/gm)].map((m) => ({
+  id: `company-${m[1]}`,
+  title: m[2],
+  html: mdToHtml(m[3].trim()),
+  body: m[3].replace(/[#*]/g, '').trim(),
+}));
+if (aboutSections.length !== 14) throw new Error('Expected 14 company profile sections');
 const portalData = {
+  aboutCompany: { title: 'Organic Việt Nam', sections: aboutSections, media: readJson(path.join(dataDir, 'about-company-media.json')) },
   ...readJson(path.join(dataDir, 'company.json')),
   documentCategories: readJson(path.join(dataDir, 'document-categories.json')),
   departments: readJson(path.join(dataDir, 'departments.json')),

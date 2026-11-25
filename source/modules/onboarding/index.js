@@ -50,7 +50,7 @@ export function renderOnboardingPage(hostEl) {
             .filter(Boolean)
             .map(
               (d) => `
-              <a class="wp-ob-doc" href="#documents/view/${esc(d.id)}">
+              <a class="wp-ob-doc" href="${d.readerKind === 'company-profile' ? '#about-company' : '#documents/view/' + esc(d.id)}">
                 <div>
                   <div class="wp-list-meta"><code>${esc(d.documentCode)}</code> · <span>${esc(d.fileType || 'Tài liệu')}</span></div>
                   <strong>${esc(d.title)}</strong>

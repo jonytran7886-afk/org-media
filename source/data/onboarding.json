@@ -12,10 +12,19 @@
       "Định hướng phát triển",
       "Kiến trúc hệ sinh thái"
     ],
-    "documentIds": ["DOC-CORP-PROFILE", "DOC-STR-COM-2027-V21"],
+    "documentIds": [
+      "DOC-CORP-PROFILE",
+      "DOC-STR-COM-2027-V21"
+    ],
     "links": [
-      { "label": "Thông tin doanh nghiệp", "route": "#organization" },
-      { "label": "Chiến lược Tập đoàn", "route": "#strategies/group" }
+      {
+        "label": "Thông tin doanh nghiệp",
+        "route": "#about-company"
+      },
+      {
+        "label": "Chiến lược Tập đoàn",
+        "route": "#strategies/group"
+      }
     ]
   },
   {
@@ -30,10 +39,18 @@
       "Chức năng và nhiệm vụ",
       "Phương thức phối hợp"
     ],
-    "documentIds": ["DOC-CORP-ORG-DECISION"],
+    "documentIds": [
+      "DOC-CORP-ORG-DECISION"
+    ],
     "links": [
-      { "label": "Cơ cấu tổ chức", "route": "#organization" },
-      { "label": "Danh sách phòng ban", "route": "#organization/departments" }
+      {
+        "label": "Cơ cấu tổ chức",
+        "route": "#organization"
+      },
+      {
+        "label": "Danh sách phòng ban",
+        "route": "#organization/departments"
+      }
     ]
   },
   {
@@ -48,9 +65,16 @@
       "Quy định nội bộ",
       "Tài liệu cần đọc trước khi bắt đầu"
     ],
-    "documentIds": ["DOC-HR-RULES", "DOC-HR-WORK-REG", "DOC-HR-SECURITY"],
+    "documentIds": [
+      "DOC-HR-RULES",
+      "DOC-HR-WORK-REG",
+      "DOC-HR-SECURITY"
+    ],
     "links": [
-      { "label": "Mục Nội quy & Quy chế", "route": "#documents/category/noi-quy-quy-che" }
+      {
+        "label": "Mục Nội quy & Quy chế",
+        "route": "#documents/category/noi-quy-quy-che"
+      }
     ]
   },
   {
@@ -65,9 +89,14 @@
       "Phúc lợi",
       "Quy định đánh giá nhân sự"
     ],
-    "documentIds": ["DOC-HR-POLICY"],
+    "documentIds": [
+      "DOC-HR-POLICY"
+    ],
     "links": [
-      { "label": "Mục Chính sách nhân sự", "route": "#documents/category/chinh-sach-nhan-su" }
+      {
+        "label": "Mục Chính sách nhân sự",
+        "route": "#documents/category/chinh-sach-nhan-su"
+      }
     ]
   },
   {
@@ -84,10 +113,19 @@
       "ADIGO MART",
       "ADIGO MARKETPLACE"
     ],
-    "documentIds": ["DOC-TRN-CHICKEN-01", "DOC-STR-COM-2027-V21"],
+    "documentIds": [
+      "DOC-TRN-CHICKEN-01",
+      "DOC-STR-COM-2027-V21"
+    ],
     "links": [
-      { "label": "Kiến trúc hệ sinh thái", "route": "#p2/m5" },
-      { "label": "Chuẩn hóa thuật ngữ", "route": "#p2/m8-2" }
+      {
+        "label": "Kiến trúc hệ sinh thái",
+        "route": "#p2/m5"
+      },
+      {
+        "label": "Chuẩn hóa thuật ngữ",
+        "route": "#p2/m8-2"
+      }
     ]
   },
   {
@@ -102,10 +140,19 @@
       "Kế hoạch hoạt động",
       "Tài liệu chuyên môn"
     ],
-    "documentIds": ["DOC-COM-PROC", "DOC-BRAND-GUIDELINES"],
+    "documentIds": [
+      "DOC-COM-PROC",
+      "DOC-BRAND-GUIDELINES"
+    ],
     "links": [
-      { "label": "Không gian phòng ban", "route": "#departments" },
-      { "label": "Phòng Truyền thông (V2.1)", "route": "#departments/truyen-thong" }
+      {
+        "label": "Không gian phòng ban",
+        "route": "#departments"
+      },
+      {
+        "label": "Phòng Truyền thông (V2.1)",
+        "route": "#departments/truyen-thong"
+      }
     ]
   },
   {
@@ -121,10 +168,18 @@
       "Phương thức phối hợp",
       "Hướng dẫn sử dụng hệ thống"
     ],
-    "documentIds": ["DOC-FORM-PROPOSAL"],
+    "documentIds": [
+      "DOC-FORM-PROPOSAL"
+    ],
     "links": [
-      { "label": "Biểu mẫu nội bộ", "route": "#documents/category/bieu-mau-noi-bo" },
-      { "label": "Danh mục dự án", "route": "#projects" }
+      {
+        "label": "Biểu mẫu nội bộ",
+        "route": "#documents/category/bieu-mau-noi-bo"
+      },
+      {
+        "label": "Danh mục dự án",
+        "route": "#projects"
+      }
     ]
   }
 ]

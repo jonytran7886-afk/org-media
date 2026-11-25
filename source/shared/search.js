@@ -33,9 +33,13 @@ function buildSearchCorpus() {
       title: `${d.documentCode} · ${d.title}`,
       meta: `${categories[d.categoryId] || ''} · ${deptMap[d.departmentId] || ''} · ${d.status}`,
       body: `${d.description} ${d.fileType} ${d.version} ${d.status}`,
-      route: `#documents/view/${d.id}`,
+      route: d.readerKind === 'company-profile' ? '#about-company' : `#documents/view/${d.id}`,
     });
   });
+
+  (portal.aboutCompany?.sections || []).forEach(s => items.push({
+    kind: 'Giới thiệu doanh nghiệp', title: s.title, meta: 'Organic Việt Nam', body: s.body, route: `#about-company/${s.id}`,
+  }));
 
   announcements.forEach((a) => {
     items.push({

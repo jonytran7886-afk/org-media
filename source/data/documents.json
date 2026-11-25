@@ -17,7 +17,11 @@
     "internalRoute": "#all",
     "readerKind": "strategy-v21",
     "requiredReading": true,
-    "relatedDocumentIds": ["DOC-STR-COM-2027-V20", "DOC-BRAND-LOGO-OVN", "DOC-BRAND-BANNER-2027"]
+    "relatedDocumentIds": [
+      "DOC-STR-COM-2027-V20",
+      "DOC-BRAND-LOGO-OVN",
+      "DOC-BRAND-BANNER-2027"
+    ]
   },
   {
     "id": "DOC-STR-COM-2027-V20",
@@ -37,7 +41,9 @@
     "internalRoute": "",
     "readerKind": "html-frame",
     "requiredReading": false,
-    "relatedDocumentIds": ["DOC-STR-COM-2027-V21"]
+    "relatedDocumentIds": [
+      "DOC-STR-COM-2027-V21"
+    ]
   },
   {
     "id": "DOC-BRAND-LOGO-OVN",
@@ -57,7 +63,10 @@
     "internalRoute": "",
     "readerKind": "image",
     "requiredReading": false,
-    "relatedDocumentIds": ["DOC-BRAND-BANNER-2027", "DOC-BRAND-GUIDELINES"]
+    "relatedDocumentIds": [
+      "DOC-BRAND-BANNER-2027",
+      "DOC-BRAND-GUIDELINES"
+    ]
   },
   {
     "id": "DOC-BRAND-BANNER-2027",
@@ -77,7 +86,10 @@
     "internalRoute": "#departments/truyen-thong",
     "readerKind": "image",
     "requiredReading": false,
-    "relatedDocumentIds": ["DOC-BRAND-LOGO-OVN", "DOC-STR-COM-2027-V21"]
+    "relatedDocumentIds": [
+      "DOC-BRAND-LOGO-OVN",
+      "DOC-STR-COM-2027-V21"
+    ]
   },
   {
     "id": "DOC-CORP-PROFILE",
@@ -87,17 +99,19 @@
     "categoryId": "tai-lieu-doanh-nghiep",
     "departmentId": "truyen-thong",
     "version": "",
-    "status": "Chưa cập nhật",
+    "status": "B?n d? th?o",
     "issuedDate": "",
     "effectiveDate": "",
-    "updatedAt": "",
-    "fileType": "PDF",
+    "updatedAt": "25/11/2026",
+    "fileType": "Markdown",
     "filePath": "",
-    "contentPath": "",
-    "internalRoute": "#organization",
-    "readerKind": "pending",
+    "contentPath": "source/data/about-company.md",
+    "internalRoute": "#about-company",
+    "readerKind": "company-profile",
     "requiredReading": true,
-    "relatedDocumentIds": ["DOC-STR-COM-2027-V21"]
+    "relatedDocumentIds": [
+      "DOC-STR-COM-2027-V21"
+    ]
   },
   {
     "id": "DOC-HR-RULES",
@@ -117,7 +131,10 @@
     "internalRoute": "",
     "readerKind": "pending",
     "requiredReading": true,
-    "relatedDocumentIds": ["DOC-HR-WORK-REG", "DOC-HR-SECURITY"]
+    "relatedDocumentIds": [
+      "DOC-HR-WORK-REG",
+      "DOC-HR-SECURITY"
+    ]
   },
   {
     "id": "DOC-HR-WORK-REG",
@@ -137,7 +154,9 @@
     "internalRoute": "",
     "readerKind": "pending",
     "requiredReading": true,
-    "relatedDocumentIds": ["DOC-HR-RULES"]
+    "relatedDocumentIds": [
+      "DOC-HR-RULES"
+    ]
   },
   {
     "id": "DOC-HR-SECURITY",
@@ -157,7 +176,9 @@
     "internalRoute": "",
     "readerKind": "pending",
     "requiredReading": true,
-    "relatedDocumentIds": ["DOC-HR-RULES"]
+    "relatedDocumentIds": [
+      "DOC-HR-RULES"
+    ]
   },
   {
     "id": "DOC-HR-POLICY",
@@ -177,7 +198,9 @@
     "internalRoute": "",
     "readerKind": "pending",
     "requiredReading": true,
-    "relatedDocumentIds": ["DOC-HR-RULES"]
+    "relatedDocumentIds": [
+      "DOC-HR-RULES"
+    ]
   },
   {
     "id": "DOC-COM-PROC",
@@ -197,7 +220,9 @@
     "internalRoute": "#p7/m32",
     "readerKind": "pending",
     "requiredReading": false,
-    "relatedDocumentIds": ["DOC-STR-COM-2027-V21"]
+    "relatedDocumentIds": [
+      "DOC-STR-COM-2027-V21"
+    ]
   },
   {
     "id": "DOC-BRAND-GUIDELINES",
@@ -217,7 +242,10 @@
     "internalRoute": "#p2/m7",
     "readerKind": "pending",
     "requiredReading": false,
-    "relatedDocumentIds": ["DOC-BRAND-LOGO-OVN", "DOC-STR-COM-2027-V21"]
+    "relatedDocumentIds": [
+      "DOC-BRAND-LOGO-OVN",
+      "DOC-STR-COM-2027-V21"
+    ]
   },
   {
     "id": "DOC-FORM-PROPOSAL",
@@ -237,7 +265,9 @@
     "internalRoute": "",
     "readerKind": "pending",
     "requiredReading": false,
-    "relatedDocumentIds": ["DOC-HR-WORK-REG"]
+    "relatedDocumentIds": [
+      "DOC-HR-WORK-REG"
+    ]
   },
   {
     "id": "DOC-TRN-CHICKEN-01",
@@ -257,7 +287,9 @@
     "internalRoute": "#p4/m14",
     "readerKind": "pending",
     "requiredReading": true,
-    "relatedDocumentIds": ["DOC-STR-COM-2027-V21"]
+    "relatedDocumentIds": [
+      "DOC-STR-COM-2027-V21"
+    ]
   },
   {
     "id": "DOC-CORP-ORG-DECISION",
@@ -277,6 +309,8 @@
     "internalRoute": "#organization",
     "readerKind": "pending",
     "requiredReading": false,
-    "relatedDocumentIds": ["DOC-HR-WORK-REG"]
+    "relatedDocumentIds": [
+      "DOC-HR-WORK-REG"
+    ]
   }
 ]

@@ -4,6 +4,7 @@ import { $, $$, esc } from './utils.js';
 import { data, portal, short, renderCloudBar, getDepartmentById } from './data-service.js';
 import { closeSearch } from './search.js';
 import { renderHomePage } from '../modules/home/index.js';
+import { renderAboutCompany } from '../modules/about-company/index.js';
 import { renderAnnouncementsPage } from '../modules/announcements/index.js';
 import { renderDocumentsPage, renderDocumentDetailPage } from '../modules/documents/index.js';
 import { renderOnboardingPage } from '../modules/onboarding/index.js';
@@ -44,7 +45,7 @@ const GLOBAL_NAV_GROUPS = [
     label: 'HỘI NHẬP NHÂN VIÊN',
     items: [
       { icon: '✦', label: 'Hướng dẫn hội nhập', href: '#onboarding', match: ['#onboarding'] },
-      { icon: '⬡', label: 'Tìm hiểu Organic Việt Nam', href: '#organization', match: ['#organization'] },
+      { icon: '⬡', label: 'Tìm hiểu Organic Việt Nam', href: '#about-company', match: ['#about-company'] },
       { icon: '✓', label: 'Tài liệu cần đọc', href: '#documents/required', match: ['#documents/required'] },
     ],
   },
@@ -204,6 +205,9 @@ function resolveRoute(rawHash) {
   const clean = raw || 'home';
   const segs = clean.split('/').filter(Boolean);
   const root = segs[0] || 'home';
+  if (root === 'about-company' || (root === 'documents' && segs[1] === 'view' && segs[2] === 'DOC-CORP-PROFILE')) {
+    return { mode: 'global', handler: 'about-company', routeKey: 'about-company', target: root === 'about-company' ? segs[1] : null, navHref: '#about-company', crumb: ['Giới thiệu doanh nghiệp'], printable: false };
+  }
 
   // Legacy Communications routes (100% compatible)
   if (root === 'dashboard') {
@@ -338,6 +342,7 @@ export function render() {
 
   if (!same) {
     if (r.handler === 'home') renderHomePage(m);
+    else if (r.handler === 'about-company') renderAboutCompany(m);
     else if (r.handler === 'announcements') renderAnnouncementsPage(m);
     else if (r.handler === 'documents') renderDocumentsPage(m);
     else if (r.handler === 'documents-cat') renderDocumentsPage(m, { categoryId: r.categoryId });

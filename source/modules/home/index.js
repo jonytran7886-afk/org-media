@@ -94,7 +94,7 @@ export function renderHomePage(hostEl) {
     obDone === 0 ? 'Bắt đầu hội nhập' : obDone < obTotal ? 'Tiếp tục hội nhập' : 'Xem lại lộ trình hội nhập';
 
   const quickCards = [
-    {icon:HOME_ICONS.organization,title:'Giới thiệu doanh nghiệp',desc:'Tìm hiểu Organic Việt Nam.',route:'#documents/category/tai-lieu-doanh-nghiep'},
+    {icon:HOME_ICONS.organization,title:'Giới thiệu doanh nghiệp',desc:'Tìm hiểu Organic Việt Nam.',route:'#about-company'},
     {icon:HOME_ICONS.rules,title:'Nội quy & Quy chế',desc:'Quy định làm việc nội bộ.',route:'#documents/category/noi-quy-quy-che'},
     {icon:HOME_ICONS.documents,title:'Chính sách nhân sự',desc:'Chính sách và chế độ nhân viên.',route:'#documents/category/chinh-sach-nhan-su'},
     {icon:HOME_ICONS.documents,title:'Quy trình & Hướng dẫn',desc:'Hướng dẫn và quy trình nghiệp vụ.',route:'#documents/category/quy-trinh-huong-dan'},
@@ -244,7 +244,7 @@ export function renderHomePage(hostEl) {
                     ${requiredDocs
                       .map(
                         (d) => `
-                      <a href="#documents/view/${esc(d.id)}" class="wp-home-doc-row">
+                      <a href="${d.readerKind === 'company-profile' ? '#about-company' : '#documents/view/' + esc(d.id)}" class="wp-home-doc-row">
                         <span class="wp-home-doc-icon" aria-hidden="true">${HOME_ICONS.docSmall}</span>
                         <span class="wp-home-doc-info">
                           <span class="wp-home-doc-title">${esc(d.title)}</span>
