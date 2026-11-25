@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import esbuild from 'esbuild';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = __dirname;
 const outDir = path.resolve(root, '..');
+const dataDir = path.join(root, 'data');
 
 const esc = (s) =>
   String(s ?? '')
@@ -15,7 +17,6 @@ const esc = (s) =>
 
 function inlineMd(text) {
   let s = String(text ?? '');
-  // Preserve intentional <br> in markdown table cells
   s = s.replace(/<br\s*\/?>/gi, '%%BR%%');
   s = esc(s);
   s = s.replace(/%%BR%%/g, '<br>');
@@ -65,7 +66,6 @@ function mdToHtml(markdown) {
       continue;
     }
 
-    // Markdown table
     if (trimmed.startsWith('|') && i + 1 < lines.length && isTableSeparator(lines[i + 1])) {
       const headers = splitTableRow(trimmed);
       const sepCells = splitTableRow(lines[i + 1]);
@@ -97,7 +97,6 @@ function mdToHtml(markdown) {
       continue;
     }
 
-    // Unordered list
     if (/^-\s+/.test(trimmed)) {
       const items = [];
       while (i < lines.length && /^-\s+/.test(lines[i].trim())) {
@@ -108,7 +107,6 @@ function mdToHtml(markdown) {
       continue;
     }
 
-    // Ordered list
     if (/^\d+\.\s+/.test(trimmed)) {
       const items = [];
       while (i < lines.length && /^\d+\.\s+/.test(lines[i].trim())) {
@@ -119,7 +117,6 @@ function mdToHtml(markdown) {
       continue;
     }
 
-    // Paragraph (collect contiguous plain lines)
     const pLines = [];
     while (
       i < lines.length &&
@@ -152,7 +149,20 @@ function stripTags(htmlStr) {
     .trim();
 }
 
-const planMeta = JSON.parse(fs.readFileSync(path.join(root, 'plan-meta.json'), 'utf8'));
+function readJson(filePath) {
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+const planMeta = readJson(path.join(root, 'plan-meta.json'));
+const portalData = {
+  ...readJson(path.join(dataDir, 'company.json')),
+  documentCategories: readJson(path.join(dataDir, 'document-categories.json')),
+  departments: readJson(path.join(dataDir, 'departments.json')),
+  documents: readJson(path.join(dataDir, 'documents.json')),
+  announcements: readJson(path.join(dataDir, 'announcements.json')),
+  onboarding: readJson(path.join(dataDir, 'onboarding.json')),
+  strategyCatalog: readJson(path.join(dataDir, 'strategy-catalog.json')),
+};
 
 const cards = (items, cls = 'cards', caption = '') =>
   `<div class="${cls}">` +
@@ -328,7 +338,7 @@ const widgets = {
   pillars:
     node('CHIẾN LƯỢC TRUYỀN THÔNG TÍCH HỢP', 'Organic Việt Nam – ADIGO', '', 'dark') +
     pillargrid() +
-    node('THƯƠNG HIỆM – NIỀM TIN – THỊ TRƯỜNG'.replace('THƯƠNG HIỆM', 'THƯƠNG HIỆU'), 'Tích lũy giá trị và nâng cao năng lực cạnh tranh', '', 'dark'),
+    node('THƯƠNG HIỆU – NIỀM TIN – THỊ TRƯỜNG', 'Tích lũy giá trị và nâng cao năng lực cạnh tranh', '', 'dark'),
   productflow: steps([
     ['ORGANIC FARM – Giá trị từ nguồn sản xuất', 'Giống vật nuôi, vùng sản xuất, thức ăn, thảo dược, kỹ thuật nuôi và quy trình chăm sóc.'],
     ['ORGANIC FOOD – Giá trị từ sản phẩm', 'Quy cách, giết mổ, sơ chế, pha lóc, đóng gói và kiểm soát chất lượng.'],
@@ -554,12 +564,10 @@ for (let idx = 1; idx < chunks.length; idx += 2) {
     rendered = rendered.replace(match[0], `<div class="visual">${widgets[key]}</div>`);
   }
 
-  // Extract first h1 as part title
   const h1Match = rendered.match(/<h1>([\s\S]*?)<\/h1>/);
   const title = h1Match ? stripTags(h1Match[1]) : `Phần ${p}`;
   if (h1Match) rendered = rendered.replace(h1Match[0], '');
 
-  // Assign heading IDs for h2 and h3
   const headings = [];
   rendered = rendered.replace(/<(h[23])>([\s\S]*?)<\/\1>/g, (full, tag, inner) => {
     const plain = stripTags(inner);
@@ -572,7 +580,6 @@ for (let idx = 1; idx < chunks.length; idx += 2) {
     return full;
   });
 
-  // Enrich Part 10 project tables with full 10-field metadata from plan-meta.json & wrap tables
   rendered = rendered.replace(/<table>([\s\S]*?)<\/table>/g, (tblFull, tblInner) => {
     if (p === 10 && /<td>[A-F]\d\d<\/td>/.test(tblInner)) {
       const rowMatches = [...tblInner.matchAll(/<tr>([\s\S]*?)<\/tr>/g)];
@@ -627,7 +634,6 @@ for (let idx = 1; idx < chunks.length; idx += 2) {
     return `<div class="table-scroll"><table>${tblInner}</table></div>`;
   });
 
-  // Build search index per h2 block
   const h2Parts = rendered.split(/(?=<h2\b)/);
   for (const part of h2Parts) {
     const hm = part.match(/^<h2 id="([^"]*)">([\s\S]*?)<\/h2>([\s\S]*)$/);
@@ -664,6 +670,7 @@ const dataObj = {
   search,
   budgetnames,
   weights,
+  portal: portalData,
 };
 
 fs.writeFileSync(path.join(root, 'data.json'), JSON.stringify(dataObj), 'utf8');
@@ -707,38 +714,81 @@ const dashboardHtml =
 
 fs.writeFileSync(path.join(root, 'dashboard.html'), dashboardHtml, 'utf8');
 
+// Bundle modular source/app.js -> IIFE for standalone index.html
+const appResult = await esbuild.build({
+  entryPoints: [path.join(root, 'app.js')],
+  bundle: true,
+  format: 'iife',
+  minify: true,
+  write: false,
+});
+const appBundleCode = appResult.outputFiles[0].text.replace(/<\/script/gi, '<\\/script').trim();
+
 // Sync into index.html cleanly while preserving FIREBASE_TRACKER_START...END placeholder
 const indexPath = path.join(outDir, 'index.html');
 let indexHtml = fs.readFileSync(indexPath, 'utf8');
 
 const styleCss = fs.readFileSync(path.join(root, 'style.css'), 'utf8').trim();
-const appJs = fs.readFileSync(path.join(root, 'app.js'), 'utf8').trim();
 const dataJsonSafe = JSON.stringify(dataObj).replace(/<\/script/gi, '<\\/script');
+
+const fontTags =
+  '<link rel="preconnect" href="https://fonts.googleapis.com">' +
+  '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' +
+  '<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">';
 
 indexHtml = indexHtml.replace(
   /<meta name="description" content="[^"]*">/,
-  `<meta name="description" content="Chiến lược truyền thông tổng thể 2027 – Organic Việt Nam & ADIGO – ${esc(planMeta.versionMeta.version)} (${esc(planMeta.versionMeta.status)})">`
+  `<meta name="description" content="Organic Workplace V1.0 – Cổng thông tin nội bộ, thư viện tài liệu, hội nhập nhân viên và quản trị chiến lược Organic Việt Nam.">`
 );
 indexHtml = indexHtml.replace(
   /<title>[^<]*<\/title>/,
-  `<title>Organic Việt Nam | Communication Strategy 2027 (V2.1)</title>`
+  `<title>Organic Workplace | Cổng thông tin nội bộ Organic Việt Nam (V1.0)</title>`
 );
-indexHtml = indexHtml.replace(
-  /<style>[\s\S]*?<\/style>/,
-  () => `<style>${styleCss}</style>`
-);
-indexHtml = indexHtml.replace(
-  /<div class="workspace">[\s\S]*?<\/div>/,
-  `<div class="workspace"><strong>Chiến lược 2027</strong><small>OVN-COM-STR-2027 · ${esc(planMeta.versionMeta.shortVersion)}</small></div>`
-);
-indexHtml = indexHtml.replace(
-  /<div class="sidebar-foot">[\s\S]*?<\/div>/,
-  `<div class="sidebar-foot">Nông nghiệp · Thực phẩm · Công nghệ<br>Nội bộ · ${esc(planMeta.versionMeta.shortVersion)} · <a href="toan-van.html" class="textlink">Bản gốc V2.0</a></div>`
-);
-indexHtml = indexHtml.replace(
-  /<footer class="footer">[\s\S]*?<\/footer>/,
-  `<footer class="footer">ORGANIC VIỆT NAM & ADIGO · Communication Strategy 2027 · ${esc(planMeta.versionMeta.version)} · Trạng thái: ${esc(planMeta.versionMeta.status)} · <a href="toan-van.html" class="textlink">Xem bản lưu trữ gốc V2.0 Final</a></footer>`
-);
+if (!indexHtml.includes('fonts.googleapis.com/css2')) {
+  indexHtml = indexHtml.replace(/<\/title>/, `</title>${fontTags}`);
+}
+indexHtml = indexHtml.replace(/<style>[\s\S]*?<\/style>/, () => `<style>${styleCss}</style>`);
+
+const shellHtml =
+  `<!-- APP_SHELL_START -->` +
+  `<aside class="sidebar" id="sidebar">` +
+  `<a class="brand" href="#home"><img class="brand-symbol" src="assets/organic-vietnam-symbol.svg" alt="" width="44" height="42"><div class="brand-text"><div class="wordmark">ORGANIC VIỆT NAM</div><div class="brand-sub" id="brand-sub">INTERNAL WORKPLACE</div></div></a>` +
+  `<div class="workspace" id="sidebar-workspace"><strong>ORGANIC WORKPLACE</strong><small>V1.0 · Cổng thông tin nội bộ</small></div>` +
+  `<div class="cloud-side offline" id="sidebar-auth"></div>` +
+  `<nav class="nav" id="nav" aria-label="Điều hướng cổng thông tin nội bộ"></nav>` +
+  `<div class="sidebar-foot" id="sidebar-foot">ORGANIC WORKPLACE V1.0<br>Nông nghiệp · Thực phẩm · Công nghệ</div>` +
+  `</aside>` +
+  `<div class="overlay"></div>` +
+  `<div class="shell">` +
+  `<header class="topbar">` +
+  `<button id="menubtn" aria-expanded="false" aria-controls="sidebar" class="iconbtn hamburger" aria-label="Mở menu">☰</button>` +
+  `<button id="sidebar-collapse-btn" aria-pressed="false" class="iconbtn collapse-toggle" title="Thu gọn thanh bên" aria-label="Thu gọn thanh bên">«</button>` +
+  `<div class="crumb" id="crumb">Organic Việt Nam / Trang chủ</div>` +
+  `<div class="actions">` +
+  `<button class="searchtrigger" id="searchbtn" aria-label="Tìm kiếm toàn hệ thống"><span>⌕</span><span class="searchtxt">Tìm tài liệu, phòng ban, dự án…</span><kbd>Ctrl K</kbd></button>` +
+  `<button class="btn small printbtn" id="printbtn" style="display:none">Tải tài liệu PDF</button>` +
+  `<a class="btn small" id="topbar-context-link" href="#home" style="display:none">Trang chủ</a>` +
+  `<div id="topbar-auth" class="topbar-auth"></div>` +
+  `</div>` +
+  `</header>` +
+  `<main class="main" id="main"></main>` +
+  `<footer class="footer">ORGANIC WORKPLACE V1.0 · Cổng thông tin nội bộ Organic Việt Nam · Nông nghiệp · Thực phẩm · Công nghệ · Chiến lược Truyền thông 2027 (V2.1 – Chờ phê duyệt)</footer>` +
+  `</div>` +
+  `<div class="searchoverlay" id="searchoverlay" role="dialog" aria-label="Tìm kiếm toàn hệ thống"><div class="searchbox"><div class="searchhead"><input type="search" id="searchinput" placeholder="Tìm tài liệu, nội quy, phòng ban, chiến lược, dự án…" aria-label="Từ khóa tìm kiếm"><button class="iconbtn" id="searchclose" aria-label="Đóng">×</button></div><div id="results" class="results"></div></div></div>` +
+  `<div id="toast" class="toast" role="status"></div>` +
+  `<noscript>Vui lòng bật JavaScript để sử dụng Organic Workplace và các chức năng tương tác.</noscript>` +
+  `<!-- APP_SHELL_END -->`;
+
+const shellMarkerRe = /<!-- APP_SHELL_START -->[\s\S]*?<!-- APP_SHELL_END -->/;
+if (shellMarkerRe.test(indexHtml)) {
+  indexHtml = indexHtml.replace(shellMarkerRe, () => shellHtml);
+} else {
+  indexHtml = indexHtml.replace(
+    /<aside class="sidebar"[\s\S]*?<noscript>[\s\S]*?<\/noscript>/,
+    () => shellHtml
+  );
+}
+
 indexHtml = indexHtml.replace(
   /<template id="dashboard-template">[\s\S]*?<\/template>/,
   () => `<template id="dashboard-template">${dashboardHtml}</template>`
@@ -747,12 +797,19 @@ indexHtml = indexHtml.replace(
   /<script type="application\/json" id="strategy-data">[\s\S]*?<\/script>/,
   () => `<script type="application/json" id="strategy-data">${dataJsonSafe}</script>`
 );
-indexHtml = indexHtml.replace(
-  /<script>'use strict';[\s\S]*?<\/script>/,
-  () => `<script>${appJs}</script>`
-);
+
+const appMarkerRe = /<!-- APP_BUNDLE_START -->[\s\S]*?<!-- APP_BUNDLE_END -->/;
+const appTag = `<!-- APP_BUNDLE_START --><script>${appBundleCode}</script><!-- APP_BUNDLE_END -->`;
+if (appMarkerRe.test(indexHtml)) {
+  indexHtml = indexHtml.replace(appMarkerRe, () => appTag);
+} else {
+  indexHtml = indexHtml.replace(
+    /<script>'use strict';[\s\S]*?<\/script>(?=\s*<\/body>)/,
+    () => appTag
+  );
+}
 
 fs.writeFileSync(indexPath, indexHtml, 'utf8');
 console.log(
-  `Built V2.1: sections=${sections.length}, h2=${h2Total}, campaigns=${planMeta.campaigns.length}, projects=${projects.length}, preLaunchProjects=${preLaunchProjectsCount}`
+  `Built ORGANIC WORKPLACE V1.0 + Comms V2.1: sections=${sections.length}, h2=${h2Total}, campaigns=${planMeta.campaigns.length}, projects=${projects.length}, preLaunchProjects=${preLaunchProjectsCount}, docs=${portalData.documents.length}, depts=${portalData.departments.length}`
 );

@@ -1,0 +1,59 @@
+{
+  "groupStrategy": {
+    "title": "Chiến lược phát triển Tập đoàn Organic Việt Nam",
+    "status": "Đang tổng hợp từ nền tảng hệ sinh thái & Chiến lược Truyền thông V2.1",
+    "standaloneDocStatus": "Chưa cập nhật",
+    "standaloneDocNote": "Văn bản Chiến lược Tập đoàn độc lập chưa được đưa lên hệ thống. Nội dung định hướng dưới đây được trích xuất từ khung kiến trúc hệ sinh thái và cột mốc thương mại chính thức đã phê duyệt trong Chiến lược V2.1.",
+    "strategicFormula": "FARM → FOOD → DISTRIBUTION → ADIGO → CUSTOMER",
+    "horizon": "Giai đoạn chuẩn bị 11–12/2026 · Thương mại hóa 01–12/2027 · Định hướng 2027–2029",
+    "corporateMilestones": [
+      {
+        "period": "Tháng 11–12/2026",
+        "title": "Chuẩn bị nền tảng thương hiệu & điều kiện tiền mở bán",
+        "status": "Đang thực hiện",
+        "detail": "Hoàn tất nhận diện, hồ sơ chất lượng, bao bì, catalog, bộ tài liệu bán hàng, POSM, kênh số và quy chế phát ngôn trước ngày mở bán."
+      },
+      {
+        "period": "Tháng 01/2027",
+        "title": "Chính thức ra mắt và thương mại hóa sản phẩm gà Organic Việt Nam",
+        "status": "Dự kiến (Mốc T0 trọng tâm)",
+        "detail": "Mở bán chính thức tại hệ thống điểm bán, đội ngũ Sale/CTV; kích hoạt truyền thông thương mại và năng lực ADIGO sẵn sàng."
+      },
+      {
+        "period": "Tháng 02/2027",
+        "title": "Cao điểm chiến dịch Tết 2027 & chăm sóc sau Tết",
+        "status": "Dự kiến",
+        "detail": "Thúc đẩy tiêu thụ sản phẩm gà dịp Tết, thu thập phản hồi thực tế và chăm sóc khách hàng sau Tết."
+      },
+      {
+        "period": "Tháng 03/2027",
+        "title": "Củng cố niềm tin & phát triển khách hàng mua lại",
+        "status": "Dự kiến",
+        "detail": "Duy trì hỗ trợ bán hàng thường xuyên theo lứa 15 ngày (C08), tăng cường bằng chứng chất lượng và Farm Tour."
+      },
+      {
+        "period": "Q2–Q4/2027",
+        "title": "Phát triển danh mục sản phẩm & mở rộng hệ sinh thái",
+        "status": "Theo tiến độ thực tế",
+        "detail": "Mở rộng thị trường, đối tác, nhà cung cấp và phát triển truyền thông danh mục tiếp theo (lợn, ADIGO) khi có kế hoạch sản xuất – thương mại chính thức."
+      }
+    ],
+    "crossDepartmentCoordination": [
+      {
+        "scope": "Chuẩn bị thương mại sản phẩm gà (11–12/2026 → 01/2027)",
+        "departments": ["Truyền thông", "Kinh doanh", "Sản xuất & Vận hành", "Sản phẩm & Công nghệ"],
+        "focus": "Hoàn tất hồ sơ QA/FARM, bao bì tem nhãn, truy xuất nguồn gốc, POSM và bộ công cụ bán hàng trước T0."
+      },
+      {
+        "scope": "Vận hành điểm bán & hỗ trợ bán hàng theo lứa 15 ngày",
+        "departments": ["Kinh doanh", "Chuỗi cung ứng", "Truyền thông", "Marketing"],
+        "focus": "Điều phối nguồn cung, chuỗi lạnh, truyền thông theo lứa (C08) và thu nhận phản hồi khách hàng."
+      },
+      {
+        "scope": "Chuẩn hóa vận hành & nền tảng công nghệ ADIGO",
+        "departments": ["Sản phẩm & Công nghệ", "Hành chính – Nhân sự", "Tài chính – Kế toán", "Truyền thông"],
+        "focus": "Dự toán ngân sách, định biên nhân sự cốt lõi, quy trình phê duyệt và công bố các năng lực ADIGO đã sẵn sàng."
+      }
+    ]
+  }
+}

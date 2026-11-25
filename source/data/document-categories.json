@@ -1,0 +1,58 @@
+[
+  {
+    "id": "tai-lieu-doanh-nghiep",
+    "code": "Nhóm A",
+    "name": "Tài liệu doanh nghiệp",
+    "description": "Giới thiệu Organic Việt Nam, hồ sơ năng lực, tầm nhìn, sứ mệnh, giá trị cốt lõi, kiến trúc hệ sinh thái và định hướng phát triển.",
+    "order": 1
+  },
+  {
+    "id": "noi-quy-quy-che",
+    "code": "Nhóm B",
+    "name": "Nội quy & Quy chế",
+    "description": "Nội quy lao động, quy chế quản lý, quy chế làm việc, quy định sử dụng tài sản, bảo mật thông tin và các quy định nội bộ.",
+    "order": 2
+  },
+  {
+    "id": "chinh-sach-nhan-su",
+    "code": "Nhóm C",
+    "name": "Chính sách nhân sự",
+    "description": "Chính sách tuyển dụng, chế độ làm việc, quy định nghỉ phép, chính sách phúc lợi và đánh giá nhân sự.",
+    "order": 3
+  },
+  {
+    "id": "quy-trinh-huong-dan",
+    "code": "Nhóm D",
+    "name": "Quy trình & Hướng dẫn",
+    "description": "Quy trình hành chính, sản xuất, kinh doanh, truyền thông, công nghệ, quản lý chất lượng và phối hợp liên phòng ban.",
+    "order": 4
+  },
+  {
+    "id": "quy-chuan-thuong-hieu",
+    "code": "Nhóm E",
+    "name": "Quy chuẩn thương hiệu",
+    "description": "Logo Organic Việt Nam, logo ADIGO, Brand Guidelines, quy chuẩn hình ảnh và quy chuẩn truyền thông.",
+    "order": 5
+  },
+  {
+    "id": "bieu-mau-noi-bo",
+    "code": "Nhóm F",
+    "name": "Biểu mẫu nội bộ",
+    "description": "Phiếu đề xuất, tờ trình, biểu mẫu báo cáo, biểu mẫu hành chính, thanh toán và biểu mẫu nghiệp vụ.",
+    "order": 6
+  },
+  {
+    "id": "tai-lieu-dao-tao",
+    "code": "Nhóm G",
+    "name": "Tài liệu đào tạo",
+    "description": "Tài liệu hội nhập nhân viên mới, kiến thức sản phẩm, đào tạo chuyên môn và hướng dẫn sử dụng công cụ.",
+    "order": 7
+  },
+  {
+    "id": "van-ban-noi-bo",
+    "code": "Nhóm H",
+    "name": "Văn bản nội bộ",
+    "description": "Quyết định, thông báo, công văn và các văn bản hướng dẫn điều hành nội bộ.",
+    "order": 8
+  }
+]

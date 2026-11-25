@@ -1,0 +1,116 @@
+{
+  "system": {
+    "name": "ORGANIC WORKPLACE",
+    "vietnameseName": "Cổng thông tin nội bộ Organic Việt Nam",
+    "version": "V1.0",
+    "tagline": "Kết nối con người. Đồng hành phát triển.",
+    "pillarsLine": "Nông nghiệp · Thực phẩm · Công nghệ",
+    "positioning": "Cổng thông tin, quản trị tri thức và chiến lược nội bộ Organic Việt Nam"
+  },
+  "company": {
+    "name": "Organic Việt Nam",
+    "shortName": "OVN",
+    "positioning": "Kiến tạo hệ sinh thái giá trị · Nông nghiệp · Thực phẩm · Công nghệ",
+    "strategicFormula": "FARM → FOOD → DISTRIBUTION → ADIGO → CUSTOMER",
+    "vision": "Phát triển Organic Việt Nam thành hệ sinh thái kinh doanh tích hợp giữa sản xuất nông nghiệp, phát triển sản phẩm thực phẩm, tổ chức chuỗi cung ứng và nền tảng công nghệ – thương mại ADIGO, lấy chất lượng sản phẩm, minh bạch thông tin và giá trị khách hàng làm trung tâm.",
+    "mission": "Tổ chức chuỗi giá trị nông nghiệp – thực phẩm – công nghệ vận hành đồng bộ, minh bạch nguồn gốc và kiểm soát chất lượng xuyên suốt từ vùng sản xuất đến người tiêu dùng.",
+    "coreValues": [
+      {
+        "id": "thuc-chat",
+        "title": "Giá trị thực tạo nên niềm tin",
+        "desc": "Mọi hoạt động và truyền thông đều dựa trên năng lực thực tế, thông tin kiểm chứng được và chất lượng sản phẩm làm gốc."
+      },
+      {
+        "id": "minh-bach",
+        "title": "Minh bạch thông tin & truy xuất",
+        "desc": "Công khai quy trình sản xuất, kiểm soát chất lượng, quy cách sản phẩm và thông tin nguồn gốc."
+      },
+      {
+        "id": "tich-hop",
+        "title": "Liên kết chuỗi giá trị tích hợp",
+        "desc": "Kết nối đồng bộ giữa sản xuất nông nghiệp, chế biến thực phẩm, phân phối và nền tảng công nghệ ADIGO."
+      },
+      {
+        "id": "ben-vung",
+        "title": "Phát triển thị trường bền vững",
+        "desc": "Kết hợp mục tiêu thương mại ngắn hạn với xây dựng uy tín thương hiệu, quan hệ đối tác và niềm tin dài hạn."
+      }
+    ],
+    "foundations": [
+      {
+        "title": "Nông nghiệp",
+        "desc": "Phát triển năng lực sản xuất và nguồn nguyên liệu thông qua vùng nuôi trồng, mô hình ứng dụng thảo dược và mạng lưới liên kết."
+      },
+      {
+        "title": "Thực phẩm",
+        "desc": "Phát triển sản phẩm, hoàn thiện quy cách, giết mổ, sơ chế, đóng gói và kiểm soát chất lượng tạo giá trị gia tăng."
+      },
+      {
+        "title": "Công nghệ",
+        "desc": "Nền tảng ADIGO hỗ trợ quản trị vận hành, kết nối dữ liệu, truy xuất nguồn gốc và tổ chức hoạt động thương mại."
+      }
+    ],
+    "ecosystemComponents": [
+      {
+        "id": "ovn",
+        "name": "ORGANIC VIỆT NAM",
+        "role": "Quản trị & định hướng chiến lược",
+        "summary": "Định hướng phát triển, quản trị hệ sinh thái, đầu tư, phân bổ nguồn lực và quản trị thương hiệu.",
+        "tone": "dark"
+      },
+      {
+        "id": "farm",
+        "name": "ORGANIC FARM",
+        "role": "Nền tảng sản xuất nông nghiệp",
+        "summary": "Chăn nuôi, trồng trọt, phát triển vùng dược liệu, mô hình ứng dụng thảo dược và liên kết nguồn nguyên liệu.",
+        "tone": "green"
+      },
+      {
+        "id": "food",
+        "name": "ORGANIC FOOD",
+        "role": "Phát triển sản phẩm & giá trị thực phẩm",
+        "summary": "Nghiên cứu sản phẩm, quy cách, sơ chế, chế biến, đóng gói và kiểm soát chất lượng sản phẩm.",
+        "tone": "green"
+      },
+      {
+        "id": "distribution",
+        "name": "ORGANIC DISTRIBUTION",
+        "role": "Chuỗi cung ứng & phân phối",
+        "summary": "Quản lý nguồn cung, kho vận, bảo quản, chuỗi lạnh và điều phối giao nhận đến điểm bán và khách hàng.",
+        "tone": "green"
+      },
+      {
+        "id": "adigo",
+        "name": "ADIGO",
+        "role": "Nền tảng công nghệ quản trị & thương mại",
+        "summary": "Hạ tầng công nghệ tích hợp dữ liệu sản xuất, chất lượng, truy xuất nguồn gốc, chuỗi cung ứng và thương mại.",
+        "tone": "blue"
+      },
+      {
+        "id": "adigo-mart",
+        "name": "ADIGO MART",
+        "role": "Hệ thống bán lẻ & trải nghiệm khách hàng",
+        "summary": "Điểm bán trực tiếp, kết nối trải nghiệm mua sắm, chất lượng sản phẩm và công nghệ.",
+        "tone": "lightblue"
+      },
+      {
+        "id": "adigo-marketplace",
+        "name": "ADIGO MARKETPLACE",
+        "role": "Nền tảng kết nối thương mại số",
+        "summary": "Kết nối nhà cung cấp, đối tác kinh doanh, hệ thống phân phối và người tiêu dùng trên nền tảng số.",
+        "tone": "lightblue"
+      }
+    ],
+    "organizationChart": {
+      "status": "Chưa cập nhật",
+      "note": "Sơ đồ cơ cấu tổ chức cấp Tập đoàn chính thức chưa có văn bản ban hành kèm theo để hiển thị. Hiện hệ thống hiển thị mô hình kiến trúc chức năng hệ sinh thái và danh mục 8 phòng ban đề xuất phục vụ quản trị không gian làm việc."
+    },
+    "keyCommercialMilestone": {
+      "title": "Tháng 01/2027 – Ra mắt và thương mại hóa sản phẩm gà Organic Việt Nam",
+      "prepWindow": "Tháng 11–12/2026: Chuẩn bị nền tảng thương hiệu, truyền thông thị trường và điều kiện phục vụ ra mắt.",
+      "launchWindow": "Tháng 01/2027: Chính thức ra mắt sản phẩm gà, mở bán thương mại và phát triển thị trường.",
+      "status": "Đang chuẩn bị tiền ra mắt (11–12/2026)",
+      "note": "Không tự ấn định ngày mở bán cụ thể khi chưa có phê duyệt chính thức của Ban lãnh đạo; không xác lập ngày ra mắt sản phẩm lợn hoặc danh mục tiếp theo khi chưa có kế hoạch sản xuất và thương mại chính thức."
+    }
+  }
+}

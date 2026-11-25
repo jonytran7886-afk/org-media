@@ -1,0 +1,1312 @@
+# ORGANIC WORKPLACE V1.0
+## Xây dựng cổng thông tin nội bộ và quản trị chiến lược Organic Việt Nam
+
+# I. MỤC TIÊU PHÁT TRIỂN
+
+## 1. Bối cảnh
+
+Hệ thống hiện tại đang phục vụ quản trị chiến lược truyền thông Organic Việt Nam 2027, với các chức năng:
+
+- Dashboard chiến lược.
+- Tài liệu chiến lược truyền thông V2.1.
+- Lộ trình triển khai.
+- Kế hoạch truyền thông.
+- Danh mục chiến dịch.
+- Master Project Tracker.
+- Kế hoạch trọng điểm 90 ngày.
+- Danh mục công việc ưu tiên.
+- Quản trị ngân sách.
+- KPI và đánh giá.
+- Quản lý tài liệu chiến lược.
+
+Cần phát triển hệ thống hiện tại thành một cổng thông tin nội bộ cấp doanh nghiệp, có khả năng quản lý tài liệu, cung cấp thông tin cho nhân viên và trình bày chiến lược, kế hoạch của tất cả phòng ban.
+
+## 2. Tên hệ thống
+
+**ORGANIC WORKPLACE**
+
+Tên tiếng Việt:
+
+**Cổng thông tin nội bộ Organic Việt Nam**
+
+Phiên bản ứng dụng: V1.0.
+
+Phiên bản ứng dụng Organic Workplace được quản lý độc lập với phiên bản tài liệu chiến lược của từng phòng ban.
+
+## 3. Mục tiêu sử dụng
+
+Hệ thống phải đáp ứng các nhu cầu:
+
+- Giúp cán bộ, nhân viên hiểu về Organic Việt Nam.
+- Cung cấp một nơi tập trung để đọc nội quy, quy chế, chính sách và các tài liệu nội bộ.
+- Hướng dẫn nhân viên mới tìm hiểu doanh nghiệp và phương thức làm việc.
+- Giúp các phòng ban nắm được chiến lược phát triển của Tập đoàn.
+- Quản lý chiến lược và kế hoạch riêng của từng phòng ban.
+- Theo dõi các dự án, công việc và mốc triển khai quan trọng.
+- Hỗ trợ Ban lãnh đạo có cái nhìn tổng quan về định hướng và kế hoạch hoạt động của doanh nghiệp.
+
+Hệ thống được định vị là cổng thông tin, quản trị tri thức và chiến lược nội bộ, không phải hệ thống ERP.
+
+# II. KIẾN TRÚC TỔNG THỂ HỆ THỐNG
+
+## 4. Cấu trúc phân hệ
+
+Tổ chức hệ thống thành 6 phân hệ chính:
+
+### Module 01 – Trang chủ
+
+- Tổng quan doanh nghiệp.
+- Thông báo nội bộ.
+- Truy cập nhanh.
+- Tài liệu mới cập nhật.
+- Kế hoạch trọng tâm.
+- Không gian các phòng ban.
+- Hướng dẫn dành cho nhân viên mới.
+
+### Module 02 – Tài liệu nội bộ
+
+- Giới thiệu doanh nghiệp.
+- Nội quy công ty.
+- Quy chế quản lý.
+- Chính sách nhân sự.
+- Quy trình nghiệp vụ.
+- Quy định và hướng dẫn.
+- Quy chuẩn thương hiệu.
+- Biểu mẫu nội bộ.
+- Tài liệu đào tạo.
+- Văn bản và thông báo.
+
+### Module 03 – Hội nhập nhân viên
+
+- Giới thiệu Organic Việt Nam.
+- Tìm hiểu hệ sinh thái doanh nghiệp.
+- Cơ cấu tổ chức.
+- Nội quy và quy chế.
+- Chính sách nhân sự.
+- Kiến thức sản phẩm.
+- Hướng dẫn làm việc.
+- Tài liệu chuyên môn.
+
+### Module 04 – Chiến lược & Kế hoạch
+
+- Chiến lược Tập đoàn.
+- Chiến lược các phòng ban.
+- Kế hoạch hoạt động năm.
+- Kế hoạch quý và tháng.
+- Lộ trình triển khai.
+- Mục tiêu và KPI.
+- Kế hoạch trọng điểm.
+
+### Module 05 – Dự án & Công việc
+
+- Danh mục dự án.
+- Công việc theo phòng ban.
+- Công việc ưu tiên.
+- Deadline.
+- Tiến độ thực hiện.
+- Công việc phối hợp.
+
+### Module 06 – Thông tin tổ chức
+
+- Thông tin doanh nghiệp.
+- Kiến trúc hệ sinh thái.
+- Sơ đồ tổ chức.
+- Danh sách phòng ban.
+- Chức năng và nhiệm vụ.
+- Quan hệ phối hợp.
+
+Các phân hệ sử dụng chung một hệ thống layout, điều hướng và Design System.
+
+# III. TÁI CẤU TRÚC LAYOUT
+
+## 5. Application Shell
+
+Xây dựng layout dùng chung cho toàn bộ ứng dụng, bao gồm:
+
+- Global Sidebar.
+- Global Header.
+- Main Content.
+- Breadcrumb.
+- Module Navigation.
+
+Hệ thống sử dụng điều hướng theo hai cấp:
+
+**Cấp 1: Điều hướng toàn bộ hệ thống.**
+
+**Cấp 2: Điều hướng chuyên sâu của từng phân hệ hoặc phòng ban.**
+
+Khi người dùng truy cập một phân hệ, hiển thị nội dung và menu tương ứng.
+
+Không đưa tất cả các chương mục của chiến lược truyền thông vào Sidebar cấp doanh nghiệp.
+
+Ưu tiên sử dụng một Sidebar chính kết hợp với tab điều hướng hoặc mục lục theo ngữ cảnh.
+
+## 6. Global Sidebar
+
+Sử dụng logo Organic Việt Nam chính thức hiện có trong hệ thống.
+
+Dòng nhận diện dưới logo:
+
+**INTERNAL WORKPLACE**
+
+Cấu trúc menu:
+
+### TỔNG QUAN
+- Trang chủ.
+- Thông báo nội bộ.
+
+### TÀI LIỆU NỘI BỘ
+- Thư viện tài liệu.
+- Nội quy & Quy chế.
+- Chính sách nhân sự.
+- Quy trình & Hướng dẫn.
+- Biểu mẫu nội bộ.
+
+### HỘI NHẬP NHÂN VIÊN
+- Hướng dẫn hội nhập.
+- Tìm hiểu Organic Việt Nam.
+- Tài liệu cần đọc.
+
+### CHIẾN LƯỢC & KẾ HOẠCH
+- Chiến lược Tập đoàn.
+- Kế hoạch các phòng ban.
+- Lộ trình trọng tâm.
+
+### DỰ ÁN & CÔNG VIỆC
+- Danh mục dự án.
+- Công việc & Deadline.
+
+### THÔNG TIN TỔ CHỨC
+- Cơ cấu tổ chức.
+- Thông tin phòng ban.
+
+Yêu cầu thiết kế:
+
+- Các nhóm menu có thể đóng và mở.
+- Sidebar có khả năng thu gọn.
+- Sử dụng icon đồng nhất.
+- Trạng thái active rõ ràng.
+- Không trình bày quá nhiều menu cùng lúc.
+- Đảm bảo người dùng dễ dàng chuyển giữa các phân hệ.
+- Các mục con có thể liên kết trực tiếp đến bộ lọc hoặc nội dung tương ứng mà không tạo trang trùng lặp.
+
+## 7. Global Header
+
+Header bao gồm:
+
+- Breadcrumb.
+- Thanh tìm kiếm toàn hệ thống.
+- Các nút chức năng theo ngữ cảnh.
+- Trạng thái lưu trữ và thông tin đăng nhập hiện có khi phù hợp.
+
+Ví dụ Breadcrumb:
+
+Organic Việt Nam / Trang chủ
+
+Organic Việt Nam / Tài liệu nội bộ / Nội quy lao động
+
+Organic Việt Nam / Chiến lược & Kế hoạch / Truyền thông
+
+Organic Việt Nam / Chiến lược & Kế hoạch / Kinh doanh
+
+Các nút tải tài liệu, đọc chiến lược hoặc xem kế hoạch chỉ xuất hiện tại trang có chức năng tương ứng.
+
+# IV. THIẾT KẾ DASHBOARD TRANG CHỦ
+
+## 8. Định hướng giao diện
+
+Trang chủ mới là Dashboard cấp doanh nghiệp, phục vụ tất cả cán bộ, nhân viên.
+
+Không sử dụng Dashboard chiến lược truyền thông làm trang chủ toàn hệ thống.
+
+Dashboard trang chủ gồm 6 section.
+
+## 9. Section 01 – Welcome Banner
+
+Tiêu đề:
+
+**Cổng thông tin nội bộ Organic Việt Nam**
+
+Thông điệp:
+
+**Kết nối con người. Đồng hành phát triển.**
+
+Dòng nhận diện:
+
+Nông nghiệp · Thực phẩm · Công nghệ
+
+Thiết kế banner theo phong cách Corporate Enterprise, hiện đại và đồng nhất với nhận diện Organic Việt Nam.
+
+Sử dụng logo chính thức hiện có.
+
+Trong thời gian chưa có hình ảnh banner nội bộ riêng, sử dụng nền CSS nhẹ, các yếu tố đồ họa nhận diện và khoảng trắng hợp lý.
+
+Không sử dụng banner chiến lược truyền thông 2027 cho trang chủ này.
+
+## 10. Section 02 – Truy cập nhanh
+
+Thiết kế 6 thẻ chức năng:
+
+1. Thư viện tài liệu.
+2. Nội quy & Quy chế.
+3. Hội nhập nhân viên.
+4. Chiến lược & Kế hoạch.
+5. Dự án & Công việc.
+6. Thông tin tổ chức.
+
+Mỗi thẻ gồm:
+
+- Icon nhận diện.
+- Tiêu đề.
+- Mô tả ngắn.
+- Liên kết truy cập.
+
+Thiết kế dạng grid, đồng nhất kích thước và màu sắc.
+
+## 11. Section 03 – Thông báo & Tài liệu mới
+
+Chia thành hai cột.
+
+Cột bên trái: Thông báo nội bộ.
+
+- Thông báo từ công ty.
+- Thông báo hoạt động.
+- Các sự kiện sắp tới.
+
+Cột bên phải: Tài liệu mới cập nhật.
+
+- Nội quy mới.
+- Quy chế mới.
+- Tài liệu vừa ban hành.
+- Tài liệu cần đọc.
+
+Mỗi nội dung có ngày cập nhật, tiêu đề, đơn vị phụ trách và liên kết xem chi tiết nếu có dữ liệu.
+
+## 12. Section 04 – Kế hoạch trọng tâm
+
+Hiển thị các mốc triển khai quan trọng cấp doanh nghiệp.
+
+Bao gồm:
+
+- Kế hoạch trong 7 ngày tới.
+- Kế hoạch trong 15 ngày tới.
+- Kế hoạch trong 30 ngày tới.
+- Các mốc chiến lược trọng điểm.
+- Công việc phối hợp giữa các phòng ban.
+
+Tận dụng dữ liệu chiến lược V2.1 đang có.
+
+Mốc kế hoạch trọng điểm đầu tiên:
+
+**Tháng 01/2027 – Ra mắt và thương mại hóa sản phẩm gà Organic Việt Nam.**
+
+Không tự xác định ngày mở bán cụ thể khi chưa có dữ liệu chính thức.
+
+Các mốc kế hoạch phải thể hiện đúng trạng thái dự kiến, đang thực hiện hoặc hoàn thành.
+
+## 13. Section 05 – Không gian phòng ban
+
+Hiển thị các phòng ban dưới dạng Department Cards.
+
+Mỗi card bao gồm:
+
+- Tên phòng ban.
+- Icon.
+- Mô tả chức năng chính.
+- Tình trạng cập nhật chiến lược.
+- Số lượng dự án nếu có dữ liệu.
+- Liên kết truy cập.
+
+Khi click vào một phòng ban, mở Department Workspace tương ứng.
+
+## 14. Section 06 – Dành cho nhân viên mới
+
+Thiết kế khu vực hướng dẫn dành cho nhân viên mới.
+
+Bao gồm:
+
+- Tìm hiểu Organic Việt Nam.
+- Đọc nội quy công ty.
+- Tìm hiểu quy chế và chính sách.
+- Tìm hiểu cơ cấu tổ chức.
+- Tìm hiểu hệ sinh thái và sản phẩm.
+- Tìm hiểu công việc chuyên môn.
+
+Có nút:
+
+**Bắt đầu hội nhập**
+
+Điều hướng đến phân hệ Hội nhập nhân viên.
+
+# V. PHÂN HỆ TÀI LIỆU NỘI BỘ
+
+## 15. Cấu trúc thư viện tài liệu
+
+Xây dựng Document Center tập trung.
+
+Phân loại tài liệu theo các nhóm:
+
+### Nhóm A – Tài liệu doanh nghiệp
+
+- Giới thiệu Organic Việt Nam.
+- Hồ sơ năng lực.
+- Tầm nhìn, sứ mệnh và giá trị.
+- Kiến trúc hệ sinh thái.
+- Cơ cấu tổ chức.
+- Định hướng phát triển.
+
+### Nhóm B – Nội quy & Quy chế
+
+- Nội quy lao động.
+- Quy chế quản lý.
+- Quy chế làm việc.
+- Quy định sử dụng tài sản.
+- Quy định bảo mật thông tin.
+- Các quy định nội bộ khác.
+
+### Nhóm C – Chính sách nhân sự
+
+- Chính sách tuyển dụng.
+- Chế độ làm việc.
+- Quy định nghỉ phép.
+- Chính sách phúc lợi.
+- Chính sách đánh giá nhân sự.
+
+### Nhóm D – Quy trình & Hướng dẫn
+
+- Quy trình hành chính.
+- Quy trình sản xuất.
+- Quy trình kinh doanh.
+- Quy trình truyền thông.
+- Quy trình công nghệ.
+- Quy trình quản lý chất lượng.
+- Quy trình phối hợp phòng ban.
+
+### Nhóm E – Quy chuẩn thương hiệu
+
+- Logo Organic Việt Nam.
+- Logo ADIGO.
+- Brand Guidelines.
+- Quy chuẩn sử dụng hình ảnh.
+- Quy chuẩn truyền thông.
+
+### Nhóm F – Biểu mẫu nội bộ
+
+- Phiếu đề xuất.
+- Tờ trình.
+- Biểu mẫu báo cáo.
+- Biểu mẫu hành chính.
+- Biểu mẫu thanh toán.
+- Biểu mẫu nghiệp vụ.
+
+### Nhóm G – Tài liệu đào tạo
+
+- Tài liệu hội nhập.
+- Kiến thức sản phẩm.
+- Đào tạo chuyên môn.
+- Hướng dẫn sử dụng công cụ.
+
+### Nhóm H – Văn bản nội bộ
+
+- Quyết định.
+- Thông báo.
+- Công văn.
+- Hướng dẫn.
+
+Danh mục được quản lý bằng dữ liệu cấu hình để có thể dễ dàng bổ sung trong tương lai.
+
+## 16. Giao diện thư viện tài liệu
+
+Trang thư viện gồm:
+
+- Tiêu đề trang.
+- Thống kê tài liệu thực tế.
+- Thanh tìm kiếm.
+- Bộ lọc danh mục.
+- Bộ lọc phòng ban.
+- Bộ lọc trạng thái.
+- Danh sách tài liệu.
+
+Danh sách tài liệu ưu tiên dạng bảng.
+
+Các cột:
+
+- Mã tài liệu.
+- Tên tài liệu.
+- Danh mục.
+- Đơn vị phụ trách.
+- Phiên bản.
+- Ngày cập nhật.
+- Trạng thái.
+- Thao tác.
+
+Các thao tác:
+
+- Đọc tài liệu.
+- Xem chi tiết.
+- Tải xuống nếu có file.
+
+## 17. Trang chi tiết tài liệu
+
+Khi truy cập một tài liệu, hiển thị:
+
+- Tiêu đề.
+- Mã tài liệu.
+- Phiên bản.
+- Đơn vị phụ trách.
+- Ngày ban hành.
+- Ngày hiệu lực.
+- Trạng thái.
+- Nội dung tài liệu.
+- Mục lục đối với tài liệu dài.
+- Tài liệu liên quan.
+- Nút tải tài liệu.
+- Nút quay lại thư viện.
+
+Hỗ trợ các nguồn tài liệu:
+
+- Markdown.
+- HTML.
+- PDF.
+- DOCX.
+- XLSX.
+- Hình ảnh.
+
+Đối với HTML và Markdown, hỗ trợ đọc trực tiếp trong hệ thống.
+
+Đối với PDF, sử dụng trình xem tài liệu tích hợp.
+
+Đối với các định dạng không hỗ trợ đọc trực tiếp, cung cấp liên kết tải file.
+
+## 18. Cấu trúc dữ liệu tài liệu
+
+Mỗi tài liệu có các trường:
+
+- id
+- documentCode
+- title
+- description
+- categoryId
+- departmentId
+- version
+- status
+- issuedDate
+- effectiveDate
+- updatedAt
+- fileType
+- filePath
+- contentPath
+- requiredReading
+- relatedDocumentIds
+
+Các trường chưa có thông tin có thể để trống.
+
+Trạng thái tài liệu gồm:
+
+- Chưa cập nhật.
+- Bản dự thảo.
+- Chờ phê duyệt.
+- Đã ban hành.
+- Đang có hiệu lực.
+- Hết hiệu lực.
+- Đã thay thế.
+
+Không tự tạo nội dung văn bản chính thức khi chưa có tài liệu nguồn.
+
+Không tạo đường dẫn tải tài liệu giả.
+
+# VI. PHÂN HỆ HỘI NHẬP NHÂN VIÊN
+
+## 19. Mục tiêu
+
+Xây dựng một không gian giúp nhân viên mới biết cần đọc tài liệu gì, hiểu những nội dung gì và tìm kiếm thông tin ở đâu.
+
+Không trình bày toàn bộ tài liệu thành một danh sách dài.
+
+Tổ chức thành lộ trình hội nhập có trình tự.
+
+## 20. Lộ trình hội nhập
+
+### Bước 01 – Hiểu về Organic Việt Nam
+
+- Giới thiệu doanh nghiệp.
+- Tầm nhìn và sứ mệnh.
+- Giá trị doanh nghiệp.
+- Định hướng phát triển.
+- Kiến trúc hệ sinh thái.
+
+### Bước 02 – Hiểu về tổ chức
+
+- Cơ cấu tổ chức.
+- Danh sách phòng ban.
+- Chức năng và nhiệm vụ.
+- Phương thức phối hợp.
+
+### Bước 03 – Nội quy & Quy chế
+
+- Nội quy lao động.
+- Quy chế làm việc.
+- Quy định nội bộ.
+- Những tài liệu cần đọc trước khi bắt đầu công việc.
+
+### Bước 04 – Chính sách nhân sự
+
+- Chế độ làm việc.
+- Chính sách nghỉ phép.
+- Phúc lợi.
+- Quy định đánh giá nhân sự.
+
+### Bước 05 – Kiến thức sản phẩm và hệ sinh thái
+
+- ORGANIC FARM.
+- ORGANIC FOOD.
+- ORGANIC DISTRIBUTION.
+- ADIGO.
+- ADIGO MART.
+- ADIGO MARKETPLACE.
+
+### Bước 06 – Tìm hiểu công việc chuyên môn
+
+- Chức năng phòng ban.
+- Quy trình nghiệp vụ.
+- Kế hoạch hoạt động.
+- Tài liệu chuyên môn.
+
+### Bước 07 – Phương thức làm việc
+
+- Công cụ sử dụng.
+- Quy trình báo cáo.
+- Quy trình đề xuất.
+- Phương thức phối hợp.
+- Hướng dẫn sử dụng hệ thống.
+
+## 21. Giao diện hội nhập
+
+Mỗi bước hiển thị:
+
+- Số thứ tự.
+- Tiêu đề.
+- Mục tiêu tìm hiểu.
+- Mô tả ngắn.
+- Danh sách tài liệu liên quan.
+- Nút đọc tài liệu.
+- Checkbox đánh dấu đã đọc.
+
+Hiển thị thanh tiến độ hội nhập cá nhân.
+
+Tiến độ được tính dựa trên các nội dung cần đọc đã được người dùng đánh dấu hoàn thành.
+
+Các tài liệu hội nhập phải liên kết với tài liệu gốc trong thư viện.
+
+Không sao chép cùng một tài liệu thành nhiều bản khác nhau.
+
+# VII. PHÂN HỆ CHIẾN LƯỢC & KẾ HOẠCH
+
+## 22. Dashboard chiến lược cấp doanh nghiệp
+
+Khi truy cập phân hệ Chiến lược & Kế hoạch, hiển thị:
+
+- Chiến lược phát triển Tập đoàn.
+- Mục tiêu phát triển.
+- Lộ trình trọng tâm.
+- Chiến lược các phòng ban.
+- Kế hoạch hoạt động.
+- Các mốc phối hợp liên phòng ban.
+
+Phân biệt rõ:
+
+- Chiến lược cấp Tập đoàn.
+- Chiến lược cấp phòng ban.
+- Kế hoạch triển khai.
+- Danh mục dự án và công việc.
+
+## 23. Chiến lược Tập đoàn
+
+Xây dựng khu vực trình bày:
+
+- Tầm nhìn chiến lược.
+- Mục tiêu phát triển.
+- Định hướng kinh doanh.
+- Kiến trúc hệ sinh thái.
+- Lộ trình phát triển.
+- Kế hoạch theo năm.
+- Mục tiêu trọng tâm.
+- Tài liệu chiến lược.
+
+Chỉ sử dụng tài liệu và dữ liệu thực tế được cung cấp.
+
+Nếu chưa có dữ liệu, hiển thị trạng thái Chưa cập nhật.
+
+## 24. Danh mục chiến lược các phòng ban
+
+Khởi tạo danh mục phòng ban theo cấu trúc đề xuất:
+
+1. Truyền thông.
+2. Marketing.
+3. Kinh doanh.
+4. Sản phẩm & Công nghệ.
+5. Sản xuất & Vận hành.
+6. Chuỗi cung ứng.
+7. Hành chính – Nhân sự.
+8. Tài chính – Kế toán.
+
+Danh mục trên phải được quản lý bằng file cấu hình riêng, có khả năng thêm, sửa hoặc sắp xếp lại.
+
+Không xem danh mục đề xuất này là cơ cấu tổ chức chính thức nếu chưa có tài liệu xác nhận.
+
+## 25. Department Workspace
+
+Mỗi phòng ban có một không gian làm việc riêng, sử dụng layout thống nhất.
+
+### Tab 01 – Tổng quan
+
+- Giới thiệu phòng ban.
+- Chức năng và nhiệm vụ.
+- Mục tiêu trọng tâm.
+- Kế hoạch sắp tới.
+- Dự án đang triển khai.
+
+### Tab 02 – Chiến lược
+
+- Tài liệu chiến lược.
+- Mục tiêu chiến lược.
+- Trụ cột chiến lược.
+- Định hướng triển khai.
+- Phiên bản tài liệu.
+- Trạng thái phê duyệt.
+
+### Tab 03 – Kế hoạch
+
+- Roadmap năm.
+- Kế hoạch quý.
+- Kế hoạch tháng.
+- Kế hoạch 90 ngày.
+- Chiến dịch.
+- Các mốc triển khai.
+
+### Tab 04 – Dự án & Công việc
+
+- Danh mục dự án.
+- Công việc.
+- Tiến độ.
+- Deadline.
+- Người phụ trách.
+- Mức độ ưu tiên.
+- Quan hệ phụ thuộc.
+- Sản phẩm bàn giao.
+
+### Tab 05 – Tài liệu
+
+- Tài liệu chiến lược.
+- Quy trình nghiệp vụ.
+- Quy định chuyên môn.
+- Biểu mẫu.
+- Hướng dẫn làm việc.
+
+### Tab 06 – Ngân sách & KPI
+
+- Kế hoạch ngân sách.
+- Phân bổ ngân sách.
+- Công cụ mô phỏng nếu có.
+- Chỉ tiêu đánh giá.
+- Kết quả thực hiện.
+- Báo cáo.
+
+Các phòng ban sử dụng chung component Department Workspace.
+
+Không xây dựng một hệ thống layout hoàn toàn khác nhau cho từng phòng ban.
+
+Các phòng ban chưa có nội dung chiến lược hiển thị trạng thái Chưa cập nhật và có cấu trúc sẵn để tiếp nhận tài liệu sau này.
+
+# VIII. TÍCH HỢP HỆ THỐNG CHIẾN LƯỢC TRUYỀN THÔNG HIỆN TẠI
+
+## 26. Không gian phòng Truyền thông
+
+Chuyển toàn bộ hệ thống chiến lược truyền thông hiện tại vào:
+
+**Chiến lược & Kế hoạch → Phòng Truyền thông**
+
+Dashboard chiến lược truyền thông hiện tại trở thành Dashboard riêng của phòng Truyền thông.
+
+Giữ nguyên toàn bộ:
+
+- Banner chiến lược truyền thông 2027.
+- Kiến trúc hệ sinh thái.
+- 6 mục tiêu chiến lược.
+- 12 phần chiến lược.
+- 50 mục nội dung.
+- 10 trụ cột truyền thông.
+- 11 chiến dịch CAM-01–CAM-11.
+- Chương trình hỗ trợ bán hàng C08.
+- 57 dự án hiện có.
+- Master Project Tracker.
+- 20 nhiệm vụ cấp thiết.
+- 14 nhiệm vụ bắt buộc trước mở bán.
+- Lộ trình tháng 12/2026–12/2027.
+- Kế hoạch sắp tới.
+- Kế hoạch trọng điểm 90 ngày.
+- Mô phỏng ngân sách.
+- KPI và đánh giá.
+- Tài liệu chiến lược V2.1.
+- Tài liệu V2.0 lưu trữ.
+- Các chức năng và dữ liệu người dùng hiện có.
+
+Số lượng thực tế được lấy từ nguồn dữ liệu hiện tại.
+
+Không thay đổi nội dung chiến lược V2.1 trong quá trình tái cấu trúc.
+
+Giữ nguyên mốc ra mắt và thương mại hóa sản phẩm gà tháng 01/2027.
+
+Giữ nguyên trạng thái tài liệu Chờ phê duyệt.
+
+## 27. Điều hướng riêng của phòng Truyền thông
+
+Khi truy cập phòng Truyền thông, hiển thị menu chuyên sâu tương ứng:
+
+### TỔNG QUAN
+
+- Dashboard chiến lược.
+- Master Project Tracker.
+- Tài liệu chiến lược.
+
+### NỘI DUNG CHIẾN LƯỢC
+
+- Bối cảnh & Định hướng.
+- Kiến trúc hệ sinh thái.
+- Đối tượng & Thị trường.
+- 10 trụ cột truyền thông.
+- Nội dung & Sáng tạo.
+- Lộ trình triển khai.
+- Tổ chức & Quản trị.
+- Ngân sách.
+- KPI & Đánh giá.
+- Danh mục dự án.
+- Điều hành Giám đốc.
+- Tổng kết chiến lược.
+- Phụ lục & Phê duyệt.
+
+### TRUY CẬP NHANH
+
+- Kế hoạch 90 ngày.
+- 20 nhiệm vụ cấp thiết.
+- Mô phỏng ngân sách.
+
+Bổ sung nút quay lại:
+
+- Trang chủ Organic Workplace.
+- Danh mục phòng ban.
+
+Giữ nguyên khả năng đọc và điều hướng đến từng chương mục chiến lược.
+
+# IX. PHÂN HỆ DỰ ÁN & CÔNG VIỆC
+
+## 28. Dashboard dự án cấp doanh nghiệp
+
+Xây dựng khu vực tổng hợp:
+
+- Tổng số dự án.
+- Dự án đang thực hiện.
+- Dự án hoàn thành.
+- Dự án sắp đến hạn.
+- Dự án quá hạn.
+- Công việc trọng điểm.
+- Dự án theo phòng ban.
+
+Các chỉ số được tính toán từ dữ liệu thực tế.
+
+Trong giai đoạn hiện tại, sử dụng dữ liệu dự án của phòng Truyền thông làm nguồn dữ liệu đầu tiên.
+
+Các phòng ban khác được bổ sung sau khi có kế hoạch và danh mục dự án.
+
+## 29. Danh mục dự án
+
+Giao diện bảng dữ liệu gồm:
+
+- Mã dự án.
+- Tên dự án.
+- Phòng ban.
+- Người phụ trách.
+- Ngày bắt đầu.
+- Deadline.
+- Mức độ ưu tiên.
+- Tiến độ.
+- Trạng thái.
+- Thao tác xem chi tiết.
+
+Hỗ trợ tìm kiếm, lọc và sắp xếp.
+
+Dữ liệu tại Dashboard tổng và Dashboard phòng ban phải sử dụng cùng một nguồn.
+
+Không tạo bản sao độc lập của Master Project Tracker hiện tại.
+
+Một dự án phải giữ nguyên ID khi xuất hiện tại nhiều phân hệ.
+
+# X. PHÂN HỆ THÔNG TIN TỔ CHỨC
+
+## 30. Giới thiệu doanh nghiệp
+
+Trình bày các nội dung:
+
+- Thông tin Organic Việt Nam.
+- Định hướng phát triển.
+- Tầm nhìn và sứ mệnh.
+- Kiến trúc hệ sinh thái.
+- Các lĩnh vực hoạt động.
+
+## 31. Cơ cấu tổ chức
+
+Chuẩn bị giao diện hiển thị sơ đồ tổ chức.
+
+Mỗi đơn vị hoặc phòng ban có thể liên kết đến trang giới thiệu riêng.
+
+Không tự tạo sơ đồ tổ chức chính thức khi chưa được cung cấp.
+
+## 32. Thông tin phòng ban
+
+Mỗi phòng ban có trang thông tin:
+
+- Tên phòng ban.
+- Vai trò.
+- Chức năng.
+- Nhiệm vụ.
+- Phạm vi hoạt động.
+- Quan hệ phối hợp.
+- Tài liệu chuyên môn.
+- Liên kết đến chiến lược và kế hoạch.
+
+Các thông tin chưa có dữ liệu hiển thị Chưa cập nhật.
+
+# XI. CẤU TRÚC SOURCE CODE
+
+## 33. Phân tích repository hiện tại
+
+Trước khi thực hiện, kiểm tra toàn bộ cấu trúc source code đang có, bao gồm:
+
+- assets/
+- public/
+- scripts/build.mjs
+- source/app.js
+- source/build.mjs
+- source/build.py
+- source/dashboard.html
+- source/data.json
+- source/plan-meta.json
+- source/strategy.md
+- source/style.css
+- src/
+- Các file cấu hình Firebase.
+- firestore.rules
+- index.html
+- package.json
+- server.js
+- toan-van.html
+- README.txt
+- tsconfig.json
+
+Xác định rõ file nguồn, file đầu ra, cơ chế build, cơ chế routing, cơ chế lưu trữ và các module đang hoạt động.
+
+Sử dụng cấu trúc kỹ thuật hiện tại làm nền tảng phát triển.
+
+Không chuyển framework hoặc xây dựng một ứng dụng song song không cần thiết.
+
+## 34. Cấu trúc source code đề xuất
+
+Tổ chức source theo module để thuận tiện bảo trì và mở rộng.
+
+    assets/
+        brand/
+        banners/
+        icons/
+
+    public/
+        documents/
+
+    scripts/
+        build.mjs
+
+    source/
+        app.js
+        build.mjs
+        build.py
+        dashboard.html
+        style.css
+        data.json
+        plan-meta.json
+        strategy.md
+
+        layouts/
+            app-shell.html
+            sidebar.html
+            header.html
+
+        modules/
+            home/
+            announcements/
+            documents/
+            onboarding/
+            strategies/
+            departments/
+            projects/
+            organization/
+
+        data/
+            company.json
+            departments.json
+            documents.json
+            document-categories.json
+            onboarding.json
+            announcements.json
+            strategy-catalog.json
+
+        shared/
+            navigation.js
+            data-service.js
+            search.js
+            utils.js
+
+    src/
+        Các module tích hợp hiện có.
+
+    index.html
+    toan-van.html
+    server.js
+    firestore.rules
+    package.json
+    README.txt
+    tsconfig.json
+
+Đây là cấu trúc định hướng.
+
+Điều chỉnh phù hợp với cơ chế build thực tế của repository.
+
+Không tạo các thư mục, file hoặc module dư thừa chỉ để khớp cấu trúc minh họa.
+
+Ưu tiên giữ nguyên các file chiến lược hiện tại và tổ chức lại giao diện theo module.
+
+## 35. Tổ chức dữ liệu
+
+Phân tách dữ liệu theo nhóm:
+
+- Company.
+- Department.
+- Document.
+- DocumentCategory.
+- Onboarding.
+- Announcement.
+- Strategy.
+- Plan.
+- Milestone.
+- Campaign.
+- Project.
+- Task.
+- KPI.
+- Budget.
+
+Mỗi đối tượng có ID duy nhất.
+
+Sử dụng departmentId để liên kết tài liệu, chiến lược, dự án và công việc với phòng ban tương ứng.
+
+Tiếp tục sử dụng source/plan-meta.json làm nguồn dữ liệu chiến lược truyền thông.
+
+Tiếp tục sử dụng source/strategy.md làm nguồn nội dung chiến lược truyền thông V2.1.
+
+Không tạo nhiều nguồn dữ liệu giống nhau.
+
+Các Dashboard phải lấy dữ liệu từ nguồn thống nhất.
+
+## 36. Điều hướng hệ thống
+
+Tận dụng cơ chế routing hiện tại.
+
+Cấu trúc route tham chiếu:
+
+    #home
+    #announcements
+    #documents
+    #documents/category/{categoryId}
+    #documents/view/{documentId}
+    #onboarding
+    #strategies
+    #strategies/group
+    #departments
+    #departments/{departmentId}
+    #departments/{departmentId}/strategy
+    #departments/{departmentId}/plans
+    #departments/{departmentId}/projects
+    #departments/{departmentId}/documents
+    #projects
+    #organization
+
+Đảm bảo:
+
+- Có thể truy cập trực tiếp từng trang bằng URL.
+- Breadcrumb chính xác.
+- Sidebar cập nhật theo route.
+- Refresh không làm mất vị trí đang xem.
+- Nút Back và Forward của trình duyệt hoạt động.
+- Các đường dẫn chiến lược hiện tại tiếp tục hoạt động hoặc được chuyển hướng tương thích.
+
+## 37. Build và lưu trữ dữ liệu
+
+Tận dụng toàn bộ cơ chế build, lưu trữ và đồng bộ dữ liệu hiện có.
+
+Bảo toàn:
+
+- Dữ liệu người dùng đã nhập.
+- Trạng thái Project Tracker.
+- Các ID dự án.
+- Dữ liệu lưu trữ cục bộ.
+- Dữ liệu Firebase và Firestore đang sử dụng.
+- Các liên kết tài liệu.
+- Các chức năng xác thực đang hoạt động.
+
+Không tự ý reset dữ liệu hoặc thay đổi cơ chế lưu trữ nếu không cần thiết.
+
+Cập nhật file nguồn thay vì chỉ chỉnh sửa file đầu ra được sinh từ quá trình build.
+
+Không đưa tài liệu nội bộ chưa được phép phổ biến hoặc dữ liệu nhạy cảm vào các tài nguyên công khai.
+
+# XII. TÌM KIẾM TOÀN HỆ THỐNG
+
+## 38. Global Search
+
+Mở rộng thanh tìm kiếm hiện tại để tra cứu:
+
+- Tài liệu.
+- Nội quy.
+- Quy chế.
+- Chính sách.
+- Phòng ban.
+- Chiến lược.
+- Chương mục chiến lược.
+- Kế hoạch.
+- Chiến dịch.
+- Dự án.
+- Công việc.
+- Biểu mẫu.
+
+Kết quả tìm kiếm phân nhóm theo loại nội dung.
+
+Mỗi kết quả hiển thị tiêu đề, danh mục, mô tả ngắn và liên kết truy cập.
+
+Ưu tiên tìm kiếm nhanh trên dữ liệu đang có.
+
+Hỗ trợ tìm kiếm tiếng Việt có dấu và không dấu.
+
+# XIII. DESIGN SYSTEM
+
+## 39. Phong cách thiết kế
+
+Giao diện theo định hướng:
+
+- Corporate Enterprise.
+- Modern.
+- Premium.
+- Clean.
+- Minimal.
+- Dễ đọc.
+- Dễ sử dụng.
+
+Giữ nguyên nhận diện chính thức của Organic Việt Nam.
+
+Không tự thiết kế lại logo.
+
+## 40. Màu sắc
+
+- Xanh lá đậm: màu chủ đạo Organic Việt Nam.
+- Xanh lá sáng: màu nhận diện bổ trợ.
+- Trắng: nền nội dung.
+- Xám sáng: nền ứng dụng.
+- Xanh lam và xanh ngọc: nội dung liên quan ADIGO.
+
+Không sử dụng quá nhiều màu sắc hoặc hiệu ứng trang trí.
+
+## 41. Typography
+
+- Sử dụng font hỗ trợ tiếng Việt đầy đủ.
+- Tiêu đề có phân cấp rõ ràng.
+- Nội dung tài liệu dễ đọc.
+- Metadata có kích thước phù hợp.
+- Không sử dụng chữ quá nhỏ trên Dashboard.
+- Đảm bảo khoảng cách giữa các dòng và các section.
+
+## 42. Layout
+
+- Tận dụng hiệu quả chiều rộng màn hình Desktop.
+- Hạn chế khoảng trắng dư thừa ở hai bên Dashboard.
+- Sử dụng grid linh hoạt.
+- Các thẻ thống kê có kích thước đồng nhất.
+- Trang đọc tài liệu có chiều rộng phù hợp.
+- Bảng dữ liệu có khả năng cuộn riêng.
+- Sidebar và Header thống nhất giữa các module.
+
+## 43. Component dùng chung
+
+Xây dựng hoặc tái sử dụng:
+
+- Page Header.
+- Breadcrumb.
+- Sidebar.
+- Module Card.
+- Department Card.
+- Document Card.
+- Data Table.
+- Status Badge.
+- Tabs.
+- Search Input.
+- Filter Bar.
+- Modal.
+- Empty State.
+- Progress Bar.
+- Loading State.
+
+Không tạo nhiều phiên bản component khác nhau cho cùng một mục đích.
+
+# XIV. RESPONSIVE
+
+## 44. Desktop
+
+- Sidebar rõ ràng.
+- Dashboard tận dụng chiều rộng vùng nội dung.
+- Các section hiển thị theo grid.
+- Bảng dữ liệu dễ quan sát.
+- Điều hướng phòng ban thuận tiện.
+
+## 45. Tablet
+
+- Sidebar có thể thu gọn.
+- Grid tự động điều chỉnh số cột.
+- Nội dung và bảng dữ liệu dễ sử dụng.
+
+## 46. Mobile
+
+- Sidebar dạng drawer.
+- Header gọn gàng.
+- Các card hiển thị theo một hoặc hai cột.
+- Nội dung tài liệu dễ đọc.
+- Không xuất hiện thanh cuộn ngang toàn bộ trang.
+- Các nút chức năng có kích thước phù hợp.
+
+Giữ nguyên tỷ lệ hình ảnh banner, không kéo giãn hoặc cắt mất nội dung quan trọng.
+
+# XV. QUẢN LÝ TRẠNG THÁI DỮ LIỆU
+
+## 47. Nguyên tắc hiển thị
+
+Đối với nội dung chưa được cung cấp:
+
+- Hiển thị Chưa cập nhật.
+- Có mô tả ngắn về nội dung sẽ được bổ sung.
+- Giữ layout đồng nhất.
+- Không tự tạo tài liệu chính thức.
+- Không tạo số liệu thống kê giả.
+- Không tạo đường dẫn không tồn tại.
+
+Phòng ban chưa có chiến lược vẫn có thể xuất hiện trong danh mục nếu được cấu hình, nhưng phải thể hiện rõ chưa có dữ liệu.
+
+KPI chưa có dữ liệu không mặc định hiển thị 0%.
+
+# XVI. TRÌNH TỰ TRIỂN KHAI
+
+## 48. Các bước thực hiện
+
+**Bước 01 – Phân tích source code**
+
+Kiểm tra cấu trúc repository, build pipeline, routing, dữ liệu và các chức năng hiện tại.
+
+**Bước 02 – Xây dựng Application Shell**
+
+Tổ chức Global Sidebar, Header, Breadcrumb và Module Navigation.
+
+**Bước 03 – Xây dựng trang chủ Organic Workplace**
+
+Hoàn thiện Dashboard cấp doanh nghiệp và điều hướng đến các phân hệ.
+
+**Bước 04 – Tích hợp chiến lược truyền thông**
+
+Đưa toàn bộ hệ thống chiến lược V2.1 vào không gian phòng Truyền thông, bảo toàn nội dung và chức năng.
+
+**Bước 05 – Xây dựng thư viện tài liệu**
+
+Hoàn thiện danh mục, tìm kiếm, bộ lọc, trang đọc và tải tài liệu.
+
+**Bước 06 – Xây dựng hội nhập nhân viên**
+
+Hoàn thiện lộ trình hội nhập và liên kết với thư viện tài liệu.
+
+**Bước 07 – Xây dựng Department Workspace**
+
+Tạo cấu trúc quản lý chiến lược và kế hoạch dùng chung cho các phòng ban.
+
+**Bước 08 – Xây dựng Dashboard dự án tổng hợp**
+
+Liên kết dữ liệu dự án hiện có, kế hoạch trọng tâm và các mốc triển khai.
+
+**Bước 09 – Hoàn thiện tìm kiếm và responsive**
+
+Đồng bộ tìm kiếm, điều hướng, giao diện và trải nghiệm trên các thiết bị.
+
+**Bước 10 – Build và kiểm thử**
+
+Chạy build pipeline hiện có, kiểm tra lỗi, dữ liệu, các chức năng cũ và toàn bộ điều hướng mới.
+
+# XVII. TIÊU CHÍ NGHIỆM THU
+
+## 49. Yêu cầu hoàn thành
+
+Hệ thống sau khi cập nhật phải đáp ứng:
+
+1. Có trang chủ Organic Workplace cấp doanh nghiệp.
+2. Có cấu trúc điều hướng rõ ràng giữa các phân hệ.
+3. Có thư viện tài liệu nội bộ.
+4. Có trang đọc tài liệu trực tiếp.
+5. Có khu vực hội nhập nhân viên mới.
+6. Có phân hệ chiến lược và kế hoạch.
+7. Có không gian riêng cho từng phòng ban.
+8. Có Dashboard tổng hợp dự án.
+9. Có phân hệ thông tin tổ chức.
+10. Có chức năng tìm kiếm toàn hệ thống.
+11. Giữ nguyên chiến lược truyền thông V2.1.
+12. Giữ nguyên toàn bộ chức năng Master Project Tracker.
+13. Bảo toàn dữ liệu người dùng hiện có.
+14. Giữ nguyên mốc ra mắt sản phẩm gà tháng 01/2027.
+15. Có khả năng bổ sung tài liệu và chiến lược phòng ban bằng cấu trúc dữ liệu thống nhất.
+16. Không tạo số liệu hoặc tài liệu giả.
+17. Các route và liên kết hoạt động chính xác.
+18. Giao diện đồng nhất với nhận diện Organic Việt Nam.
+19. Đảm bảo responsive.
+20. Build thành công với cấu trúc kỹ thuật hiện có.
+
+# XVIII. YÊU CẦU BÀN GIAO
+
+## 50. Báo cáo sau khi thực hiện
+
+Sau khi hoàn thành, cung cấp:
+
+- Cấu trúc source code mới.
+- Danh sách file được bổ sung.
+- Danh sách file được chỉnh sửa.
+- Sơ đồ điều hướng hệ thống.
+- Danh sách module đã hoàn thành.
+- Các chức năng đã hoạt động.
+- Các khu vực đang chờ dữ liệu.
+- Kết quả kiểm tra chiến lược truyền thông V2.1.
+- Kết quả kiểm tra Master Project Tracker.
+- Kết quả build.
+- Các lỗi hoặc hạn chế còn tồn tại.
+
+Cập nhật README.txt hướng dẫn:
+
+- Cách bổ sung tài liệu nội bộ.
+- Cách thêm danh mục tài liệu.
+- Cách thêm phòng ban.
+- Cách bổ sung tài liệu chiến lược phòng ban.
+- Cách cập nhật kế hoạch và dự án.
+- Cách thay đổi banner.
+- Cách build lại ứng dụng.
+
+Thực hiện trực tiếp trên source code hiện có.
+
+Không chỉ dừng lại ở việc phân tích, đề xuất kiến trúc hoặc tạo mockup.
+
+Ưu tiên giải pháp đơn giản, ổn định, chuyên nghiệp, dễ sử dụng, dễ bảo trì và có khả năng mở rộng lâu dài.

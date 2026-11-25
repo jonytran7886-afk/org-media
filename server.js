@@ -9,12 +9,13 @@ const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 const HOST = '0.0.0.0';
 
+app.use('/documents', express.static(path.join(__dirname, 'public', 'documents')));
 app.use(express.static(__dirname, {
   extensions: ['html']
 }));
 
 app.get('*', (req, res) => {
-  if (req.path.startsWith('/assets/') || /\.[a-z0-9]+$/i.test(req.path)) {
+  if (req.path.startsWith('/assets/') || req.path.startsWith('/documents/') || /\.[a-z0-9]+$/i.test(req.path)) {
     res.status(404).end();
     return;
   }

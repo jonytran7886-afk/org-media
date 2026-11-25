@@ -1,0 +1,214 @@
+[
+  {
+    "id": "truyen-thong",
+    "order": 1,
+    "name": "Phòng Truyền thông",
+    "shortName": "Truyền thông",
+    "code": "COM",
+    "icon": "◈",
+    "structureStatus": "Đang vận hành dữ liệu chiến lược V2.1",
+    "summary": "Quản trị thương hiệu Organic Việt Nam & ADIGO, truyền thông doanh nghiệp, sản phẩm, báo chí PR, nội dung số, sự kiện và kiểm soát danh tiếng.",
+    "functions": [
+      "Quản trị thương hiệu tổng thể (Organic Việt Nam, ADIGO và các cấu phần).",
+      "Truyền thông doanh nghiệp, đối ngoại, báo chí và sự kiện.",
+      "Truyền thông sản phẩm, hỗ trợ hệ thống bán hàng, Sale/CTV và điểm bán.",
+      "Sản xuất nội dung đa phương tiện, vận hành hệ thống kênh truyền thông số.",
+      "Quản trị khủng hoảng, quy chế phát ngôn và truyền thông nội bộ."
+    ],
+    "coordination": [
+      "Phối hợp Kinh doanh & Bán lẻ triển khai ra mắt sản phẩm gà 01/2027 và Tết 2027.",
+      "Phối hợp FARM / FOOD / QA xác minh nguồn gốc, quy cách và thông tin chất lượng.",
+      "Phối hợp Công nghệ (ADIGO) chuẩn hóa nhận diện và nội dung năng lực sẵn sàng.",
+      "Phối hợp Nhân sự & Tài chính về định biên nhân sự, đào tạo nội bộ và dự toán."
+    ],
+    "strategyStatus": "V2.1 · Chờ phê duyệt",
+    "strategyVersion": "V2.1 – Cập nhật lộ trình thương mại tháng 01/2027",
+    "hasStrategyData": true,
+    "projectCountSource": "communications",
+    "budgetSummary": "3.000 triệu đồng/năm (Phương án B tham chiếu; chuẩn bị 11–12/2026 phê duyệt riêng)",
+    "kpiSummary": "Bộ KPI trước mở bán (11–12/2026), sau mở bán (01–03/2027) & KPI năm 2027",
+    "workspaceMode": "communications"
+  },
+  {
+    "id": "marketing",
+    "order": 2,
+    "name": "Phòng Marketing",
+    "shortName": "Marketing",
+    "code": "MKT",
+    "icon": "◎",
+    "structureStatus": "Danh mục đề xuất (Chưa có văn bản cơ cấu chính thức)",
+    "summary": "Nghiên cứu thị trường, hoạch định chiến dịch tiếp thị thương mại, định giá – khuyến mãi và thúc đẩy nhu cầu khách hàng.",
+    "functions": [
+      "Nghiên cứu thị trường, hành vi người tiêu dùng và phân tích nhu cầu theo khu vực.",
+      "Phối hợp xây dựng kế hoạch tung sản phẩm, chiến dịch mùa vụ và điểm bán.",
+      "Tổ chức hoạt động thu hút khách hàng mới và chương trình giữ chân khách hàng."
+    ],
+    "coordination": [
+      "Phối hợp chặt chẽ với Truyền thông và Kinh doanh trong chiến dịch ra mắt sản phẩm gà 01/2027.",
+      "Phối hợp Sản phẩm & Công nghệ về trải nghiệm khách hàng trên ADIGO MART."
+    ],
+    "strategyStatus": "Chưa cập nhật",
+    "strategyVersion": "",
+    "hasStrategyData": false,
+    "projectCountSource": null,
+    "budgetSummary": "Chưa cập nhật",
+    "kpiSummary": "Chưa cập nhật",
+    "workspaceMode": "standard"
+  },
+  {
+    "id": "kinh-doanh",
+    "order": 3,
+    "name": "Phòng Kinh doanh",
+    "shortName": "Kinh doanh",
+    "code": "SAL",
+    "icon": "▤",
+    "structureStatus": "Danh mục đề xuất (Chưa có văn bản cơ cấu chính thức)",
+    "summary": "Phát triển hệ thống phân phối, điểm bán lẻ, đại lý, đội ngũ Sale/CTV và thực hiện mục tiêu doanh thu thương mại.",
+    "functions": [
+      "Tổ chức mạng lưới bán hàng trực tiếp, đại lý, nhà phân phối và cộng tác viên.",
+      "Triển khai mở bán thương mại sản phẩm gà từ tháng 01/2027 và kế hoạch Tết 2027.",
+      "Theo dõi sức mua theo lứa, phản hồi khách hàng và phối hợp điều phối nguồn hàng."
+    ],
+    "coordination": [
+      "Phối hợp Truyền thông & Marketing sử dụng bộ tài liệu bán hàng (C03), POSM (C04) và lịch lứa 15 ngày (C08).",
+      "Phối hợp Chuỗi cung ứng bảo đảm giao nhận và tồn kho tại điểm bán."
+    ],
+    "strategyStatus": "Chưa cập nhật",
+    "strategyVersion": "",
+    "hasStrategyData": false,
+    "projectCountSource": null,
+    "budgetSummary": "Chưa cập nhật",
+    "kpiSummary": "Chưa cập nhật",
+    "workspaceMode": "standard"
+  },
+  {
+    "id": "san-pham-cong-nghe",
+    "order": 4,
+    "name": "Phòng Sản phẩm & Công nghệ (ADIGO)",
+    "shortName": "Sản phẩm & Công nghệ",
+    "code": "TEC",
+    "icon": "❖",
+    "structureStatus": "Danh mục đề xuất (Chưa có văn bản cơ cấu chính thức)",
+    "summary": "Phát triển nền tảng công nghệ ADIGO, quản trị dữ liệu, hệ thống truy xuất nguồn gốc và hạ tầng thương mại số.",
+    "functions": [
+      "Phát triển và vận hành nền tảng quản trị doanh nghiệp và thương mại ADIGO.",
+      "Xây dựng hệ thống dữ liệu truy xuất nguồn gốc phục vụ sản phẩm thương mại 01/2027.",
+      "Phát triển các cấu phần ADIGO MART và ADIGO MARKETPLACE theo lộ trình sẵn sàng."
+    ],
+    "coordination": [
+      "Phối hợp Truyền thông xác nhận tính năng sẵn sàng trước khi công bố (B04, C07, D02).",
+      "Phối hợp Sản xuất, FOOD và Chuỗi cung ứng chuẩn hóa luồng dữ liệu vận hành."
+    ],
+    "strategyStatus": "Chưa cập nhật",
+    "strategyVersion": "",
+    "hasStrategyData": false,
+    "projectCountSource": null,
+    "budgetSummary": "Chưa cập nhật",
+    "kpiSummary": "Chưa cập nhật",
+    "workspaceMode": "standard"
+  },
+  {
+    "id": "san-xuat-van-hanh",
+    "order": 5,
+    "name": "Khối Sản xuất & Vận hành (FARM · FOOD)",
+    "shortName": "Sản xuất & Vận hành",
+    "code": "OPS",
+    "icon": "⬡",
+    "structureStatus": "Danh mục đề xuất (Chưa có văn bản cơ cấu chính thức)",
+    "summary": "Tổ chức vùng sản xuất nông nghiệp (FARM), mô hình ứng dụng thảo dược, chế biến thực phẩm (FOOD) và kiểm soát chất lượng.",
+    "functions": [
+      "Tổ chức vùng nuôi trồng, chăn nuôi ứng dụng thảo dược và nguồn nguyên liệu.",
+      "Thực hiện giết mổ, sơ chế, pha lóc, đóng gói và kiểm soát chất lượng (QA/QC).",
+      "Cung cấp hồ sơ kỹ thuật, quy cách và lịch xuất lứa phục vụ thương mại hóa."
+    ],
+    "coordination": [
+      "Phối hợp Truyền thông cung cấp thông tin xác minh chất lượng (C07) và tư liệu thực tế (D08).",
+      "Phối hợp Chuỗi cung ứng và Kinh doanh cân đối sản lượng theo chu kỳ lứa."
+    ],
+    "strategyStatus": "Chưa cập nhật",
+    "strategyVersion": "",
+    "hasStrategyData": false,
+    "projectCountSource": null,
+    "budgetSummary": "Chưa cập nhật",
+    "kpiSummary": "Chưa cập nhật",
+    "workspaceMode": "standard"
+  },
+  {
+    "id": "chuoi-cung-ung",
+    "order": 6,
+    "name": "Phòng Chuỗi cung ứng (DISTRIBUTION)",
+    "shortName": "Chuỗi cung ứng",
+    "code": "SCM",
+    "icon": "⇄",
+    "structureStatus": "Danh mục đề xuất (Chưa có văn bản cơ cấu chính thức)",
+    "summary": "Tổ chức thu mua, quản lý kho, bảo quản chuỗi lạnh, điều phối vận chuyển và giao nhận hàng hóa toàn hệ sinh thái.",
+    "functions": [
+      "Quản lý tồn kho, quy chuẩn bảo quản và vận chuyển bảo đảm chất lượng sản phẩm.",
+      "Điều phối giao nhận hàng hóa từ vùng sản xuất/chế biến đến điểm bán và khách hàng.",
+      "Phát triển mạng lưới đối tác logistics và nhà cung ứng bổ sung theo nhu cầu."
+    ],
+    "coordination": [
+      "Phối hợp Sản xuất & Kinh doanh duy trì luồng hàng ổn định từ mở bán 01/2027.",
+      "Phối hợp Truyền thông chuẩn hóa nhận diện kho vận và xe giao nhận (B08, B10)."
+    ],
+    "strategyStatus": "Chưa cập nhật",
+    "strategyVersion": "",
+    "hasStrategyData": false,
+    "projectCountSource": null,
+    "budgetSummary": "Chưa cập nhật",
+    "kpiSummary": "Chưa cập nhật",
+    "workspaceMode": "standard"
+  },
+  {
+    "id": "hanh-chinh-nhan-su",
+    "order": 7,
+    "name": "Phòng Hành chính – Nhân sự",
+    "shortName": "Hành chính – Nhân sự",
+    "code": "HRM",
+    "icon": "⊞",
+    "structureStatus": "Danh mục đề xuất (Chưa có văn bản cơ cấu chính thức)",
+    "summary": "Quản trị nguồn nhân lực, tuyển dụng, đào tạo, nội quy – quy chế, chính sách phúc lợi và công tác hành chính văn phòng.",
+    "functions": [
+      "Xây dựng và ban hành nội quy lao động, quy chế làm việc và chính sách nhân sự.",
+      "Tổ chức tuyển dụng, định biên nhân sự, hội nhập nhân viên mới và đào tạo nội bộ.",
+      "Quản lý hành chính, tài sản, cơ sở vật chất và lưu trữ hồ sơ pháp nhân."
+    ],
+    "coordination": [
+      "Phối hợp Truyền thông hoàn thiện định biên nhân sự cốt lõi (A02, A03) và đào tạo nội bộ (F04).",
+      "Phối hợp các phòng ban cập nhật tài liệu hội nhập và biểu mẫu hành chính lên Workplace."
+    ],
+    "strategyStatus": "Chưa cập nhật",
+    "strategyVersion": "",
+    "hasStrategyData": false,
+    "projectCountSource": null,
+    "budgetSummary": "Chưa cập nhật",
+    "kpiSummary": "Chưa cập nhật",
+    "workspaceMode": "standard"
+  },
+  {
+    "id": "tai-chinh-ke-toan",
+    "order": 8,
+    "name": "Phòng Tài chính – Kế toán",
+    "shortName": "Tài chính – Kế toán",
+    "code": "FIN",
+    "icon": "◐",
+    "structureStatus": "Danh mục đề xuất (Chưa có văn bản cơ cấu chính thức)",
+    "summary": "Quản trị tài chính, lập kế hoạch ngân sách, kiểm soát chi phí, kế toán, thuế và thẩm định dự toán các phòng ban.",
+    "functions": [
+      "Tổng hợp, thẩm định dự toán ngân sách năm và ngân sách theo giai đoạn của các phòng ban.",
+      "Quản lý thanh toán, chứng từ, hóa đơn, công nợ và kiểm soát tuân thủ tài chính.",
+      "Báo cáo tài chính quản trị phục vụ điều hành của Ban lãnh đạo."
+    ],
+    "coordination": [
+      "Phối hợp Truyền thông rà soát dự toán tiền ra mắt 11–12/2026 và ngân sách năm 2027 (A05).",
+      "Phối hợp Hành chính ban hành quy trình, biểu mẫu tạm ứng và thanh toán nội bộ."
+    ],
+    "strategyStatus": "Chưa cập nhật",
+    "strategyVersion": "",
+    "hasStrategyData": false,
+    "projectCountSource": null,
+    "budgetSummary": "Chưa cập nhật",
+    "kpiSummary": "Chưa cập nhật",
+    "workspaceMode": "standard"
+  }
+]

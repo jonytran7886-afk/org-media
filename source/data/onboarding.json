@@ -1,0 +1,130 @@
+[
+  {
+    "id": "step-01",
+    "stepNumber": "01",
+    "title": "Hiểu về Organic Việt Nam",
+    "objective": "Nắm rõ định vị doanh nghiệp, tầm nhìn, sứ mệnh, triết lý giá trị thực và bức tranh tổng thể mô hình phát triển.",
+    "description": "Tìm hiểu quá trình chuyển đổi sang mô hình kinh doanh tích hợp Nông nghiệp · Thực phẩm · Công nghệ và các cột mốc năm 2027.",
+    "topics": [
+      "Giới thiệu doanh nghiệp",
+      "Tầm nhìn và sứ mệnh",
+      "Giá trị doanh nghiệp",
+      "Định hướng phát triển",
+      "Kiến trúc hệ sinh thái"
+    ],
+    "documentIds": ["DOC-CORP-PROFILE", "DOC-STR-COM-2027-V21"],
+    "links": [
+      { "label": "Thông tin doanh nghiệp", "route": "#organization" },
+      { "label": "Chiến lược Tập đoàn", "route": "#strategies/group" }
+    ]
+  },
+  {
+    "id": "step-02",
+    "stepNumber": "02",
+    "title": "Hiểu về tổ chức",
+    "objective": "Nắm cấu trúc phòng ban, chức năng nhiệm vụ từng đơn vị và đầu mối phối hợp trong công việc hằng ngày.",
+    "description": "Xem mô hình kiến trúc chức năng và không gian làm việc của 8 phòng ban trong hệ thống.",
+    "topics": [
+      "Cơ cấu tổ chức",
+      "Danh sách phòng ban",
+      "Chức năng và nhiệm vụ",
+      "Phương thức phối hợp"
+    ],
+    "documentIds": ["DOC-CORP-ORG-DECISION"],
+    "links": [
+      { "label": "Cơ cấu tổ chức", "route": "#organization" },
+      { "label": "Danh sách phòng ban", "route": "#organization/departments" }
+    ]
+  },
+  {
+    "id": "step-03",
+    "stepNumber": "03",
+    "title": "Nội quy & Quy chế",
+    "objective": "Đọc và tuân thủ các quy định nền tảng về kỷ luật lao động, quy chế làm việc và bảo mật thông tin trước khi bắt đầu công việc.",
+    "description": "Tổng hợp các tài liệu nội quy và quy chế bắt buộc đọc từ Thư viện tài liệu trung tâm.",
+    "topics": [
+      "Nội quy lao động",
+      "Quy chế làm việc",
+      "Quy định nội bộ",
+      "Tài liệu cần đọc trước khi bắt đầu"
+    ],
+    "documentIds": ["DOC-HR-RULES", "DOC-HR-WORK-REG", "DOC-HR-SECURITY"],
+    "links": [
+      { "label": "Mục Nội quy & Quy chế", "route": "#documents/category/noi-quy-quy-che" }
+    ]
+  },
+  {
+    "id": "step-04",
+    "stepNumber": "04",
+    "title": "Chính sách nhân sự",
+    "objective": "Hiểu rõ quyền lợi, chế độ làm việc, quy trình nghỉ phép, phúc lợi và tiêu chí đánh giá nhân sự.",
+    "description": "Tra cứu các chính sách nhân sự hiện hành do Phòng Hành chính – Nhân sự ban hành.",
+    "topics": [
+      "Chế độ làm việc",
+      "Chính sách nghỉ phép",
+      "Phúc lợi",
+      "Quy định đánh giá nhân sự"
+    ],
+    "documentIds": ["DOC-HR-POLICY"],
+    "links": [
+      { "label": "Mục Chính sách nhân sự", "route": "#documents/category/chinh-sach-nhan-su" }
+    ]
+  },
+  {
+    "id": "step-05",
+    "stepNumber": "05",
+    "title": "Kiến thức sản phẩm và hệ sinh thái",
+    "objective": "Hiểu đúng thuật ngữ chuẩn, chuỗi giá trị FARM → FOOD → DISTRIBUTION → ADIGO → CUSTOMER và sản phẩm gà thương mại 01/2027.",
+    "description": "Nắm rõ ranh giới sử dụng thuật ngữ (không dùng \"hữu cơ\" hay \"gà thảo dược\", sử dụng \"gà được nuôi theo mô hình ứng dụng thảo dược\") và năng lực ADIGO.",
+    "topics": [
+      "ORGANIC FARM",
+      "ORGANIC FOOD",
+      "ORGANIC DISTRIBUTION",
+      "ADIGO",
+      "ADIGO MART",
+      "ADIGO MARKETPLACE"
+    ],
+    "documentIds": ["DOC-TRN-CHICKEN-01", "DOC-STR-COM-2027-V21"],
+    "links": [
+      { "label": "Kiến trúc hệ sinh thái", "route": "#p2/m5" },
+      { "label": "Chuẩn hóa thuật ngữ", "route": "#p2/m8-2" }
+    ]
+  },
+  {
+    "id": "step-06",
+    "stepNumber": "06",
+    "title": "Tìm hiểu công việc chuyên môn",
+    "objective": "Truy cập không gian phòng ban trực thuộc để nắm kế hoạch, danh mục dự án, quy trình và tài liệu chuyên môn.",
+    "description": "Liên kết trực tiếp tới workspace của từng phòng ban trong phân hệ Chiến lược & Kế hoạch.",
+    "topics": [
+      "Chức năng phòng ban",
+      "Quy trình nghiệp vụ",
+      "Kế hoạch hoạt động",
+      "Tài liệu chuyên môn"
+    ],
+    "documentIds": ["DOC-COM-PROC", "DOC-BRAND-GUIDELINES"],
+    "links": [
+      { "label": "Không gian phòng ban", "route": "#departments" },
+      { "label": "Phòng Truyền thông (V2.1)", "route": "#departments/truyen-thong" }
+    ]
+  },
+  {
+    "id": "step-07",
+    "stepNumber": "07",
+    "title": "Phương thức làm việc",
+    "objective": "Nắm quy trình đề xuất, báo cáo, phối hợp liên phòng ban và cách sử dụng Organic Workplace để theo dõi dự án.",
+    "description": "Hướng dẫn tra cứu biểu mẫu, tìm kiếm toàn văn (Ctrl+K) và cập nhật tiến độ trên Master Project Tracker.",
+    "topics": [
+      "Công cụ sử dụng",
+      "Quy trình báo cáo",
+      "Quy trình đề xuất",
+      "Phương thức phối hợp",
+      "Hướng dẫn sử dụng hệ thống"
+    ],
+    "documentIds": ["DOC-FORM-PROPOSAL"],
+    "links": [
+      { "label": "Biểu mẫu nội bộ", "route": "#documents/category/bieu-mau-noi-bo" },
+      { "label": "Danh mục dự án", "route": "#projects" }
+    ]
+  }
+]
