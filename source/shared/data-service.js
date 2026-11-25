@@ -208,7 +208,6 @@ export async function persistProject(id, explicitNotify) {
 export function renderCloudBar() {
   const bar = $('#cloud-sync-bar');
   const topAuth = $('#topbar-auth');
-  const sideAuth = $('#sidebar-auth');
   const dashNote = $('#dash-sync-note');
   const dashActions = $('#dash-auth-actions');
   if (!fb) {
@@ -217,10 +216,6 @@ export function renderCloudBar() {
       bar.innerHTML = '<div class="cloud-info"><span class="cloud-dot"></span><span>Đang lưu cục bộ trên trình duyệt này.</span></div>';
     }
     if (topAuth) topAuth.innerHTML = '';
-    if (sideAuth) {
-      sideAuth.className = 'cloud-side offline';
-      sideAuth.innerHTML = '<div class="cloud-side-head"><span class="cloud-dot"></span><span class="cloud-side-title">Lưu cục bộ</span></div>';
-    }
     return;
   }
   const st = fb.getSyncState();
@@ -233,17 +228,6 @@ export function renderCloudBar() {
     } else {
       topAuth.innerHTML = `<span class="auth-chip" title="${esc(st.user.email || userLabel)}"><span class="cloud-dot"></span><span class="auth-name">${esc(userLabel)}</span></span><button type="button" class="btn small" id="topbar-signout-btn">Đăng xuất</button>`;
       $('#topbar-signout-btn', topAuth).onclick = () => fb.signOut();
-    }
-  }
-  if (sideAuth) {
-    sideAuth.className = `cloud-side ${stateClass}`;
-    if (!st.user) {
-      sideAuth.innerHTML =
-        '<div class="cloud-side-head"><span class="cloud-dot"></span><span class="cloud-side-title">Chế độ cục bộ</span></div><small>Đăng nhập để lưu & đồng bộ giữa các thiết bị.</small><button type="button" class="btn small primary" id="side-signin-btn">Đăng nhập Google để lưu</button>';
-      $('#side-signin-btn', sideAuth).onclick = () => fb.signIn();
-    } else {
-      const subTxt = st.syncing ? 'Đang lưu lên Cloud…' : st.lastSavedAt ? `Đã lưu lúc ${fmtTime(st.lastSavedAt)}` : 'Đã kết nối Cloud';
-      sideAuth.innerHTML = `<div class="cloud-side-head"><span class="cloud-dot"></span><span class="cloud-side-title" title="${esc(st.user.email || userLabel)}">${esc(userLabel)}</span></div><small>${esc(subTxt)}</small>`;
     }
   }
   if (dashNote) {

@@ -763,7 +763,6 @@ const shellHtml =
   `<aside class="sidebar" id="sidebar">` +
   `<a class="brand" href="#home"><img class="brand-symbol" src="assets/organic-vietnam-symbol.svg" alt="" width="44" height="42"><div class="brand-text"><div class="wordmark">ORGANIC VIỆT NAM</div><div class="brand-sub" id="brand-sub">INTERNAL WORKPLACE</div></div></a>` +
   `<div class="workspace" id="sidebar-workspace"><strong>ORGANIC WORKPLACE</strong><small>V1.0 · Cổng thông tin nội bộ</small></div>` +
-  `<div class="cloud-side offline" id="sidebar-auth"></div>` +
   `<nav class="nav" id="nav" aria-label="Điều hướng cổng thông tin nội bộ"></nav>` +
   `<div class="sidebar-foot" id="sidebar-foot">ORGANIC WORKPLACE V1.0<br>Nông nghiệp · Thực phẩm · Công nghệ</div>` +
   `</aside>` +
