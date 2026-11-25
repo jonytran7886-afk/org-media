@@ -92,4 +92,104 @@
 .cloud-side .btn{width:100%}
 .dash-auth-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 @media screen and (max-width:600px){.auth-chip{max-width:120px}.topbar-auth .btn{min-height:36px;padding:6px 10px;font-size:11px}}
-@media print{.cloud-bar,.save-row-btn,.topbar-auth,.cloud-side,.dash-auth-actions{display:none!important}}
+@media print{.cloud-bar,.save-row-btn,.topbar-auth,.cloud-side,.dash-auth-actions,.upcoming-tabs,.roadmap-hint{display:none!important}}
+
+/* V2.1 Version Pill, Badges & Notices */
+.version-pill{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:6px;background:#fff4e2;border:1px solid #ecd09c;color:#8a530f;font-size:10px;font-weight:700;letter-spacing:.4px}
+.req-badge{display:inline-flex;align-items:center;gap:4px;padding:2px 7px;border-radius:5px;background:#fdebe5;border:1px solid #f2c4b3;color:#9b3b1e;font-size:10px;font-weight:700;white-space:nowrap}
+.opt-badge{display:inline-flex;align-items:center;padding:2px 7px;border-radius:5px;background:#eef4f0;border:1px solid #d4e2d8;color:#456854;font-size:10px;font-weight:600;white-space:nowrap}
+.camp-badge{display:inline-flex;align-items:center;padding:2px 6px;border-radius:4px;background:#eaf4f6;border:1px solid #c4e1e6;color:#176d80;font-size:10px;font-weight:700;white-space:nowrap}
+.upcoming-badge{display:inline-flex;align-items:center;padding:2px 6px;border-radius:4px;background:#fff3da;border:1px solid #e9c97b;color:#8a5600;font-size:10px;font-weight:700;white-space:nowrap}
+
+/* Monthly Roadmap (12/2026 - 12/2027) */
+.roadmap-wrap{margin-top:16px}
+.roadmap-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.roadmap-legend{display:flex;flex-wrap:wrap;gap:10px;font-size:11px;color:var(--muted)}
+.legend-item{display:inline-flex;align-items:center;gap:5px}
+.legend-swatch{width:12px;height:12px;border-radius:3px;display:inline-block;flex:none}
+.sw-prep{background:#e1a749}.sw-launch{background:#17543c}.sw-peak{background:#c85a32}.sw-sales{background:#176d80}.sw-maintain{background:#4d8b62}.sw-planned{background:#8ea3ab}
+.roadmap-now-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:7px;background:#edf5ee;border:1px solid #cfe0d4;font-size:11px;font-weight:600;color:var(--green)}
+.roadmap-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff;scrollbar-width:thin}
+.roadmap-grid{min-width:960px;position:relative}
+.rm-row{display:grid;grid-template-columns:280px repeat(13,minmax(42px,1fr));align-items:stretch;border-bottom:1px solid #e8efe9}
+.rm-row:last-child{border-bottom:0}
+.rm-head-q{background:#f1f6f2;font-size:10px;font-weight:700;color:#395c45;text-transform:uppercase;letter-spacing:.6px}
+.rm-head-q>div{padding:7px 8px;border-left:1px solid #dfe9e1;text-align:center}
+.rm-head-q>div:first-child{border-left:0;text-align:left;padding-left:12px}
+.rm-head-m{background:#f8fbf8;font-size:11px;font-weight:700;color:#4a6555}
+.rm-head-m>div{padding:6px 4px;border-left:1px solid #e6eee7;text-align:center;position:relative}
+.rm-head-m>div:first-child{border-left:0;text-align:left;padding-left:12px}
+.rm-head-m .col-launch{background:#e7f3eb;color:#17543c}
+.rm-head-m .col-now{background:#fff8e8;color:#8f5500;box-shadow:inset 0 -2px 0 #d99326}
+.rm-milestone-tag{display:block;font-size:9px;font-weight:700;color:#17543c;background:#d3eadb;border-radius:4px;padding:1px 3px;margin-top:2px;white-space:nowrap}
+.rm-item:hover{background:#f7fbf8}
+.rm-item.rm-ongoing{background:#f5fafb}
+.rm-label{padding:9px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.rm-title-btn{background:none;border:0;padding:0;text-align:left;color:var(--ink);font-weight:650;font-size:12px;line-height:1.35;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.rm-title-btn:hover{color:var(--green);text-decoration:underline}
+.rm-meta{display:flex;flex-wrap:wrap;align-items:center;gap:5px;font-size:10px;color:var(--muted)}
+.rm-cells{grid-column:2 / -1;display:grid;grid-template-columns:repeat(13,1fr);position:relative;align-items:center;padding:6px 0}
+.rm-cell-bg{position:absolute;inset:0;display:grid;grid-template-columns:repeat(13,1fr);pointer-events:none}
+.rm-cell-bg span{border-left:1px solid #eef3ef;height:100%}
+.rm-cell-bg span.col-launch{background:#17543c0a}
+.rm-cell-bg span.col-now{background:#e1a74914;border-left:2px dashed #d99326}
+.rm-bar{position:relative;z-index:1;height:18px;margin:2px 3px;border-radius:5px;cursor:pointer;border:0;display:flex;align-items:center;padding:0 6px;font-size:10px;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:transform .12s,filter .12s}
+.rm-bar:hover,.rm-bar:focus-visible{transform:translateY(-1px);filter:brightness(1.06)}
+.rm-bar.phase-prep{background:#d9952b;color:#fff}
+.rm-bar.phase-launch{background:#17543c;color:#fff}
+.rm-bar.phase-peak{background:#c85a32;color:#fff}
+.rm-bar.phase-sales{background:#176d80;color:#fff}
+.rm-bar.phase-maintain{background:#4d8b62;color:#fff}
+.rm-bar.phase-planned{background:#7f969f;color:#fff}
+.rm-status-chip{display:inline-block;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:600;background:#eef3ef;color:#4f6659}
+.rm-status-chip.done{background:#dcf2e3;color:#17543c}.rm-status-chip.active{background:#e3f1f5;color:#176d80}.rm-status-chip.pause{background:#fdeee5;color:#9c522e}
+
+/* Tooltip & Campaign Modal */
+.rm-tooltip{position:fixed;z-index:120;max-width:340px;background:#133224;color:#fff;padding:11px 13px;border-radius:9px;box-shadow:0 12px 30px #0d231850;font-size:11px;line-height:1.5;pointer-events:none;display:none}
+.rm-tooltip.open{display:block}
+.rm-tooltip strong{display:block;font-size:12px;margin-bottom:4px;color:#d6f2df}
+.rm-tooltip .tt-row{margin-top:3px;color:#d7e8dd}
+.modal-backdrop{position:fixed;inset:0;background:#10291d6b;z-index:110;display:none;align-items:center;justify-content:center;padding:16px}
+.modal-backdrop.open{display:flex}
+.modal-card{width:min(680px,100%);max-height:85vh;overflow:auto;background:#fff;border-radius:14px;border:1px solid var(--line);box-shadow:0 24px 60px #102b1c44;padding:22px}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.modal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.modal-box{background:#f7faf8;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12px}
+.modal-box small{display:block;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
+.proj-chip-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.proj-chip{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:6px;background:#edf5ee;border:1px solid #cfe0d4;font-size:11px;font-weight:600;color:var(--green)}
+.proj-chip:hover{background:#dfeee2}
+
+/* Upcoming 7/15/30 Days Panel */
+.upcoming-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 12px}
+.upcoming-tab{border:1px solid #cfded3;background:#fff;color:var(--green);border-radius:7px;padding:5px 10px;font-size:11px;font-weight:650;cursor:pointer}
+.upcoming-tab.active{background:var(--green);color:#fff;border-color:var(--green)}
+.upcoming-list{display:grid;gap:8px}
+.upcoming-item{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:#fafcfa;transition:.12s}
+.upcoming-item:hover{border-color:#88b597;background:#f4f9f5}
+.upcoming-item-main{min-width:0;flex:1}
+.upcoming-item-title{font-size:12px;font-weight:650;color:var(--ink);display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.upcoming-item-meta{font-size:11px;color:var(--muted);margin-top:3px;display:flex;flex-wrap:wrap;gap:8px}
+.upcoming-item-side{text-align:right;flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.upcoming-due{font-size:11px;font-weight:700;color:#17543c}
+
+/* Checklist badge & Enriched 10-field Tracker */
+.checkrow-head{display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+.checklist-meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:12px;color:var(--muted)}
+.tracker-project-cell{min-width:240px;max-width:340px}
+.tracker-submeta{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px;font-size:11px;color:var(--muted)}
+.tracker-deliverable{font-size:11px;color:#4a6054;margin-top:4px;line-height:1.45}
+.tracker-dates{white-space:nowrap;font-size:11px;line-height:1.5}
+.tracker-prog{min-width:86px}
+.tracker-prog-bar{height:6px;border-radius:6px;background:#e4ede6;overflow:hidden;margin-top:4px}
+.tracker-prog-bar span{display:block;height:100%;background:var(--accent);border-radius:6px}
+.tracker-row-focus{background:#e7f4e8!important;transition:background .3s}
+
+@media screen and (max-width:600px){
+  .modal-grid{grid-template-columns:1fr}
+  .upcoming-item{flex-direction:column}
+  .upcoming-item-side{align-items:flex-start;text-align:left}
+  .tracker-project-cell{min-width:0;max-width:none}
+  .tracker-table tr[data-id] td:nth-child(n+5){grid-column:1/-1}
+}
+

@@ -9,14 +9,15 @@ Nông nghiệp · Thực phẩm · Công nghệ
 | Thông tin tài liệu | Nội dung |
 |---|---|
 | Mã tài liệu | OVN-COM-STR-2027 |
-| Phiên bản | V2.0 – Final |
+| Phiên bản | V2.1 – Cập nhật lộ trình thương mại tháng 01/2027 |
 | Phạm vi áp dụng | Toàn bộ hệ sinh thái Organic Việt Nam |
-| Thời gian thực hiện | 01/2027 – 12/2027 |
+| Thời gian thực hiện | 11/2026 – 12/2027 (tiền ra mắt 11–12/2026; thương mại 01–12/2027) |
 | Định hướng dài hạn | 2027–2029, tầm nhìn 2030 |
 | Đơn vị chủ trì | Phòng Truyền thông |
 | Người chịu trách nhiệm | Giám đốc Truyền thông |
 | Cấp phê duyệt | Ban lãnh đạo |
-| Trạng thái | Hoàn thiện nội dung trình phê duyệt |
+| Trạng thái | Chờ phê duyệt |
+| Tài liệu gốc tham chiếu | Bản lưu trữ V2.0 Final (`toan-van.html`) – phân biệt rõ với bản điều chỉnh V2.1 |
 
 ## MỤC LỤC
 
@@ -48,9 +49,16 @@ Mô hình được xây dựng trên ba nền tảng phát triển cốt lõi:
 
 Ba nền tảng trên được cụ thể hóa thông qua các cấu phần ORGANIC FARM, ORGANIC FOOD, ORGANIC DISTRIBUTION và hệ sinh thái công nghệ – thương mại ADIGO.
 
-Trong giai đoạn đầu năm 2027, trọng tâm thương mại là sản phẩm gà được nuôi theo mô hình ứng dụng thảo dược. Trên cơ sở kết quả triển khai, Organic Việt Nam từng bước mở rộng sang sản phẩm lợn và các danh mục khác phù hợp với năng lực sản xuất, chất lượng và nhu cầu thị trường.
+Sản phẩm gà được nuôi theo mô hình ứng dụng thảo dược của Organic Việt Nam **chính thức ra mắt và triển khai thương mại trong tháng 01/2027**. Theo đó, tháng 01/2027 là giai đoạn chính thức đưa sản phẩm ra thị trường, mở bán và phát triển hệ thống bán hàng; toàn bộ công tác chuẩn bị nền tảng thương hiệu, tài sản truyền thông và điều kiện phục vụ mở bán phải được tổ chức và hoàn tất trong tháng 11–12/2026.
 
-Hoạt động truyền thông cần đồng hành với toàn bộ quá trình phát triển này, từ xây dựng nhận diện doanh nghiệp đến hình thành niềm tin sản phẩm, phát triển thị trường và nâng cao giá trị thương hiệu.
+Các giai đoạn triển khai xuyên suốt được xác định như sau:
+- **Tháng 11–12/2026:** Chuẩn bị nền tảng thương hiệu, truyền thông thị trường và điều kiện phục vụ ra mắt trước ngày mở bán.
+- **Tháng 01/2027:** Chính thức ra mắt sản phẩm gà, mở bán thương mại và phát triển thị trường.
+- **Tháng 02/2027:** Cao điểm truyền thông và kinh doanh Tết 2027, kết hợp chăm sóc khách hàng sau Tết.
+- **Tháng 03/2027:** Củng cố niềm tin, duy trì bán hàng thường xuyên và phát triển khách hàng mua lại.
+- **Q2–Q4/2027:** Phát triển danh mục sản phẩm theo tiến độ thực tế, mở rộng thị trường và nâng cao năng lực hệ sinh thái.
+
+Đối với sản phẩm lợn và các danh mục tiếp theo, truyền thông thương mại chỉ được triển khai khi có kế hoạch sản xuất, chất lượng và thương mại chính thức được phê duyệt. Hoạt động truyền thông đồng hành xuyên suốt từ chuẩn bị mở bán đến xây dựng niềm tin dài hạn và nâng cao giá trị thương hiệu.
 
 ## 2. Tầm nhìn và sứ mệnh truyền thông
 ### 2.1. Tầm nhìn truyền thông
@@ -78,6 +86,8 @@ Truyền thông không thay thế năng lực sản xuất, chất lượng sả
 - Không đưa ra các tuyên bố về công dụng sức khỏe, chất lượng hoặc tiêu chuẩn sản phẩm khi chưa có căn cứ xác thực.
 - Không hạ thấp đối thủ cạnh tranh hoặc gây tâm lý lo sợ đối với thực phẩm trên thị trường.
 - Phân biệt rõ năng lực hiện tại, hoạt động đang triển khai và định hướng phát triển trong tương lai.
+- Toàn bộ tài sản truyền thông phục vụ mở bán sản phẩm gà phải hoàn thành kiểm duyệt trước ngày mở bán chính thức (`T0` trong tháng 01/2027).
+- Không mặc định ngày mở bán cụ thể khi chưa có phê duyệt chính thức của Ban lãnh đạo; không xác lập ngày ra mắt sản phẩm lợn hoặc các sản phẩm tiếp theo khi chưa có kế hoạch sản xuất và thương mại chính thức.
 - Lấy chất lượng sản phẩm, giá trị khách hàng và uy tín doanh nghiệp làm trọng tâm.
 
 <!-- PART:2 -->
@@ -263,7 +273,7 @@ Chiến lược truyền thông Organic Việt Nam không chỉ hướng đến 
 
 | Phạm vi | Định hướng truyền thông năm 2027 |
 |---|---|
-| Kỳ Anh | Thị trường thương mại trọng điểm, phát triển nhận biết, trải nghiệm sản phẩm và hệ thống bán hàng |
+| Kỳ Anh | Thị trường thương mại trọng điểm ngay từ mở bán tháng 01/2027; phát triển nhận biết, điểm bán thực tế, trải nghiệm sản phẩm và hỗ trợ đội ngũ Sale/CTV |
 | Hà Tĩnh | Mở rộng quan hệ đối tác, báo chí, cơ quan, tổ chức, điểm bán và khách hàng |
 | Bắc Trung Bộ | Nghiên cứu, xây dựng quan hệ và từng bước phát triển thị trường khi đủ năng lực cung ứng |
 | Toàn quốc | Xây dựng hình ảnh doanh nghiệp, năng lực công nghệ, danh tiếng và cơ hội hợp tác |
@@ -377,10 +387,10 @@ Không công bố năng lực kho, chuỗi lạnh, thời gian giao hàng hoặc
 ### 14.4. Chiến lược truyền thông danh mục sản phẩm năm 2027
 | Danh mục | Trọng tâm truyền thông | Mức độ ưu tiên |
 |---|---|---|
-| Gà | Mô hình nuôi, thảo dược, nguồn gốc, chất lượng, quy cách | Trọng điểm đầu năm |
-| Lợn | Nguồn gốc, quy trình chăn nuôi và hoàn thiện sản phẩm | Tiếp nối sản phẩm gà |
-| Trứng | Nguồn sản xuất và quy cách | Theo tiến độ |
-| Bò, trâu | Năng lực sản xuất, chất lượng, chuỗi cung ứng | Theo tiến độ |
+| Gà | Mô hình nuôi ứng dụng thảo dược, nguồn gốc, chất lượng xác minh, quy cách, điểm bán | Ra mắt thương mại chính thức 01/2027 (trọng điểm đầu năm) |
+| Lợn | Nguồn gốc, quy trình chăn nuôi và hoàn thiện sản phẩm | Theo tiến độ thực tế (chỉ mở bán khi có kế hoạch chính thức) |
+| Trứng | Nguồn sản xuất và quy cách | Theo tiến độ thực tế |
+| Bò, trâu | Năng lực sản xuất, chất lượng, chuỗi cung ứng | Theo tiến độ thực tế |
 | Rau củ | Vùng trồng, mùa vụ và chất lượng | Theo nguồn cung |
 | Trái cây | Vùng nguyên liệu, sản phẩm và mùa vụ | Theo nguồn cung |
 | Dược liệu | Vai trò trong hệ sinh thái sản xuất | Xuyên suốt |
@@ -437,7 +447,7 @@ Chỉ triển khai chiến dịch thu hút nhà bán hàng hoặc người dùng
 ### 15.5. Sản phẩm truyền thông ADIGO
 Website, hồ sơ năng lực công nghệ, video giới thiệu nền tảng, bộ mockup desktop/tablet/mobile, tài liệu giải pháp, video trình diễn tính năng, video hướng dẫn, sự kiện Demo Day và tài liệu hợp tác.
 
-Thông tin truyền thông phải phân biệt rõ tính năng đã vận hành, tính năng đang thử nghiệm và lộ trình phát triển.
+Thông tin truyền thông phải phân biệt rõ tính năng đã vận hành (như các năng lực quản trị dữ liệu, truy xuất nguồn gốc phục vụ mở bán Q1/2027), tính năng đang thử nghiệm và lộ trình phát triển. Không quảng bá các tính năng ADIGO chưa sẵn sàng vận hành thực tế.
 
 ## 16. Trụ cột 05 – Báo chí và quan hệ công chúng
 **Public Relations & Media Relations**
@@ -542,7 +552,7 @@ Chuyển hóa giá trị thương hiệu thành trải nghiệm thực tế, t�
 |---|---|---|
 | Farm Tour | Tham quan và tìm hiểu vùng sản xuất | FARM |
 | Media Tour | Trải nghiệm thực tế dành cho báo chí | ORGANIC VIỆT NAM |
-| Product Launch | Ra mắt sản phẩm | FOOD |
+| Product Launch | Ra mắt thương mại sản phẩm gà trong tháng 01/2027 (phù hợp ngân sách) | FOOD |
 | Product Experience | Trải nghiệm, sử dụng và phản hồi sản phẩm | FOOD |
 | Supply Chain Visit | Giới thiệu năng lực chuỗi cung ứng | DISTRIBUTION |
 | Store Opening | Khai trương điểm bán | Hệ thống bán lẻ |
@@ -699,80 +709,98 @@ Mỗi tài nguyên cần có thông tin về ngày tạo, nguồn, người th�
 <!-- PART:6 -->
 # PHẦN VI. LỘ TRÌNH TRIỂN KHAI NĂM 2027
 ## 25. Chiến lược triển khai theo quý
+Để đồng bộ với mốc **ra mắt thương mại chính thức sản phẩm gà trong tháng 01/2027**, toàn bộ hoạt động chuẩn bị nền tảng thương hiệu, bao bì, tư liệu sản phẩm và bộ công cụ bán hàng được tổ chức hoàn tất trong giai đoạn tiền ra mắt **tháng 11–12/2026**, tạo bước đệm cho lộ trình 4 quý năm 2027:
+
 <!-- WIDGET:quarters -->
 
+Các nguyên tắc điều hành lộ trình:
+- Tháng 11–12/2026 tập trung chuẩn bị nền tảng thương hiệu, truyền thông thị trường tiền mở bán và hoàn thiện 100% điều kiện phục vụ ra mắt trước ngày mở bán chính thức (`T0`).
+- Không mặc định ngày mở bán cụ thể khi chưa có phê duyệt chính thức của Ban lãnh đạo; không xác lập ngày ra mắt sản phẩm lợn hoặc các sản phẩm tiếp theo khi chưa có kế hoạch sản xuất và thương mại chính thức.
+
 ## 26. Kế hoạch truyền thông theo 12 tháng
+Giai đoạn **11–12/2026 (Tiền ra mắt)** là bước chuẩn bị bắt buộc để bảo đảm toàn bộ tài sản nhận diện, bao bì, tem nhãn, catalog, TVC/video, POSM, website, Press Kit và bộ tài liệu Sale/CTV hoàn thành trước khi mở bán sản phẩm gà vào tháng 01/2027.
+
 | Tháng | Chủ đề trọng tâm | Hoạt động chính |
 |---|---|---|
-| **01** | Hành trình sản phẩm đầu tiên | Giới thiệu vùng sản xuất, mô hình nuôi, hoàn thiện bao bì, catalog, TVC và chuẩn bị ra mắt |
-| **02** | Tết cùng Organic Việt Nam | Truyền thông sản phẩm gà, điểm bán, trải nghiệm khách hàng và hỗ trợ thương mại |
-| **03** | Chất lượng tạo dựng niềm tin | Đánh giá chiến dịch, phản hồi khách hàng, truyền thông chất lượng, Farm Tour |
-| **04** | Phát triển chuỗi giá trị | Giới thiệu FARM – FOOD – DISTRIBUTION và chuẩn bị danh mục tiếp theo |
-| **05** | Giá trị từ thảo dược | Truyền thông vùng dược liệu, trồng trọt và mô hình ứng dụng thảo dược |
-| **06** | Công nghệ và minh bạch | ADIGO, dữ liệu, truy xuất và quản trị vận hành |
-| **07** | Kết nối nguồn cung và thị trường | Nhà cung cấp, đại lý, đối tác và năng lực phân phối |
-| **08** | Con người và cộng đồng | Văn hóa doanh nghiệp, nhân sự, chuyên gia, cộng đồng |
-| **09** | Trải nghiệm thương hiệu | Khách hàng, điểm bán, dịch vụ và các chương trình trải nghiệm |
-| **10** | Hệ sinh thái Organic – ADIGO | Chiến dịch tích hợp, năng lực công nghệ và mô hình tạo giá trị |
-| **11** | Đồng hành phát triển | Hội nghị đối tác, nhà cung cấp, cơ hội hợp tác và kết nối thị trường |
-| **12** | Hành trình một năm kiến tạo | Tổng kết năm 2027, báo cáo thương hiệu và định hướng năm 2028 |
+| **11–12/2026** *(Tiền ra mắt)* | Chuẩn bị nền tảng & điều kiện mở bán | Chốt chiến lược V2.1, quy chuẩn thông điệp, bộ nhận diện Organic Việt Nam & ADIGO, bao bì/tem nhãn gà, catalog, TVC/video sản phẩm gà, website, POSM, bộ Sale/CTV, hồ sơ chất lượng xác minh, Press Kit và kế hoạch ra mắt |
+| **01/2027** | Ra mắt sản phẩm đầu tiên | • Công bố chính thức sản phẩm gà Organic Việt Nam.<br>• Truyền thông mô hình chăn nuôi ứng dụng thảo dược.<br>• Công bố quy cách sản phẩm, thông tin chất lượng và nguồn gốc đã được xác minh.<br>• Công bố kênh mua hàng và hệ thống điểm bán thực tế.<br>• Triển khai TVC, video sản phẩm, catalog, bao bì và POSM.<br>• Truyền thông tại điểm bán.<br>• Phối hợp đội ngũ Kinh doanh, Sale và CTV tiếp cận khách hàng.<br>• Tổ chức hoạt động báo chí, PR và sự kiện ra mắt phù hợp ngân sách.<br>• Triển khai nội dung trải nghiệm và phản hồi khách hàng.<br>• Hỗ trợ truyền thông chiến dịch kinh doanh Tết. |
+| **02/2027** | Tết cùng Organic Việt Nam | Cao điểm truyền thông sản phẩm gà và chương trình Tết 2027; truyền thông điểm bán, đơn vị bán hàng, trải nghiệm và phản hồi khách hàng dịp Tết; sau Tết triển khai nội dung tri ân, chăm sóc khách hàng và duy trì nhịp mua hàng hậu Tết *(tập trung duy nhất sản phẩm gà đã đủ điều kiện thương mại)* |
+| **03/2027** | Chất lượng tạo dựng niềm tin | Củng cố niềm tin thị trường từ chất lượng thực tế và hồ sơ nguồn gốc; tổng hợp đánh giá khách hàng sau mở bán & Tết; duy trì truyền thông bán hàng thường xuyên theo lứa gà (`C08`); phát triển khách hàng mua lại; triển khai Farm Tour tuân thủ an toàn sinh học |
+| **04/2027** | Phát triển chuỗi giá trị | Giới thiệu chuỗi giá trị FARM – FOOD – DISTRIBUTION; duy trì truyền thông bán hàng thường xuyên sản phẩm gà; chuẩn bị truyền thông danh mục sản phẩm tiếp theo theo tiến độ sản xuất & thương mại thực tế |
+| **05/2027** | Giá trị từ thảo dược | Truyền thông vùng dược liệu, trồng trọt và cơ sở ứng dụng thảo dược; duy trì truyền thông sản phẩm gà đang thương mại hóa |
+| **06/2027** | Công nghệ và minh bạch | Phát triển truyền thông công nghệ ADIGO, dữ liệu, truy xuất và quản trị vận hành; tiếp tục duy trì truyền thông sản phẩm đang bán |
+| **07/2027** | Kết nối nguồn cung và thị trường | Truyền thông nhà cung cấp, đại lý, đối tác, năng lực phân phối; duy trì nhịp hỗ trợ điểm bán và sản phẩm đã thương mại hóa |
+| **08/2027** | Con người và cộng đồng | Văn hóa doanh nghiệp, đội ngũ kỹ thuật viên, chuyên gia, cộng đồng địa phương; duy trì truyền thông sản phẩm |
+| **09/2027** | Trải nghiệm thương hiệu | Chương trình trải nghiệm tại điểm bán, dịch vụ khách hàng và phát triển nhóm khách hàng gắn kết, mua lại |
+| **10/2027** | Hệ sinh thái Organic – ADIGO | Chiến dịch tích hợp năng lực hệ sinh thái, công nghệ và thương mại phù hợp tiến độ vận hành |
+| **11/2027** | Đồng hành phát triển | Hội nghị đối tác, nhà cung cấp, mở rộng hợp tác và kết nối thị trường |
+| **12/2027** | Hành trình một năm kiến tạo | Tổng kết năm 2027, đánh giá thương hiệu – KPI và hoạch định kế hoạch năm 2028 |
 
-Đây là lịch chủ đề cấp chiến lược. Mỗi tháng cần xây dựng kế hoạch tác nghiệp riêng, bao gồm danh mục công việc, lịch sản xuất, lịch xuất bản, người phụ trách, ngân sách và KPI.
+**Lưu ý điều hành:** Chủ đề từng tháng là **chủ đề trọng tâm** định hướng chiến dịch và tuyến nội dung ưu tiên, không hàm ý chỉ truyền thông duy nhất một nội dung trong tháng đó. Các tuyến truyền thông thương hiệu nền tảng, truyền thông sản phẩm gà đang thương mại hóa và hỗ trợ bán hàng vẫn diễn ra song song liên tục. Mỗi tháng cần lập kế hoạch tác nghiệp chi tiết về hạng mục, lịch sản xuất, xuất bản, đầu mối, ngân sách và KPI.
 
 ## 27. Danh mục chiến dịch cấp doanh nghiệp
-| Mã | Chiến dịch | Thời gian | Cấu phần trọng tâm |
-|---|---|---|---|
-| CAM-01 | Kiến tạo hệ sinh thái giá trị | Xuyên suốt | ORGANIC VIỆT NAM |
-| CAM-02 | Hành trình sản phẩm đầu tiên | Q1 | FARM, FOOD |
-| CAM-03 | Tết cùng Organic Việt Nam | Q1 | FOOD, DISTRIBUTION, bán lẻ |
-| CAM-04 | Chất lượng từ quy trình | Q1–Q2 | FARM, FOOD, ADIGO |
-| CAM-05 | Giá trị từ thảo dược | Q2–Q3 | FARM |
-| CAM-06 | Hành trình từ sản xuất đến bàn ăn | Q2–Q4 | FARM, FOOD, DISTRIBUTION |
-| CAM-07 | ADIGO – Công nghệ kết nối giá trị | Q2–Q4 | ADIGO |
-| CAM-08 | Trải nghiệm cùng Organic Việt Nam | Q2–Q4 | FOOD, bán lẻ |
-| CAM-09 | Đồng hành kiến tạo giá trị | Q3–Q4 | Đối tác, nhà cung cấp |
-| CAM-10 | Kết nối thị trường | Theo tiến độ | ADIGO MARKETPLACE |
-| CAM-11 | Hành trình một năm kiến tạo | Q4 | Toàn hệ sinh thái |
+| Mã | Chiến dịch | Thời gian | Cấu phần trọng tâm | Dự án liên kết |
+|---|---|---|---|---|
+| CAM-01 | Kiến tạo hệ sinh thái giá trị | Chuẩn bị 11–12/2026 · Xuyên suốt 01–12/2027 | ORGANIC VIỆT NAM | A01, A07, B01, B03, D01, D04 |
+| CAM-02 | Hành trình sản phẩm đầu tiên – Ra mắt sản phẩm gà | Chuẩn bị 11–12/2026 · Ra mắt thương mại 01/2027 | FARM, FOOD | C01–C05, C07, D05, E02, E04 |
+| CAM-03 | Tết cùng Organic Việt Nam | Chuẩn bị 12/2026 · Cao điểm 01–02/2027 | FOOD, DISTRIBUTION, bán lẻ | C06, C03, C04, D03, D05, E05 |
+| CAM-04 | Chất lượng từ quy trình (Củng cố niềm tin & mua lại) | Xác minh từ 01/2027 · Trọng tâm 03–06/2027 | FARM, FOOD, ADIGO | C07, C12, D07, D08, E03, F06 |
+| CAM-05 | Giá trị từ thảo dược | Q2–Q3/2027 (04–09/2027) | FARM | B06, D07, D08, D09 |
+| CAM-06 | Hành trình từ sản xuất đến bàn ăn | Q2–Q4/2027 (04–12/2027) | FARM, FOOD, DISTRIBUTION | B08, B10, C09, C10, C11, D10 |
+| CAM-07 | ADIGO – Công nghệ kết nối giá trị | Q1 (năng lực sẵn sàng) · Mở rộng Q2–Q4/2027 | ADIGO | B02, B04, D02, D06, E07 |
+| CAM-08 | Trải nghiệm cùng Organic Việt Nam | Khởi động điểm bán 01/2027 · Duy trì 02–12/2027 | FOOD, bán lẻ | B09, C04, C08, C12, D11, E05 |
+| CAM-09 | Đồng hành kiến tạo giá trị | Q3–Q4/2027 (07–12/2027) | Đối tác, nhà cung cấp | E06, E08, E09, F05 |
+| CAM-10 | Kết nối thị trường | Theo tiến độ sẵn sàng vận hành | ADIGO MARKETPLACE | B11, D11, E09 |
+| CAM-11 | Hành trình một năm kiến tạo | Q4/2027 (10–12/2027) | Toàn hệ sinh thái | F03, F06, F07 |
+
+### Phân biệt rõ tính chất các chương trình thương mại
+| Phân loại | Đại diện / Mã liên kết | Nhịp triển khai & nguyên tắc |
+|---|---|---|
+| Chiến dịch ra mắt sản phẩm | **CAM-02** *(Ra mắt sản phẩm gà)* | Triển khai duy nhất cho cột mốc mở bán lần đầu **01/2027** (chuẩn bị 11–12/2026); không kéo dài dải ra mắt sang cả Q1. |
+| Chiến dịch mùa vụ cao điểm | **CAM-03** *(Tết cùng Organic Việt Nam)* | Cao điểm thương mại Tết trong **01–02/2027** cho sản phẩm gà và chăm sóc khách hàng sau Tết. |
+| Chương trình hỗ trợ bán hàng thường xuyên | **Dự án C08** *(Truyền thông theo lứa gà)* | Vận hành liên tục từ **01–12/2027** theo chu kỳ lứa gối đầu 15 ngày; phối hợp đội ngũ Sale, CTV và điểm bán mà **không xem mỗi lứa là một chiến dịch ra mắt mới**. |
+| Chương trình củng cố niềm tin & mua lại | **CAM-04** & **CAM-08** | Kích hoạt từ bằng chứng chất lượng 01/2027 và đẩy mạnh từ **03/2027** trở đi để tăng tỷ lệ khách hàng quay lại. |
 
 ### Tiến độ triển khai các chiến dịch
 <!-- WIDGET:gantt -->
 
-## 28. Kế hoạch trọng điểm 90 ngày trước và trong giai đoạn ra mắt sản phẩm đầu tiên
-### 28.1. Giai đoạn chuẩn bị cuối năm 2026
-| Thời gian | Công việc trọng điểm |
-|---|---|
-| 24–30/11/2026 | Chốt chiến lược, nhân sự, định vị, thông điệp và danh mục công việc |
-| 01–10/12/2026 | Hoàn thiện nhận diện, kế hoạch nội dung, kịch bản, thu thập tư liệu |
-| 11–20/12/2026 | Sản xuất video, hoàn thiện website, thiết kế bao bì, catalog, tờ rơi |
-| 21–31/12/2026 | Hoàn thiện bộ tài liệu bán hàng, kế hoạch ra mắt, kết nối báo chí và đối tác |
+## 28. Kế hoạch trọng điểm 90 ngày chuẩn bị, ra mắt và thương mại hóa sản phẩm gà
+### 28.1. Giai đoạn chuẩn bị trước mở bán (tháng 11–12/2026)
+| Thời gian *(mốc đề xuất)* | Công việc trọng điểm | Trạng thái điều chỉnh |
+|---|---|---|
+| **24–30/11/2026** | Chốt chiến lược V2.1, nhân sự cốt lõi, định vị, thông điệp, quy chuẩn thuật ngữ và danh mục 57 dự án | Mốc đề xuất trước `T0` |
+| **01–10/12/2026** | Hoàn thiện nhận diện Organic Việt Nam – ADIGO – sản phẩm gà, kế hoạch nội dung, kịch bản TVC/video và thu thập tư liệu thực tế tại vùng nuôi | Mốc đề xuất trước `T0` |
+| **11–20/12/2026** | Sản xuất TVC/video sản phẩm gà, hoàn thiện website, thiết kế bao bì, tem nhãn, catalog, bộ tài liệu Sale/CTV và POSM | Mốc đề xuất trước `T0` |
+| **21–31/12/2026** | Nghiệm thu in ấn bao bì/POSM/catalog, xác minh hồ sơ chất lượng – truy xuất, hoàn thiện kế hoạch ra mắt chi tiết, làm việc báo chí/đối tác và quy chế khủng hoảng | Hoàn tất **100% trước ngày mở bán** |
 
-### 28.2. Giai đoạn truyền thông trước thương mại
-Tập trung giúp thị trường hiểu Organic Việt Nam, nguồn gốc sản phẩm, mô hình chăn nuôi ứng dụng thảo dược, quá trình hoàn thiện sản phẩm và năng lực kiểm soát chất lượng.
+*Ghi chú: Các mốc thời gian chuẩn bị trong tháng 11–12/2026 là mốc đề xuất nhằm bảo đảm sẵn sàng trước tháng 01/2027 và sẽ được hiệu chỉnh tương ứng theo ngày mở bán chính thức (`T0`) do Ban lãnh đạo phê duyệt.*
 
-Đồng thời phối hợp với Marketing và Kinh doanh tiếp nhận nhu cầu, chuẩn bị dữ liệu khách hàng, triển khai nội dung cho đội ngũ Sale, CTV và hệ thống điểm bán.
+### 28.2. Giai đoạn tiền mở bán (T-14 đến T-1)
+- **`T-14` đến `T-7` (Chuẩn bị thị trường & nhận diện):** Truyền thông nhận diện Organic Việt Nam, vùng sản xuất, mô hình chăn nuôi ứng dụng thảo dược và quy trình kiểm soát chất lượng; phối hợp Marketing và Kinh doanh đào tạo thông điệp cho Sale, CTV và tiếp nhận nhu cầu đặt hàng sớm.
+- **`T-7` đến `T-1` (Đếm ngược & hoàn tất điểm bán):** Hoàn tất lắp đặt POSM, bao bì, bảng giá và tài liệu tư vấn tại điểm bán thực tế; kiểm tra lần cuối nội dung truy xuất nguồn gốc, đường dây tiếp nhận đơn hàng và thông cáo báo chí sẵn sàng phát hành đúng `T0`.
 
-### 28.3. Giai đoạn thương mại hóa
-Tập trung chiến dịch ra mắt sản phẩm gà, truyền thông điểm bán, quy cách sản phẩm, chương trình trải nghiệm, phản hồi khách hàng và hỗ trợ các kênh phân phối.
-
-Do kế hoạch sản xuất được tổ chức theo lứa gối đầu, chiến dịch truyền thông cũng cần được triển khai theo chu kỳ tương ứng.
+### 28.3. Giai đoạn ra mắt và chu kỳ thương mại hóa (T0 và lứa gối đầu 15 ngày)
+- **`T0` (Ngày chính thức ra mắt & mở bán trong 01/2027):** Công bố chính thức sản phẩm gà Organic Việt Nam, quy cách sản phẩm, thông tin chất lượng – nguồn gốc đã xác minh, kênh mua hàng và điểm bán thực tế; phát hành TVC/video sản phẩm, hoạt động PR/báo chí và sự kiện ra mắt phù hợp ngân sách.
+- **`T+1` đến `T+7` (Tuần đầu thương mại):** Truyền thông tại điểm bán, nội dung chế biến – bảo quản, trải nghiệm và phản hồi khách hàng đầu tiên; phối hợp đội ngũ Sale, CTV và triển khai song song nội dung chiến dịch Tết 2027 (`CAM-03`).
+- **`T+8` đến `T+14` (Tuần thứ hai & chuyển giao lứa gối đầu):** Phối hợp Kinh doanh theo dõi sức mua từng lứa, điều chỉnh nội dung hỗ trợ bán hàng; đồng thời kích hoạt truyền thông giới thiệu lứa tiếp theo theo chu kỳ **lứa gối đầu 15 ngày**.
 
 <!-- WIDGET:batch -->
 
-Truyền thông cần bám sát mục tiêu bán hết từng lứa trong vòng hai tuần, nhưng không chịu trách nhiệm thay cho Kinh doanh về doanh số, tồn kho hoặc khả năng cung ứng.
+**Nguyên tắc phân biệt nhịp vận hành:** Việc tổ chức sản xuất theo lứa gối đầu 15 ngày thuộc **chương trình truyền thông hỗ trợ bán hàng thường xuyên (`C08`)**, nhằm giữ nhịp tiêu thụ đều đặn cho từng lứa sản phẩm mà **không tổ chức mỗi lứa như một chiến dịch ra mắt thương hiệu mới**. Truyền thông hỗ trợ mục tiêu nhận biết và bán hàng từng lứa nhưng không chịu trách nhiệm thay cho Kinh doanh về doanh số, tồn kho hoặc khả năng cung ứng.
 
-### 28.4. Điều kiện kích hoạt chiến dịch thương mại
+### 28.4. Điều kiện kích hoạt mở bán (`Pre-launch Gate`)
 | Điều kiện | Đơn vị xác nhận |
 |---|---|
-| Nguồn cung và lịch xuất bán | FARM, Kinh doanh |
-| Hồ sơ chất lượng và điều kiện sản phẩm | FOOD, QA, pháp chế |
-| Quy cách, giá và chính sách bán hàng | Kinh doanh |
-| Bao bì, tem nhãn, thông tin công bố | FOOD, QA, Truyền thông |
-| Năng lực lưu kho, giao nhận | DISTRIBUTION |
-| Tính năng công nghệ được giới thiệu | ADIGO, Công nghệ |
-| Kênh bán hàng và tiếp nhận đơn | Marketing, Kinh doanh |
-| Nội dung và kế hoạch truyền thông | Giám đốc Truyền thông |
+| Nguồn cung, sản lượng gà và lịch xuất lứa | FARM, Kinh doanh |
+| Hồ sơ chất lượng và điều kiện công bố sản phẩm | FOOD, QA, pháp chế |
+| Quy cách, giá bán và chính sách Sale/CTV | Kinh doanh |
+| Bao bì, tem nhãn và thông tin công bố trên nhãn | FOOD, QA, Truyền thông |
+| Năng lực lưu kho, chuỗi lạnh, giao nhận | DISTRIBUTION |
+| Tính năng công nghệ được phép giới thiệu | ADIGO, Công nghệ |
+| Kênh bán hàng, điểm bán thực tế và tiếp nhận đơn | Marketing, Kinh doanh |
+| Hồ sơ nội dung, kiểm duyệt và kế hoạch ra mắt | Giám đốc Truyền thông |
 
-Mốc ra mắt được quyết định trên cơ sở mức độ sẵn sàng thực tế của toàn chuỗi giá trị, không chỉ dựa vào lịch truyền thông.
+Mốc ra mắt `T0` trong tháng 01/2027 được kích hoạt trên cơ sở xác nhận mức độ sẵn sàng thực tế của toàn chuỗi giá trị trước khi mở bán.
 
 <!-- PART:7 -->
 # PHẦN VII. TỔ CHỨC VÀ QUẢN TRỊ PHÒNG TRUYỀN THÔNG
@@ -896,15 +924,17 @@ Ngân sách trên không bao gồm chiết khấu đại lý, hoa hồng CTV, kh
 ## 36. Phân bổ ngân sách theo quý
 <!-- WIDGET:quarterbudget -->
 
-| Giai đoạn | Tỷ trọng | Ngân sách | Trọng tâm |
+| Giai đoạn | Tỷ trọng | Ngân sách | Trọng tâm triển khai (cập nhật nhịp 01/2027) |
 |---|---:|---:|---|
-| Quý I | 35% | 1.050 triệu | Nền tảng thương hiệu, sản phẩm gà, chiến dịch Tết |
-| Quý II | 22% | 660 triệu | Chất lượng, phát triển danh mục và ADIGO |
-| Quý III | 20% | 600 triệu | Thị trường, đối tác, chuỗi cung ứng, cộng đồng |
-| Quý IV | 23% | 690 triệu | Hệ sinh thái, sự kiện, danh tiếng và tổng kết |
-| **Tổng cộng** | **100%** | **3.000 triệu** | |
+| Quý I | 35% | 1.050 triệu | **Ưu tiên cao trong 01–02/2027:** kích hoạt mở bán sản phẩm gà, truyền thông điểm bán/POSM, PR/sự kiện ra mắt phù hợp ngân sách, chiến dịch Tết 2027 & chăm sóc hậu Tết; tháng 03/2027 củng cố niềm tin & mua lại |
+| Quý II | 22% | 660 triệu | Duy trì bán hàng gà (`C08`), truyền thông chất lượng, Farm Tour, phát triển danh mục theo tiến độ thực tế và ADIGO |
+| Quý III | 20% | 600 triệu | Phát triển thị trường, đối tác, đại lý, chuỗi cung ứng và cộng đồng |
+| Quý IV | 23% | 690 triệu | Hệ sinh thái tích hợp, hội nghị đối tác, danh tiếng và tổng kết năm |
+| **Tổng cộng** | **100%** | **3.000 triệu** | *(Giữ nguyên tổng ngân sách tham chiếu theo phương án B đã trình)* |
 
-Ngân sách chuẩn bị trong tháng 11–12/2026 cần được xây dựng và phê duyệt riêng, không mặc định tính vào ngân sách hoạt động năm 2027.
+**Nguyên tắc giải ngân tiền ra mắt (11–12/2026) và đầu năm 2027:**
+- Ngân sách chuẩn bị trong tháng **11–12/2026** (sản xuất TVC/video sản phẩm gà, chụp ảnh thực tế, hoàn thiện nhận diện, thiết kế và in ấn đợt 1 bao bì – tem nhãn – catalog – POSM – bộ tài liệu Sale/CTV, website) phải được lập dự toán và phê duyệt giải ngân riêng ngay trong 11–12/2026 (hoặc tạm ứng chuyển tiếp theo quy chế tài chính) để kịp hoàn thành trước ngày mở bán `T0` tháng 01/2027, không chờ sang tháng 01/2027 mới bắt đầu sản xuất.
+- Không điều chỉnh tăng tổng ngân sách tham chiếu 3.000 triệu đồng/năm khi chưa có phê duyệt mới của Ban lãnh đạo; tập trung điều phối nhịp chi Quý I sớm vào tháng 01–02/2027 phù hợp cao điểm mở bán và Tết.
 
 ## 37. Cơ chế quản trị ngân sách
 Mọi khoản chi truyền thông phải gắn với kế hoạch, dự án hoặc chiến dịch cụ thể. Việc quản lý ngân sách bao gồm lập dự toán, phê duyệt, lựa chọn nhà cung cấp, nghiệm thu, thanh toán và đánh giá hiệu quả.
@@ -923,31 +953,48 @@ Hiệu quả truyền thông được đánh giá thông qua bốn cấp độ, 
 Không sử dụng số lượng bài đăng, lượt theo dõi hoặc lượt xem làm tiêu chí duy nhất để đánh giá thành công của truyền thông.
 
 ## 39. Bộ KPI cấp chiến lược năm 2027
-| Nhóm | Chỉ tiêu | Mục tiêu đề xuất |
-|---|---|---:|
-| Thương hiệu | Nhận biết có hỗ trợ tại thị trường trọng điểm | ≥ 50% |
-| Thương hiệu | Mức độ tin tưởng trong nhóm biết thương hiệu | ≥ 70% |
-| Nhận thức | Hiểu đúng mô hình sản xuất trong nhóm đã tiếp cận | ≥ 70% |
-| Nhận diện | Tuân thủ quy chuẩn thương hiệu | 100% |
-| Website | Lượt truy cập trong năm | 100.000 |
-| Digital | Tổng lượt tiếp cận nội dung | 5 triệu |
-| Digital | Tổng lượt xem video | 2 triệu |
-| Facebook | Người theo dõi phù hợp thị trường mục tiêu | 20.000 |
-| Báo chí | Bài viết, phóng sự phù hợp định vị | 20–30 |
-| Nội dung | Bài viết truyền thông gốc | 250–350 |
-| Multimedia | Video ngắn | 150–200 |
-| Multimedia | Video chuyên sâu | 12–24 |
-| Thương hiệu | Phim giới thiệu doanh nghiệp | 1–2 |
-| Sự kiện | Hoạt động tham quan, trải nghiệm | 8–12 |
-| Đối ngoại | Đầu mối đối tác tiềm năng được xác minh | 100 |
-| ADIGO | Chiến dịch giới thiệu năng lực công nghệ | 2–4 |
-| Nội bộ | Nhân viên được phổ biến thông điệp | 100% |
-| Vận hành | Hoàn thành nhiệm vụ đúng tiến độ | ≥ 95% |
-| Kiểm duyệt | Nội dung thuộc diện bắt buộc được xác minh | 100% |
-| Khủng hoảng | Tiếp nhận và báo cáo sự cố nghiêm trọng | Trong 60 phút |
-| Tài chính | Chi phí thực hiện | Trong ngân sách được duyệt |
+### 39.1. Nhóm KPI Trước ra mắt (11–12/2026 – Điều kiện sẵn sàng mở bán)
+Giai đoạn tiền ra mắt đánh giá mức độ sẵn sàng của tài sản thương hiệu, tài liệu thương mại và quy trình kiểm duyệt trước ngày mở bán `T0` (không áp đặt chỉ tiêu doanh số hoặc chỉ số chưa có dữ liệu nền):
 
-Các mục tiêu trên là chỉ tiêu đề xuất để xây dựng kế hoạch. Phòng Truyền thông cần thực hiện khảo sát ban đầu, xác lập dữ liệu nền và thống nhất cách tính trước khi Ban lãnh đạo giao KPI chính thức.
+| Nhóm | Chỉ tiêu đánh giá trước mở bán | Tiêu chuẩn đạt | Đơn vị chịu trách nhiệm |
+|---|---|---|---|
+| Chiến lược & thông điệp | Phê duyệt chiến lược V2.1 & quy chuẩn thuật ngữ | Hoàn thành trước mở bán | Truyền thông (A/R), Ban lãnh đạo (A) |
+| Tài sản nhận diện & bao bì | Bộ nhận diện cốt lõi, bao bì – tem nhãn sản phẩm gà nghiệm thu | 100% đạt duyệt QA/Pháp chế trước `T0` | Truyền thông (R), FOOD/QA (C) |
+| Bộ công cụ bán hàng | Catalog, bộ tài liệu Sale/CTV, POSM tại điểm bán | Sẵn sàng bàn giao trước `T0` | Truyền thông (R), Kinh doanh (C) |
+| Nội dung & Digital | TVC/video sản phẩm gà, bộ ảnh thực tế, Website & hồ sơ truy xuất | Sẵn sàng phát hành tại `T0` | Truyền thông (R), ADIGO/FARM (C) |
+| Báo chí & Rủi ro | Press Kit, thông cáo ra mắt, quy chế phát ngôn & quy trình khủng hoảng | Hoàn tất & phê duyệt trước `T0` | Truyền thông (R), Pháp chế (C) |
+| Đào tạo nội bộ bán hàng | Nhân sự Sale/CTV được phổ biến đúng thông điệp sản phẩm gà | 100% đội ngũ đầu mối nắm thông điệp | Truyền thông + Kinh doanh (Phối hợp) |
+
+### 39.2. Nhóm KPI Sau ra mắt (01–12/2027 – Thương hiệu, truyền thông & phối hợp thương mại)
+Phân tách rõ **KPI do phòng Truyền thông chủ trì chịu trách nhiệm** và **KPI phối hợp với Marketing – Kinh doanh**:
+
+| Nhóm | Chỉ tiêu | Mục tiêu đề xuất | Phân định trách nhiệm |
+|---|---|---:|---|
+| Thương hiệu | Nhận biết có hỗ trợ tại thị trường trọng điểm | ≥ 50% | **Truyền thông chủ trì** |
+| Thương hiệu | Mức độ tin tưởng trong nhóm biết thương hiệu | ≥ 70% | **Truyền thông chủ trì** |
+| Nhận thức | Hiểu đúng mô hình chăn nuôi ứng dụng thảo dược | ≥ 70% | **Truyền thông chủ trì** |
+| Nhận diện | Tuân thủ quy chuẩn thương hiệu | 100% | **Truyền thông chủ trì** |
+| Website | Lượt truy cập trong năm | 100.000 | **Truyền thông chủ trì** |
+| Digital | Tổng lượt tiếp cận nội dung | 5 triệu | **Truyền thông chủ trì** |
+| Digital | Tổng lượt xem video | 2 triệu | **Truyền thông chủ trì** |
+| Facebook | Người theo dõi phù hợp thị trường mục tiêu | 20.000 | **Truyền thông chủ trì** |
+| Báo chí | Bài viết, phóng sự phù hợp định vị | 20–30 | **Truyền thông chủ trì** |
+| Nội dung | Bài viết truyền thông gốc | 250–350 | **Truyền thông chủ trì** |
+| Multimedia | Video ngắn | 150–200 | **Truyền thông chủ trì** |
+| Multimedia | Video chuyên sâu | 12–24 | **Truyền thông chủ trì** |
+| Thương hiệu | Phim giới thiệu doanh nghiệp | 1–2 | **Truyền thông chủ trì** |
+| Sự kiện | Hoạt động tham quan, trải nghiệm | 8–12 | **Truyền thông chủ trì** |
+| ADIGO | Chiến dịch giới thiệu năng lực công nghệ | 2–4 | **Truyền thông chủ trì** |
+| Nội bộ | Nhân viên được phổ biến thông điệp | 100% | **Truyền thông chủ trì** |
+| Vận hành | Hoàn thành nhiệm vụ đúng tiến độ | ≥ 95% | **Truyền thông chủ trì** |
+| Kiểm duyệt | Nội dung thuộc diện bắt buộc được xác minh | 100% | **Truyền thông chủ trì** |
+| Khủng hoảng | Tiếp nhận và báo cáo sự cố nghiêm trọng | Trong 60 phút | **Truyền thông chủ trì** |
+| Tài chính | Chi phí thực hiện | Trong ngân sách được duyệt | **Truyền thông chủ trì** |
+| Đối ngoại & thị trường | Đầu mối đối tác tiềm năng được xác minh từ kênh truyền thông | 100 | **Phối hợp Marketing & Kinh doanh** |
+| Hỗ trợ bán hàng (`C08`) | Mức độ phủ thông tin sản phẩm, điểm bán & tiếp nhận nhu cầu theo lứa | Theo kế hoạch từng lứa 15 ngày | **Phối hợp Marketing & Kinh doanh** |
+| Tái mua & trải nghiệm | Phản hồi khách hàng, mức độ hài lòng & nhận biết chương trình mua lại | Theo khảo sát sau mở bán & Q4 | **Phối hợp Marketing, Bán lẻ & Kinh doanh** |
+
+Các mục tiêu định lượng trên là chỉ tiêu đề xuất giữ nguyên theo khung tham chiếu để xây dựng kế hoạch; không tự đặt thêm chỉ tiêu doanh số hoặc con số chưa được phê duyệt. Phòng Truyền thông cần thực hiện khảo sát ban đầu, xác lập dữ liệu nền và thống nhất cách tính trước khi Ban lãnh đạo giao KPI chính thức.
 
 Lượt tiếp cận trên nhiều nền tảng không được mặc định là số người duy nhất. Nội dung đăng lại cần được phân biệt với nội dung sản xuất mới.
 
@@ -955,10 +1002,10 @@ Lượt tiếp cận trên nhiều nền tảng không được mặc định l�
 | Cấu phần | Nhóm chỉ số đánh giá |
 |---|---|
 | ORGANIC VIỆT NAM | Nhận biết thương hiệu, uy tín, chất lượng báo chí, quan hệ đối tác |
-| ORGANIC FARM | Mức độ hiểu nguồn sản xuất, mô hình thảo dược, niềm tin về nguồn gốc |
-| ORGANIC FOOD | Mức độ hiểu sản phẩm, chất lượng cảm nhận, ý định mua |
+| ORGANIC FARM | Mức độ hiểu nguồn sản xuất, mô hình ứng dụng thảo dược, niềm tin về nguồn gốc |
+| ORGANIC FOOD | Mức độ hiểu sản phẩm gà, quy cách, chất lượng cảm nhận, ý định mua & mua lại |
 | ORGANIC DISTRIBUTION | Mức độ hiểu năng lực cung ứng, niềm tin vào bảo quản và giao nhận |
-| ADIGO | Nhận biết công nghệ, hiểu năng lực nền tảng, mức độ quan tâm sử dụng |
+| ADIGO | Nhận biết công nghệ, hiểu năng lực nền tảng đã sẵn sàng, mức độ quan tâm sử dụng |
 | ADIGO MART | Nhận biết điểm bán, trải nghiệm và phản hồi khách hàng |
 | ADIGO MARKETPLACE | Mức độ quan tâm của nhà cung cấp, nhà bán hàng và đối tác |
 
@@ -967,7 +1014,7 @@ KPI đối với các cấu phần chưa vận hành thương mại được đ�
 ## 41. KPI Giám đốc Truyền thông
 <!-- WIDGET:directorkpi -->
 
-Nhóm KPI hỗ trợ kinh doanh được đánh giá thông qua mức độ đóng góp của truyền thông vào nhận biết sản phẩm, tiếp nhận nhu cầu, hỗ trợ hệ thống bán hàng và phát triển niềm tin khách hàng. Doanh thu và tỷ lệ chốt đơn là chỉ tiêu phối hợp với Marketing và Kinh doanh, không phải trách nhiệm độc lập của phòng Truyền thông.
+Nhóm KPI hỗ trợ kinh doanh được đánh giá thông qua mức độ đóng góp của truyền thông vào nhận biết sản phẩm gà khi mở bán 01/2027, tiếp nhận nhu cầu, hỗ trợ hệ thống bán hàng theo lứa (`C08`) và phát triển niềm tin khách hàng mua lại. Doanh thu, sản lượng bán và tỷ lệ chốt đơn là chỉ tiêu **phối hợp với Marketing và Kinh doanh**, không phải trách nhiệm độc lập của phòng Truyền thông.
 
 ## 42. Hệ thống báo cáo quản trị
 | Báo cáo | Tần suất | Đối tượng nhận |
@@ -997,69 +1044,69 @@ Quy ước mức độ ưu tiên:
 ### Nhóm A. Chiến lược và quản trị
 | Mã | Dự án | Ưu tiên | Tiến độ |
 |---|---|:---:|---|
-| A01 | Chiến lược truyền thông tổng thể 2027 | P1 | 12/2026 |
-| A02 | Đề án tổ chức và vận hành phòng Truyền thông | P1 | 12/2026 |
-| A03 | Tuyển dụng và hoàn thiện định biên nhân sự | P1 | Q1 |
-| A04 | Hệ thống quy trình và quy chế quản trị | P1 | Q1 |
-| A05 | Ngân sách và Dashboard KPI | P1 | Q1 |
-| A06 | Hệ thống quản trị tài nguyên truyền thông | P1 | Q1 |
-| A07 | Quy chuẩn thông điệp toàn hệ sinh thái | P1 | 12/2026 |
+| A01 | Chiến lược truyền thông tổng thể 2027 | P1 | 11/2026 |
+| A02 | Đề án tổ chức và vận hành phòng Truyền thông | P1 | 11–12/2026 |
+| A03 | Tuyển dụng và hoàn thiện định biên nhân sự | P1 | 12/2026–Q1 |
+| A04 | Hệ thống quy trình và quy chế quản trị | P1 | 12/2026–Q1 |
+| A05 | Ngân sách và Dashboard KPI | P1 | 12/2026–Q1 |
+| A06 | Hệ thống quản trị tài nguyên truyền thông | P1 | Q1/2027 |
+| A07 | Quy chuẩn thông điệp toàn hệ sinh thái | P1 | 11/2026 |
 
 ### Nhóm B. Thương hiệu và nhận diện
 | Mã | Dự án | Ưu tiên | Tiến độ |
 |---|---|:---:|---|
-| B01 | Hoàn thiện bộ nhận diện Organic Việt Nam | P1 | 12/2026–Q1 |
-| B02 | Hoàn thiện bộ nhận diện ADIGO | P1 | 12/2026–Q1 |
-| B03 | Hồ sơ năng lực doanh nghiệp | P1 | Q1 |
-| B04 | Hồ sơ năng lực công nghệ ADIGO | P1 | Q1 |
+| B01 | Hoàn thiện bộ nhận diện Organic Việt Nam | P1 | 12/2026 |
+| B02 | Hoàn thiện bộ nhận diện ADIGO | P1 | 12/2026 |
+| B03 | Hồ sơ năng lực doanh nghiệp | P1 | 12/2026 |
+| B04 | Hồ sơ năng lực công nghệ ADIGO | P1 | 12/2026–Q1 |
 | B05 | Nhận diện văn phòng và nhà điều hành | P2 | Theo tiến độ |
-| B06 | Nhận diện ORGANIC FARM | P2 | Q1–Q2 |
-| B07 | Nhận diện sản phẩm ORGANIC FOOD | P1 | Q1 |
-| B08 | Nhận diện ORGANIC DISTRIBUTION | P2 | Q2 |
-| B09 | Nhận diện hệ thống bán lẻ | P1 | Theo tiến độ |
-| B10 | Nhận diện phương tiện giao nhận | P2 | Q2–Q3 |
+| B06 | Nhận diện ORGANIC FARM | P2 | Q1–Q2/2027 |
+| B07 | Nhận diện sản phẩm ORGANIC FOOD | P1 | 12/2026 |
+| B08 | Nhận diện ORGANIC DISTRIBUTION | P2 | Q2/2027 |
+| B09 | Nhận diện hệ thống bán lẻ | P1 | 12/2026 & theo điểm bán |
+| B10 | Nhận diện phương tiện giao nhận | P2 | Q2–Q3/2027 |
 | B11 | Nhận diện ADIGO MARKETPLACE | P3 | Theo tiến độ |
 
 ### Nhóm C. Sản phẩm và hỗ trợ thương mại
 | Mã | Dự án | Ưu tiên | Tiến độ |
 |---|---|:---:|---|
-| C01 | Bao bì và tem nhãn sản phẩm gà | P1 | 12/2026–Q1 |
-| C02 | Catalog sản phẩm | P1 | 12/2026–Q1 |
-| C03 | Bộ tài liệu bán hàng và CTV | P1 | 12/2026–Q1 |
-| C04 | Bộ POSM và ấn phẩm điểm bán | P1 | Q1 |
-| C05 | Chiến dịch ra mắt sản phẩm gà | P1 | Q1 |
-| C06 | Chiến dịch truyền thông Tết 2027 | P1 | Q1 |
-| C07 | Bộ tài liệu chất lượng và truy xuất | P1 | Q1 |
-| C08 | Chương trình truyền thông theo từng lứa | P1 | Xuyên suốt |
+| C01 | Bao bì và tem nhãn sản phẩm gà | P1 | 12/2026 |
+| C02 | Catalog sản phẩm | P1 | 12/2026 |
+| C03 | Bộ tài liệu bán hàng và CTV | P1 | 12/2026 |
+| C04 | Bộ POSM và ấn phẩm điểm bán | P1 | 12/2026 |
+| C05 | Chiến dịch ra mắt sản phẩm gà | P1 | Chuẩn bị 12/2026 · Mở bán 01/2027 |
+| C06 | Chiến dịch truyền thông Tết 2027 | P1 | Chuẩn bị 12/2026 · Cao điểm 01–02/2027 |
+| C07 | Bộ tài liệu chất lượng và truy xuất | P1 | 12/2026 |
+| C08 | Chương trình truyền thông theo từng lứa | P1 | Khung 12/2026 · Vận hành 01–12/2027 |
 | C09 | Chiến dịch sản phẩm lợn | P2 | Theo tiến độ |
-| C10 | Truyền thông chuỗi cung ứng | P2 | Q2–Q4 |
+| C10 | Truyền thông chuỗi cung ứng | P2 | Q2–Q4/2027 |
 | C11 | Chiến dịch phát triển danh mục mới | P3 | Theo tiến độ |
-| C12 | Chương trình trải nghiệm khách hàng | P2 | Q1–Q4 |
+| C12 | Chương trình trải nghiệm khách hàng | P2 | 01–12/2027 |
 
 ### Nhóm D. Digital và sản xuất nội dung
 | Mã | Dự án | Ưu tiên | Tiến độ |
 |---|---|:---:|---|
-| D01 | Website Organic Việt Nam | P1 | 12/2026–Q1 |
-| D02 | Website ADIGO | P2 | Q1–Q2 |
-| D03 | Hệ thống kênh mạng xã hội | P1 | Xuyên suốt |
-| D04 | Phim giới thiệu doanh nghiệp | P1 | Q1 |
-| D05 | TVC và video sản phẩm | P1 | Q1 |
-| D06 | Video giới thiệu ADIGO | P2 | Q1–Q2 |
-| D07 | Series truyền thông vùng sản xuất | P1 | Xuyên suốt |
-| D08 | Thư viện ảnh và video thực tế | P1 | Xuyên suốt |
-| D09 | Series giáo dục và thông tin khách hàng | P2 | Xuyên suốt |
-| D10 | Video chuỗi cung ứng và phân phối | P2 | Q2–Q3 |
+| D01 | Website Organic Việt Nam | P1 | 12/2026 |
+| D02 | Website ADIGO | P2 | Q1–Q2/2027 |
+| D03 | Hệ thống kênh mạng xã hội | P1 | Thiết lập 12/2026 · Xuyên suốt |
+| D04 | Phim giới thiệu doanh nghiệp | P1 | 12/2026–01/2027 |
+| D05 | TVC và video sản phẩm | P1 | 12/2026 |
+| D06 | Video giới thiệu ADIGO | P2 | Q1–Q2/2027 |
+| D07 | Series truyền thông vùng sản xuất | P1 | Khởi động 12/2026 · Xuyên suốt |
+| D08 | Thư viện ảnh và video thực tế | P1 | Đợt 1: 12/2026 · Xuyên suốt |
+| D09 | Series giáo dục và thông tin khách hàng | P2 | 01–12/2027 |
+| D10 | Video chuỗi cung ứng và phân phối | P2 | Q2–Q3/2027 |
 | D11 | Nội dung thương mại số và bán lẻ | P2 | Theo tiến độ |
 
 ### Nhóm E. Báo chí, đối ngoại và sự kiện
 | Mã | Dự án | Ưu tiên | Tiến độ |
 |---|---|:---:|---|
-| E01 | Xây dựng mạng lưới quan hệ báo chí | P1 | Q1 |
-| E02 | Bộ Press Kit doanh nghiệp | P1 | Q1 |
-| E03 | Chương trình Farm Tour và Media Tour | P2 | Q1–Q4 |
-| E04 | Sự kiện ra mắt sản phẩm | P1 | Q1 |
-| E05 | Sự kiện khai trương cửa hàng | P1 | Theo tiến độ |
-| E06 | Hội nghị đối tác và nhà phân phối | P2 | Q3–Q4 |
+| E01 | Xây dựng mạng lưới quan hệ báo chí | P1 | 12/2026–Q1 |
+| E02 | Bộ Press Kit doanh nghiệp | P1 | 12/2026 |
+| E03 | Chương trình Farm Tour và Media Tour | P2 | 03–12/2027 (Q1–Q4) |
+| E04 | Sự kiện ra mắt sản phẩm | P1 | Chuẩn bị 12/2026 · Tổ chức 01/2027 |
+| E05 | Sự kiện khai trương cửa hàng | P1 | 01/2027 & theo điểm bán |
+| E06 | Hội nghị đối tác và nhà phân phối | P2 | Q3–Q4/2027 |
 | E07 | Sự kiện trình diễn ADIGO | P2 | Theo tiến độ |
 | E08 | Hội chợ và triển lãm | P2 | Theo kế hoạch |
 | E09 | Chương trình kết nối nhà cung cấp | P3 | Theo tiến độ |
@@ -1067,17 +1114,17 @@ Quy ước mức độ ưu tiên:
 ### Nhóm F. Danh tiếng, nội bộ và phát triển cộng đồng
 | Mã | Dự án | Ưu tiên | Tiến độ |
 |---|---|:---:|---|
-| F01 | Hệ thống quản trị khủng hoảng | P1 | Q1 |
-| F02 | Quy chế phát ngôn | P1 | Q1 |
-| F03 | Chương trình truyền thông lãnh đạo | P2 | Xuyên suốt |
-| F04 | Chương trình văn hóa và truyền thông nội bộ | P2 | Xuyên suốt |
-| F05 | Chương trình kết nối cộng đồng | P2 | Q2–Q4 |
-| F06 | Khảo sát nhận biết và niềm tin thương hiệu | P1 | Q1, Q4 |
-| F07 | Báo cáo tổng kết thương hiệu năm 2027 | P2 | Q4 |
+| F01 | Hệ thống quản trị khủng hoảng | P1 | 12/2026 |
+| F02 | Quy chế phát ngôn | P1 | 12/2026 |
+| F03 | Chương trình truyền thông lãnh đạo | P2 | Xuyên suốt 2027 |
+| F04 | Chương trình văn hóa và truyền thông nội bộ | P2 | Khởi động 12/2026 · Xuyên suốt |
+| F05 | Chương trình kết nối cộng đồng | P2 | Q2–Q4/2027 |
+| F06 | Khảo sát nhận biết và niềm tin thương hiệu | P1 | Đợt 1: 03/2027 · Đợt 2: Q4/2027 |
+| F07 | Báo cáo tổng kết thương hiệu năm 2027 | P2 | Q4/2027 |
 
 <!-- WIDGET:projectstats -->
 
-Danh mục này là cơ sở để xây dựng Master Project Tracker, phân công nhân sự, xác lập deadline, ngân sách, sản phẩm đầu ra và KPI cho từng dự án.
+Danh mục 57 dự án này là cơ sở vận hành Master Project Tracker, bảo đảm toàn bộ hạng mục chuẩn bị phục vụ mở bán sản phẩm gà hoàn thành trước mốc `T0` tháng 01/2027 và đồng bộ đầy đủ thông số: ngày bắt đầu, deadline đề xuất, đơn vị phụ trách, mức ưu tiên, tiến độ, trạng thái, sản phẩm bàn giao, phụ thuộc, chiến dịch liên quan và mức độ sẵn sàng mở bán.
 
 ## 44. Danh mục công việc ưu tiên triển khai ngay
 <!-- WIDGET:checklist -->
@@ -1123,16 +1170,16 @@ Giám đốc Truyền thông không nên sử dụng phần lớn thời gian đ
 ## 48. Các nội dung trình Ban lãnh đạo phê duyệt
 | STT | Nội dung |
 |---:|---|
-| 01 | Chiến lược truyền thông tổng thể 2027 |
+| 01 | Chiến lược truyền thông tổng thể 2027 (V2.1 – Cập nhật lộ trình thương mại 01/2027) |
 | 02 | Kiến trúc hệ sinh thái và quản trị thương hiệu |
 | 03 | Định vị, thông điệp và quy chuẩn thuật ngữ |
 | 04 | Cơ cấu tổ chức và định biên phòng Truyền thông |
 | 05 | Chức năng, nhiệm vụ và quyền hạn Giám đốc Truyền thông |
-| 06 | Ngân sách hoạt động năm 2027 |
-| 07 | Danh mục dự án và chiến dịch trọng điểm |
+| 06 | Ngân sách hoạt động năm 2027 và dự toán chuẩn bị 11–12/2026 |
+| 07 | Danh mục 57 dự án và 11 chiến dịch trọng điểm (kèm điều kiện tiền mở bán) |
 | 08 | Cơ chế phối hợp giữa các phòng ban và cấu phần |
-| 09 | Hệ thống KPI và báo cáo quản trị |
-| 10 | Kế hoạch triển khai 90 ngày đầu tiên |
+| 09 | Hệ thống KPI trước ra mắt, sau ra mắt và báo cáo quản trị |
+| 10 | Kế hoạch triển khai 90 ngày chuẩn bị và ra mắt sản phẩm gà 01/2027 |
 | 11 | Quy chế phát ngôn và quản trị khủng hoảng |
 | 12 | Lộ trình phát triển truyền thông ADIGO, bán lẻ và Marketplace |
 
@@ -1162,28 +1209,32 @@ Toàn bộ hệ sinh thái được quản trị dưới định hướng chiế
 
 Trên nền tảng đó, phòng Truyền thông có trách nhiệm xây dựng một hệ thống thông tin và thương hiệu nhất quán, giúp thị trường nhận biết đúng, hiểu đúng và tin tưởng vào những giá trị mà doanh nghiệp đang tạo dựng.
 
-Năm 2027 không chỉ là năm giới thiệu sản phẩm ra thị trường mà còn là năm xây dựng nền móng thương hiệu, danh tiếng, năng lực truyền thông và quan hệ đối tác cho quá trình phát triển dài hạn.
+Năm 2027 đánh dấu cột mốc đưa sản phẩm gà ra mắt thương mại chính thức ngay từ tháng 01/2027 (trên nền tảng chuẩn bị hoàn tất trong tháng 11–12/2026), đồng thời xây dựng nền móng thương hiệu, danh tiếng, năng lực truyền thông và quan hệ đối tác cho quá trình phát triển dài hạn.
 
 <!-- WIDGET:closing -->
 
 <!-- PART:13 -->
 # PHỤ LỤC. HỆ THỐNG TÀI LIỆU TRIỂN KHAI SAU CHIẾN LƯỢC
-Sau khi chiến lược tổng thể được phê duyệt, Giám đốc Truyền thông chịu trách nhiệm cụ thể hóa thành các tài liệu quản trị và kế hoạch tác nghiệp.
+Sau khi chiến lược tổng thể V2.1 được phê duyệt, Giám đốc Truyền thông chịu trách nhiệm cụ thể hóa thành các tài liệu quản trị và kế hoạch tác nghiệp.
+
+**Phân biệt phiên bản tài liệu:**
+- **Phiên bản V2.1 (hiện hành – Chờ phê duyệt):** Đã cập nhật đồng bộ lộ trình ra mắt thương mại sản phẩm gà tháng 01/2027, kế hoạch 11–12/2026 tiền ra mắt, chiến dịch, Master Project Tracker 57 dự án, KPI và tiến độ giải ngân.
+- **Tài liệu gốc lưu trữ V2.0 – Final (`toan-van.html`):** Giữ nguyên bản lưu trữ ban đầu để đối chiếu lịch sử; không dùng thay thế cho các mốc điều chỉnh của V2.1.
 
 | STT | Tài liệu | Mục đích |
 |---:|---|---|
-| 01 | Chiến lược truyền thông tổng thể 2027 | Định hướng cấp doanh nghiệp |
+| 01 | Chiến lược truyền thông tổng thể 2027 (V2.1) | Định hướng cấp doanh nghiệp |
 | 02 | Kế hoạch hành động truyền thông 2027 | Chi tiết tháng, quý, chiến dịch, deadline |
-| 03 | Kế hoạch truyền thông sản phẩm gà – Tết 2027 | Triển khai mục tiêu thương mại cấp thiết |
+| 03 | Kế hoạch truyền thông ra mắt sản phẩm gà 01/2027 – Tết 2027 | Triển khai mục tiêu thương mại cấp thiết |
 | 04 | Đề án tổ chức và vận hành phòng Truyền thông | Nhân sự, cơ cấu, chức năng, phân quyền |
-| 05 | Dự toán ngân sách truyền thông 2027 | Phân bổ nguồn lực và kiểm soát tài chính |
+| 05 | Dự toán ngân sách chuẩn bị 11–12/2026 & ngân sách 2027 | Phân bổ nguồn lực và kiểm soát tài chính |
 | 06 | Brand Guidelines – Organic Việt Nam & ADIGO | Chuẩn hóa nhận diện toàn hệ sinh thái |
 | 07 | Corporate Messaging Guidelines | Chuẩn hóa thông điệp và thuật ngữ |
 | 08 | Kế hoạch PR, báo chí và sự kiện 2027 | Phát triển đối ngoại và danh tiếng |
 | 09 | Kế hoạch truyền thông ADIGO | Phát triển thương hiệu công nghệ và thương mại |
 | 10 | Master Content Plan 2027 | Quản trị hệ thống nội dung và sáng tạo |
-| 11 | Master Project Tracker | Quản lý 57 dự án và nhóm công việc |
-| 12 | Dashboard KPI truyền thông | Kiểm soát tiến độ và hiệu quả |
+| 11 | Master Project Tracker | Quản lý 57 dự án với đủ 10 trường điều hành |
+| 12 | Dashboard KPI truyền thông | Kiểm soát KPI trước ra mắt, sau ra mắt & hiệu quả |
 | 13 | Bộ quy trình và quy chế truyền thông | Chuẩn hóa hoạt động |
 | 14 | Kế hoạch quản trị khủng hoảng | Kiểm soát rủi ro và danh tiếng |
 | 15 | Kế hoạch truyền thông nội bộ | Phát triển văn hóa và năng lực tổ chức |
@@ -1200,4 +1251,4 @@ Sau khi chiến lược tổng thể được phê duyệt, Giám đốc Truyề
 
 *ORGANIC VIỆT NAM*
 
-*CHIẾN LƯỢC TRUYỀN THÔNG TỔNG THỂ 2027 – V2.0 FINAL*
+*CHIẾN LƯỢC TRUYỀN THÔNG TỔNG THỂ 2027 – V2.1 (CHỜ PHÊ DUYỆT)*

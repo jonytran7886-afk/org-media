@@ -1,0 +1,332 @@
+{
+  "versionMeta": {
+    "code": "OVN-COM-STR-2027",
+    "version": "V2.1 – Cập nhật lộ trình thương mại tháng 01/2027",
+    "shortVersion": "V2.1 · Chờ phê duyệt",
+    "status": "Chờ phê duyệt",
+    "effectivePeriod": "11/2026 – 12/2027 (chuẩn bị tiền ra mắt 11–12/2026; triển khai thương mại 01–12/2027)",
+    "legacyReference": "toan-van.html (Bản lưu trữ gốc V2.0 Final)"
+  },
+  "quarters": [
+    {
+      "id": "Q1",
+      "label": "Q1 · Tháng 1–3/2027",
+      "prepNote": "Tiền ra mắt 11–12/2026 → Mở bán 01/2027",
+      "title": "Q1 – Ra mắt sản phẩm và phát triển thị trường",
+      "desc": "Chính thức ra mắt sản phẩm gà trong tháng 01/2027; triển khai truyền thông thương mại, hỗ trợ hệ thống bán hàng, phát triển điểm bán, tổ chức chiến dịch Tết 2027, xây dựng niềm tin thông qua chất lượng, nguồn gốc sản phẩm và trải nghiệm khách hàng. Truyền thông các năng lực ADIGO đã sẵn sàng phục vụ vận hành."
+    },
+    {
+      "id": "Q2",
+      "label": "Q2 · Tháng 4–6/2027",
+      "prepNote": "Duy trì sản phẩm gà & mở rộng danh mục",
+      "title": "Q2 – Củng cố niềm tin và phát triển danh mục",
+      "desc": "Duy trì truyền thông sản phẩm gà, phát triển khách hàng mua lại, nâng cao nhận diện chuỗi giá trị FARM – FOOD – DISTRIBUTION. Chuẩn bị truyền thông sản phẩm lợn và các sản phẩm tiếp theo theo tiến độ thực tế. Phát triển truyền thông công nghệ ADIGO."
+    },
+    {
+      "id": "Q3",
+      "label": "Q3 · Tháng 7–9/2027",
+      "prepNote": "Mở rộng thị trường & hệ sinh thái",
+      "title": "Q3 – Mở rộng thị trường và kết nối hệ sinh thái",
+      "desc": "Phát triển truyền thông đối tác, nhà cung cấp, hệ thống phân phối, bán lẻ và nền tảng ADIGO phù hợp tiến độ vận hành."
+    },
+    {
+      "id": "Q4",
+      "label": "Q4 · Tháng 10–12/2027",
+      "prepNote": "Tổng kết 2027 & định hướng 2028",
+      "title": "Q4 – Nâng cao vị thế và tích hợp giá trị",
+      "desc": "Truyền thông tổng thể hệ sinh thái, tổng kết năng lực, phát triển quan hệ chiến lược và chuẩn bị kế hoạch năm 2028."
+    }
+  ],
+  "roadmapMonths": [
+    { "idx": 0, "short": "T12/26", "label": "12/2026", "quarter": "Tiền ra mắt" },
+    { "idx": 1, "short": "T1", "label": "01/2027", "quarter": "Q1", "milestone": "Mở bán gà" },
+    { "idx": 2, "short": "T2", "label": "02/2027", "quarter": "Q1" },
+    { "idx": 3, "short": "T3", "label": "03/2027", "quarter": "Q1" },
+    { "idx": 4, "short": "T4", "label": "04/2027", "quarter": "Q2" },
+    { "idx": 5, "short": "T5", "label": "05/2027", "quarter": "Q2" },
+    { "idx": 6, "short": "T6", "label": "06/2027", "quarter": "Q2" },
+    { "idx": 7, "short": "T7", "label": "07/2027", "quarter": "Q3" },
+    { "idx": 8, "short": "T8", "label": "08/2027", "quarter": "Q3" },
+    { "idx": 9, "short": "T9", "label": "09/2027", "quarter": "Q3" },
+    { "idx": 10, "short": "T10", "label": "10/2027", "quarter": "Q4" },
+    { "idx": 11, "short": "T11", "label": "11/2027", "quarter": "Q4" },
+    { "idx": 12, "short": "T12", "label": "12/2027", "quarter": "Q4" }
+  ],
+  "campaigns": [
+    {
+      "id": "CAM-01",
+      "name": "Kiến tạo hệ sinh thái giá trị",
+      "type": "Thương hiệu nền tảng",
+      "timing": "Chuẩn bị 11–12/2026 · Xuyên suốt 01–12/2027",
+      "focus": "ORGANIC VIỆT NAM",
+      "goal": "Xác lập định vị tập đoàn hệ sinh thái nông nghiệp – thực phẩm – công nghệ; bảo đảm nhận diện và thông điệp nhất quán trước và trong quá trình thương mại hóa.",
+      "plannedStatus": "Đang chuẩn bị nền tảng (11–12/2026)",
+      "startIso": "2026-11-24",
+      "endIso": "2027-12-31",
+      "relatedProjects": ["A01", "A07", "B01", "B03", "D01", "D04"],
+      "segments": [
+        { "startMonth": 0, "endMonth": 0, "phase": "prep", "label": "Chuẩn bị nền tảng thương hiệu (11–12/2026)" },
+        { "startMonth": 1, "endMonth": 12, "phase": "maintain", "label": "Truyền thông thương hiệu xuyên suốt (01–12/2027)" }
+      ]
+    },
+    {
+      "id": "CAM-02",
+      "name": "Hành trình sản phẩm đầu tiên – Ra mắt sản phẩm gà",
+      "type": "Chiến dịch ra mắt sản phẩm",
+      "timing": "Chuẩn bị 11–12/2026 · Ra mắt thương mại 01/2027",
+      "focus": "FARM, FOOD",
+      "goal": "Chính thức đưa sản phẩm gà được nuôi theo mô hình ứng dụng thảo dược ra thị trường tháng 01/2027; công bố quy cách, chất lượng, nguồn gốc xác minh và hệ thống điểm bán.",
+      "plannedStatus": "Chuẩn bị trước mở bán (mốc T0 tháng 01/2027)",
+      "startIso": "2026-12-01",
+      "endIso": "2027-01-31",
+      "relatedProjects": ["C01", "C02", "C03", "C04", "C05", "C07", "D05", "E02", "E04"],
+      "segments": [
+        { "startMonth": 0, "endMonth": 0, "phase": "prep", "label": "Hoàn tất bao bì, TVC, POSM, bộ Sale/CTV trước T0 (11–12/2026)" },
+        { "startMonth": 1, "endMonth": 1, "phase": "launch", "label": "Ra mắt & mở bán chính thức sản phẩm gà (01/2027)" }
+      ]
+    },
+    {
+      "id": "CAM-03",
+      "name": "Tết cùng Organic Việt Nam",
+      "type": "Chiến dịch Tết",
+      "timing": "Chuẩn bị 12/2026 · Cao điểm 01–02/2027",
+      "focus": "FOOD, DISTRIBUTION, bán lẻ",
+      "goal": "Thúc đẩy nhận biết và tiêu thụ sản phẩm gà dịp Tết 2027 tại điểm bán, kênh Sale/CTV; kết hợp tri ân và chăm sóc khách hàng sau Tết.",
+      "plannedStatus": "Chuẩn bị tư liệu Tết (12/2026)",
+      "startIso": "2026-12-15",
+      "endIso": "2027-02-28",
+      "relatedProjects": ["C06", "C03", "C04", "D03", "D05", "E05"],
+      "segments": [
+        { "startMonth": 0, "endMonth": 0, "phase": "prep", "label": "Chuẩn bị ấn phẩm & kịch bản Tết (12/2026)" },
+        { "startMonth": 1, "endMonth": 2, "phase": "peak", "label": "Cao điểm Tết & chăm sóc sau Tết (01–02/2027)" }
+      ]
+    },
+    {
+      "id": "CAM-04",
+      "name": "Chất lượng từ quy trình (Củng cố niềm tin & mua lại)",
+      "type": "Củng cố niềm tin & mua lại",
+      "timing": "Xác minh từ 01/2027 · Trọng tâm 03–06/2027",
+      "focus": "FARM, FOOD, ADIGO",
+      "goal": "Củng cố niềm tin thị trường bằng bằng chứng kiểm soát chất lượng, truy xuất nguồn gốc, phản hồi thực tế và Farm Tour để phát triển khách hàng mua lại.",
+      "plannedStatus": "Theo kế hoạch Q1–Q2/2027",
+      "startIso": "2027-01-10",
+      "endIso": "2027-06-30",
+      "relatedProjects": ["C07", "C12", "D07", "D08", "E03", "F06"],
+      "segments": [
+        { "startMonth": 1, "endMonth": 2, "phase": "prep", "label": "Công bố hồ sơ chất lượng & thu thập phản hồi đầu (01–02/2027)" },
+        { "startMonth": 3, "endMonth": 6, "phase": "maintain", "label": "Củng cố niềm tin, Farm Tour & mua lại (03–06/2027)" }
+      ]
+    },
+    {
+      "id": "CAM-05",
+      "name": "Giá trị từ thảo dược",
+      "type": "Chuyên đề nông nghiệp & thảo dược",
+      "timing": "Q2–Q3/2027 (04–09/2027)",
+      "focus": "FARM",
+      "goal": "Làm rõ vùng dược liệu, kỹ thuật trồng trọt và cơ sở ứng dụng thảo dược trong chăn nuôi theo thông tin đã được xác minh chuyên môn.",
+      "plannedStatus": "Theo kế hoạch Q2–Q3/2027",
+      "startIso": "2027-04-01",
+      "endIso": "2027-09-30",
+      "relatedProjects": ["B06", "D07", "D08", "D09"],
+      "segments": [
+        { "startMonth": 4, "endMonth": 9, "phase": "maintain", "label": "Truyền thông vùng dược liệu & mô hình thảo dược (04–09/2027)" }
+      ]
+    },
+    {
+      "id": "CAM-06",
+      "name": "Hành trình từ sản xuất đến bàn ăn",
+      "type": "Chuỗi giá trị & danh mục mới",
+      "timing": "Q2–Q4/2027 (04–12/2027)",
+      "focus": "FARM, FOOD, DISTRIBUTION",
+      "goal": "Nâng cao nhận diện chuỗi FARM – FOOD – DISTRIBUTION và chuẩn bị truyền thông sản phẩm lợn, danh mục tiếp theo khi có kế hoạch sản xuất & thương mại chính thức.",
+      "plannedStatus": "Theo tiến độ thực tế Q2–Q4/2027",
+      "startIso": "2027-04-01",
+      "endIso": "2027-12-31",
+      "relatedProjects": ["B08", "B10", "C09", "C10", "C11", "D10"],
+      "segments": [
+        { "startMonth": 4, "endMonth": 12, "phase": "planned", "label": "Chuỗi cung ứng & danh mục mới theo tiến độ (04–12/2027)" }
+      ]
+    },
+    {
+      "id": "CAM-07",
+      "name": "ADIGO – Công nghệ kết nối giá trị",
+      "type": "Truyền thông công nghệ",
+      "timing": "Q1 (năng lực sẵn sàng) · Mở rộng Q2–Q4/2027",
+      "focus": "ADIGO",
+      "goal": "Giới thiệu các năng lực ADIGO đã sẵn sàng phục vụ vận hành từ Q1/2027 và mở rộng truyền thông nền tảng quản trị – dữ liệu – thương mại trong Q2–Q4.",
+      "plannedStatus": "Sẵn sàng phục vụ Q1 · Mở rộng Q2–Q4",
+      "startIso": "2027-01-05",
+      "endIso": "2027-12-31",
+      "relatedProjects": ["B02", "B04", "D02", "D06", "E07"],
+      "segments": [
+        { "startMonth": 0, "endMonth": 0, "phase": "prep", "label": "Chuẩn hóa nhận diện & nội dung ADIGO sẵn sàng (12/2026)" },
+        { "startMonth": 1, "endMonth": 3, "phase": "launch", "label": "Truyền thông năng lực ADIGO phục vụ vận hành Q1 (01–03/2027)" },
+        { "startMonth": 4, "endMonth": 12, "phase": "maintain", "label": "Phát triển truyền thông nền tảng & Demo Day (04–12/2027)" }
+      ]
+    },
+    {
+      "id": "CAM-08",
+      "name": "Trải nghiệm cùng Organic Việt Nam",
+      "type": "Trải nghiệm & điểm bán",
+      "timing": "Khởi động điểm bán 01/2027 · Duy trì 02–12/2027",
+      "focus": "FOOD, bán lẻ",
+      "goal": "Tổ chức truyền thông tại điểm bán, khai trương cửa hàng theo tiến độ, tích hợp trải nghiệm mua hàng và phát triển khách hàng mua lại.",
+      "plannedStatus": "Khởi động cùng mở bán 01/2027",
+      "startIso": "2027-01-05",
+      "endIso": "2027-12-31",
+      "relatedProjects": ["B09", "C04", "C08", "C12", "D11", "E05"],
+      "segments": [
+        { "startMonth": 1, "endMonth": 2, "phase": "launch", "label": "Kích hoạt trải nghiệm & điểm bán mở bán (01–02/2027)" },
+        { "startMonth": 3, "endMonth": 12, "phase": "maintain", "label": "Duy trì trải nghiệm điểm bán & khách hàng mua lại (03–12/2027)" }
+      ]
+    },
+    {
+      "id": "CAM-09",
+      "name": "Đồng hành kiến tạo giá trị",
+      "type": "Đối tác & nguồn cung",
+      "timing": "Q3–Q4/2027 (07–12/2027)",
+      "focus": "Đối tác, nhà cung cấp",
+      "goal": "Mở rộng mạng lưới đại lý, nhà phân phối, nhà cung cấp và đối tác chiến lược phù hợp năng lực cung ứng thực tế.",
+      "plannedStatus": "Theo kế hoạch Q3–Q4/2027",
+      "startIso": "2027-07-01",
+      "endIso": "2027-12-15",
+      "relatedProjects": ["E06", "E08", "E09", "F05"],
+      "segments": [
+        { "startMonth": 7, "endMonth": 12, "phase": "maintain", "label": "Kết nối đối tác, đại lý & nhà cung cấp (07–12/2027)" }
+      ]
+    },
+    {
+      "id": "CAM-10",
+      "name": "Kết nối thị trường",
+      "type": "Nền tảng số",
+      "timing": "Theo tiến độ sẵn sàng vận hành (dự kiến nửa cuối 2027)",
+      "focus": "ADIGO MARKETPLACE",
+      "goal": "Chỉ kích hoạt truyền thông thu hút nhà bán hàng và đối tác trên ADIGO MARKETPLACE khi chức năng và điều kiện vận hành tương ứng đã sẵn sàng.",
+      "plannedStatus": "Chờ điều kiện vận hành thực tế",
+      "startIso": "2027-09-01",
+      "endIso": "2027-12-31",
+      "relatedProjects": ["B11", "D11", "E09"],
+      "segments": [
+        { "startMonth": 9, "endMonth": 12, "phase": "planned", "label": "Kích hoạt theo mức độ sẵn sàng vận hành" }
+      ]
+    },
+    {
+      "id": "CAM-11",
+      "name": "Hành trình một năm kiến tạo",
+      "type": "Tổng kết năm",
+      "timing": "Q4/2027 (10–12/2027)",
+      "focus": "Toàn hệ sinh thái",
+      "goal": "Tổng kết năng lực hệ sinh thái, đánh giá mức độ nhận biết – niềm tin thương hiệu cuối năm và chuẩn bị kế hoạch năm 2028.",
+      "plannedStatus": "Theo kế hoạch Q4/2027",
+      "startIso": "2027-10-01",
+      "endIso": "2027-12-31",
+      "relatedProjects": ["F03", "F06", "F07"],
+      "segments": [
+        { "startMonth": 10, "endMonth": 12, "phase": "maintain", "label": "Tổng kết thương hiệu 2027 & định hướng 2028 (10–12/2027)" }
+      ]
+    }
+  ],
+  "ongoingTrack": {
+    "id": "C08-SALES",
+    "code": "C08",
+    "name": "Hỗ trợ bán hàng thường xuyên (theo lứa gà)",
+    "type": "Chương trình tác nghiệp liên kết C08",
+    "timing": "Chuẩn bị khung 12/2026 · Vận hành liên tục 01–12/2027",
+    "focus": "FOOD, DISTRIBUTION, Sale & CTV",
+    "goal": "Hỗ trợ bán hàng thường xuyên theo chu kỳ lứa gối đầu 15 ngày từ tháng 01/2027; tách biệt với chiến dịch ra mắt lần đầu CAM-02 và chiến dịch Tết CAM-03.",
+    "plannedStatus": "Vận hành liên tục từ mở bán 01/2027",
+    "startIso": "2027-01-01",
+    "endIso": "2027-12-31",
+    "relatedProjects": ["C08", "C03", "C04", "D03"],
+    "segments": [
+      { "startMonth": 0, "endMonth": 0, "phase": "prep", "label": "Chuẩn bị mẫu nội dung theo lứa 15 ngày (12/2026)" },
+      { "startMonth": 1, "endMonth": 12, "phase": "sales", "label": "Hỗ trợ bán hàng thường xuyên theo lứa gà (01–12/2027)" }
+    ]
+  },
+  "projectsMeta": {
+    "A01": { "startDate": "24/11/2026", "startIso": "2026-11-24", "deadline": "30/11/2026", "deadlineIso": "2026-11-30", "schedule": "11/2026", "defaultOwner": "Giám đốc Truyền thông", "priority": "P1", "deliverable": "Tài liệu chiến lược V2.1 trình phê duyệt", "dependencies": "Định hướng mở bán 01/2027", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "A02": { "startDate": "24/11/2026", "startIso": "2026-11-24", "deadline": "05/12/2026", "deadlineIso": "2026-12-05", "schedule": "11–12/2026", "defaultOwner": "Giám đốc Truyền thông + Nhân sự", "priority": "P1", "deliverable": "Đề án cơ cấu, mô tả vị trí và phân công đầu mối", "dependencies": "A01", "relatedCampaign": "CAM-01", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "A03": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "28/02/2027", "deadlineIso": "2027-02-28", "schedule": "12/2026–Q1", "defaultOwner": "Nhân sự + Giám đốc Truyền thông", "priority": "P1", "deliverable": "Nhân sự cốt lõi (Content, Design, Media, PR)", "dependencies": "A02", "relatedCampaign": "CAM-01", "launchReadiness": "Nhân sự lõi xong trước 31/12/2026", "preLaunchRequired": false },
+    "A04": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "15/02/2027", "deadlineIso": "2027-02-15", "schedule": "12/2026–Q1", "defaultOwner": "Giám đốc Truyền thông", "priority": "P1", "deliverable": "Bộ quy trình kiểm duyệt, xuất bản & phối hợp", "dependencies": "A02", "relatedCampaign": "CAM-01", "launchReadiness": "Quy trình duyệt nội dung xong trước mở bán", "preLaunchRequired": false },
+    "A05": { "startDate": "25/11/2026", "startIso": "2026-11-25", "deadline": "20/12/2026", "deadlineIso": "2026-12-20", "schedule": "12/2026–Q1", "defaultOwner": "Giám đốc Truyền thông + Tài chính", "priority": "P1", "deliverable": "Dự toán tiền ra mắt 12/2026, ngân sách 2027 & bộ KPI", "dependencies": "A01", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Dự toán 12/2026 & Q1 xong trước mở bán", "preLaunchRequired": true },
+    "A06": { "startDate": "10/12/2026", "startIso": "2026-12-10", "deadline": "28/02/2027", "deadlineIso": "2027-02-28", "schedule": "Q1/2027", "defaultOwner": "Content & Multimedia", "priority": "P1", "deliverable": "Kho DAM 10 thư mục chuẩn & quy ước lưu trữ", "dependencies": "A04", "relatedCampaign": "CAM-01", "launchReadiness": "Hậu mở bán / Q1", "preLaunchRequired": false },
+    "A07": { "startDate": "24/11/2026", "startIso": "2026-11-24", "deadline": "30/11/2026", "deadlineIso": "2026-11-30", "schedule": "11/2026", "defaultOwner": "Giám đốc Truyền thông", "priority": "P1", "deliverable": "Bộ thông điệp & quy chuẩn thuật ngữ toàn hệ sinh thái", "dependencies": "A01", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+
+    "B01": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "15/12/2026", "deadlineIso": "2026-12-15", "schedule": "12/2026", "defaultOwner": "Brand & Design", "priority": "P1", "deliverable": "Brand Guidelines Organic Việt Nam & bộ template", "dependencies": "Logo đã duyệt", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "B02": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "20/12/2026", "deadlineIso": "2026-12-20", "schedule": "12/2026", "defaultOwner": "Brand & Design + Công nghệ", "priority": "P1", "deliverable": "Brand Guidelines ADIGO & quy chuẩn ứng dụng", "dependencies": "Logo ADIGO đã duyệt", "relatedCampaign": "CAM-07", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "B03": { "startDate": "05/12/2026", "startIso": "2026-12-05", "deadline": "26/12/2026", "deadlineIso": "2026-12-26", "schedule": "12/2026", "defaultOwner": "Content + Brand & Design", "priority": "P1", "deliverable": "Hồ sơ năng lực doanh nghiệp (PDF & bản in)", "dependencies": "A07, B01", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "B04": { "startDate": "10/12/2026", "startIso": "2026-12-10", "deadline": "31/01/2027", "deadlineIso": "2027-01-31", "schedule": "12/2026–Q1", "defaultOwner": "Content + ADIGO", "priority": "P1", "deliverable": "Hồ sơ năng lực công nghệ ADIGO (tính năng sẵn sàng)", "dependencies": "B02, xác nhận ADIGO", "relatedCampaign": "CAM-07", "launchReadiness": "Phục vụ Q1/2027", "preLaunchRequired": false },
+    "B05": { "startDate": "01/02/2027", "startIso": "2027-02-01", "deadline": "Theo tiến độ thực tế", "deadlineIso": null, "schedule": "Theo tiến độ", "defaultOwner": "Brand & Design + Hành chính", "priority": "P2", "deliverable": "Hệ thống biển bảng văn phòng & nhà điều hành", "dependencies": "B01, tiến độ hạ tầng", "relatedCampaign": "CAM-01", "launchReadiness": "Theo tiến độ cơ sở vật chất", "preLaunchRequired": false },
+    "B06": { "startDate": "01/02/2027", "startIso": "2027-02-01", "deadline": "30/04/2027", "deadlineIso": "2027-04-30", "schedule": "Q1–Q2/2027", "defaultOwner": "Brand & Design + FARM", "priority": "P2", "deliverable": "Bộ nhận diện trang trại, biển vùng nuôi trồng", "dependencies": "B01, FARM", "relatedCampaign": "CAM-05", "launchReadiness": "Sau mở bán / Q1–Q2", "preLaunchRequired": false },
+    "B07": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "18/12/2026", "deadlineIso": "2026-12-18", "schedule": "12/2026", "defaultOwner": "Brand & Design + FOOD", "priority": "P1", "deliverable": "Hệ thống nhận diện sản phẩm ORGANIC FOOD (dòng gà)", "dependencies": "B01, A07", "relatedCampaign": "CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "B08": { "startDate": "01/04/2027", "startIso": "2027-04-01", "deadline": "30/06/2027", "deadlineIso": "2027-06-30", "schedule": "Q2/2027", "defaultOwner": "Brand & Design + DISTRIBUTION", "priority": "P2", "deliverable": "Nhận diện kho vận & ấn phẩm giao nhận", "dependencies": "B01, DISTRIBUTION", "relatedCampaign": "CAM-06", "launchReadiness": "Mở rộng Q2", "preLaunchRequired": false },
+    "B09": { "startDate": "10/12/2026", "startIso": "2026-12-10", "deadline": "30/12/2026", "deadlineIso": "2026-12-30", "schedule": "12/2026 & theo điểm bán", "defaultOwner": "Brand & Design + Bán lẻ", "priority": "P1", "deliverable": "Quy chuẩn biển bảng, quầy kệ điểm bán mở bán 01/2027", "dependencies": "B01, chốt tên thương hiệu bán lẻ", "relatedCampaign": "CAM-02, CAM-08", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "B10": { "startDate": "01/05/2027", "startIso": "2027-05-01", "deadline": "31/08/2027", "deadlineIso": "2027-08-31", "schedule": "Q2–Q3/2027", "defaultOwner": "Brand & Design + DISTRIBUTION", "priority": "P2", "deliverable": "Thiết kế nhận diện xe vận chuyển lạnh", "dependencies": "B08, đội xe thực tế", "relatedCampaign": "CAM-06", "launchReadiness": "Mở rộng Q2–Q3", "preLaunchRequired": false },
+    "B11": { "startDate": "01/07/2027", "startIso": "2027-07-01", "deadline": "Theo tiến độ thực tế", "deadlineIso": null, "schedule": "Theo tiến độ", "defaultOwner": "Brand & Design + ADIGO", "priority": "P3", "deliverable": "Bộ nhận diện ADIGO MARKETPLACE", "dependencies": "B02, điều kiện vận hành sàn", "relatedCampaign": "CAM-10", "launchReadiness": "Chờ điều kiện thực tế", "preLaunchRequired": false },
+
+    "C01": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "20/12/2026", "deadlineIso": "2026-12-20", "schedule": "12/2026", "defaultOwner": "Brand & Design + FOOD/QA", "priority": "P1", "deliverable": "File thiết kế, duyệt pháp lý & bản in bao bì, tem nhãn gà", "dependencies": "B07, thông số quy cách FOOD/QA", "relatedCampaign": "CAM-02, CAM-03", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "C02": { "startDate": "05/12/2026", "startIso": "2026-12-05", "deadline": "22/12/2026", "deadlineIso": "2026-12-22", "schedule": "12/2026", "defaultOwner": "Content + Brand & Design", "priority": "P1", "deliverable": "Catalog sản phẩm gà (bản số & bản in)", "dependencies": "B07, C01, D08", "relatedCampaign": "CAM-02, CAM-03", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "C03": { "startDate": "10/12/2026", "startIso": "2026-12-10", "deadline": "26/12/2026", "deadlineIso": "2026-12-26", "schedule": "12/2026", "defaultOwner": "Content + Kinh doanh", "priority": "P1", "deliverable": "Bộ tài liệu bán hàng, FAQ, hướng dẫn tư vấn Sale & CTV", "dependencies": "A07, C02, chính sách giá", "relatedCampaign": "CAM-02, CAM-03, C08", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "C04": { "startDate": "10/12/2026", "startIso": "2026-12-10", "deadline": "28/12/2026", "deadlineIso": "2026-12-28", "schedule": "12/2026", "defaultOwner": "Brand & Design + Bán lẻ", "priority": "P1", "deliverable": "Bộ POSM (standee, poster, bảng giá, leaflet điểm bán)", "dependencies": "B09, C01", "relatedCampaign": "CAM-02, CAM-03, CAM-08", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "C05": { "startDate": "05/12/2026", "startIso": "2026-12-05", "deadline": "31/12/2026", "deadlineIso": "2026-12-31", "schedule": "Chuẩn bị 12/2026 · Mở bán 01/2027", "defaultOwner": "Giám đốc Truyền thông + Marketing/Sale", "priority": "P1", "deliverable": "Kế hoạch chi tiết & kích hoạt chiến dịch ra mắt sản phẩm gà 01/2027", "dependencies": "C01–C04, C07, D05, E04", "relatedCampaign": "CAM-02", "launchReadiness": "Bắt buộc trước mở bán (triển khai T0 01/2027)", "preLaunchRequired": true },
+    "C06": { "startDate": "15/12/2026", "startIso": "2026-12-15", "deadline": "31/12/2026", "deadlineIso": "2026-12-31", "schedule": "Chuẩn bị 12/2026 · Cao điểm 01–02/2027", "defaultOwner": "Content + Design + Kinh doanh", "priority": "P1", "deliverable": "Bộ ấn phẩm & nội dung chiến dịch Tết 2027 + chăm sóc hậu Tết", "dependencies": "C01, C05", "relatedCampaign": "CAM-03", "launchReadiness": "Chuẩn bị trước 01/2027 · Cao điểm 01–02/2027", "preLaunchRequired": true },
+    "C07": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "24/12/2026", "deadlineIso": "2026-12-24", "schedule": "12/2026", "defaultOwner": "Content + FOOD/QA + ADIGO", "priority": "P1", "deliverable": "Hồ sơ công bố chất lượng, quy trình & trang truy xuất xác minh", "dependencies": "Hồ sơ QA, FARM, tính năng truy xuất", "relatedCampaign": "CAM-02, CAM-04", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "C08": { "startDate": "15/12/2026", "startIso": "2026-12-15", "deadline": "28/12/2026", "deadlineIso": "2026-12-28", "schedule": "Khung 12/2026 · Vận hành 01–12/2027", "defaultOwner": "Content + Kinh doanh", "priority": "P1", "deliverable": "Hệ thống kịch bản & lịch truyền thông hỗ trợ bán hàng theo lứa 15 ngày", "dependencies": "Lịch xuất lứa FARM/Kinh doanh", "relatedCampaign": "CAM-02, CAM-08", "launchReadiness": "Khung vận hành xong trước mở bán · Chạy 01–12/2027", "preLaunchRequired": true },
+    "C09": { "startDate": "01/04/2027", "startIso": "2027-04-01", "deadline": "Theo tiến độ thực tế", "deadlineIso": null, "schedule": "Theo tiến độ", "defaultOwner": "Truyền thông + FARM/FOOD", "priority": "P2", "deliverable": "Chiến dịch truyền thông sản phẩm lợn (khi có kế hoạch thương mại chính thức)", "dependencies": "Kế hoạch sản xuất & mở bán lợn được duyệt", "relatedCampaign": "CAM-06", "launchReadiness": "Chờ điều kiện thực tế", "preLaunchRequired": false },
+    "C10": { "startDate": "01/03/2027", "startIso": "2027-03-01", "deadline": "30/11/2027", "deadlineIso": "2027-11-30", "schedule": "Q2–Q4/2027", "defaultOwner": "Content + DISTRIBUTION", "priority": "P2", "deliverable": "Tuyến bài, video quy trình bảo quản – vận chuyển – giao nhận", "dependencies": "Xác nhận vận hành DISTRIBUTION", "relatedCampaign": "CAM-06", "launchReadiness": "Mở rộng Q2–Q4", "preLaunchRequired": false },
+    "C11": { "startDate": "01/06/2027", "startIso": "2027-06-01", "deadline": "Theo tiến độ thực tế", "deadlineIso": null, "schedule": "Theo tiến độ", "defaultOwner": "Truyền thông + FOOD", "priority": "P3", "deliverable": "Kế hoạch truyền thông trứng, rau củ, trái cây, bò/trâu theo nguồn cung", "dependencies": "Kế hoạch danh mục mới được duyệt", "relatedCampaign": "CAM-06", "launchReadiness": "Chờ điều kiện thực tế", "preLaunchRequired": false },
+    "C12": { "startDate": "20/12/2026", "startIso": "2026-12-20", "deadline": "15/01/2027", "deadlineIso": "2027-01-15", "schedule": "01–12/2027", "defaultOwner": "Content + Bán lẻ/CSKH", "priority": "P2", "deliverable": "Kịch bản thu thập phản hồi, review, tri ân & phát triển khách hàng mua lại", "dependencies": "C05, điểm bán 01/2027", "relatedCampaign": "CAM-04, CAM-08", "launchReadiness": "Kích hoạt từ mở bán 01/2027 · Trọng tâm từ 02–03/2027", "preLaunchRequired": false },
+
+    "D01": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "24/12/2026", "deadlineIso": "2026-12-24", "schedule": "12/2026", "defaultOwner": "Content & Digital + Công nghệ", "priority": "P1", "deliverable": "Website chính thức kèm trang sản phẩm gà, chất lượng & điểm bán", "dependencies": "A07, B01, C07", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "D02": { "startDate": "15/01/2027", "startIso": "2027-01-15", "deadline": "30/04/2027", "deadlineIso": "2027-04-30", "schedule": "Q1–Q2/2027", "defaultOwner": "Content & Digital + ADIGO", "priority": "P2", "deliverable": "Website / landing page giới thiệu giải pháp ADIGO", "dependencies": "B02, B04", "relatedCampaign": "CAM-07", "launchReadiness": "Sau mở bán / Q1–Q2", "preLaunchRequired": false },
+    "D03": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "18/12/2026", "deadlineIso": "2026-12-18", "schedule": "Thiết lập 12/2026 · Xuyên suốt", "defaultOwner": "Content & Digital", "priority": "P1", "deliverable": "Hệ thống Facebook, TikTok, YouTube, Zalo OA, LinkedIn chuẩn hóa", "dependencies": "B01, A07", "relatedCampaign": "CAM-01, CAM-02, CAM-03, C08", "launchReadiness": "Bắt buộc trước mở bán (thiết lập kênh)", "preLaunchRequired": true },
+    "D04": { "startDate": "10/12/2026", "startIso": "2026-12-10", "deadline": "15/01/2027", "deadlineIso": "2027-01-15", "schedule": "12/2026–01/2027", "defaultOwner": "Multimedia + Giám đốc Truyền thông", "priority": "P1", "deliverable": "Phim giới thiệu doanh nghiệp & hệ sinh thái Organic Việt Nam", "dependencies": "A07, D08", "relatedCampaign": "CAM-01", "launchReadiness": "Kịch bản & quay xong 12/2026 · Phát hành Q1", "preLaunchRequired": false },
+    "D05": { "startDate": "05/12/2026", "startIso": "2026-12-05", "deadline": "26/12/2026", "deadlineIso": "2026-12-26", "schedule": "12/2026", "defaultOwner": "Multimedia", "priority": "P1", "deliverable": "TVC ra mắt sản phẩm gà & bộ video quy trình – sử dụng sản phẩm", "dependencies": "A07, C01, D08", "relatedCampaign": "CAM-02, CAM-03", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "D06": { "startDate": "01/02/2027", "startIso": "2027-02-01", "deadline": "31/05/2027", "deadlineIso": "2027-05-31", "schedule": "Q1–Q2/2027", "defaultOwner": "Multimedia + ADIGO", "priority": "P2", "deliverable": "Video giới thiệu nền tảng & trình diễn tính năng ADIGO", "dependencies": "B04, xác nhận tính năng ADIGO", "relatedCampaign": "CAM-07", "launchReadiness": "Sau mở bán / Q1–Q2", "preLaunchRequired": false },
+    "D07": { "startDate": "05/12/2026", "startIso": "2026-12-05", "deadline": "24/12/2026", "deadlineIso": "2026-12-24", "schedule": "Khởi động 12/2026 · Xuyên suốt", "defaultOwner": "Multimedia + Content + FARM", "priority": "P1", "deliverable": "Series phóng sự vùng nuôi, mô hình thảo dược & quy trình chăm sóc", "dependencies": "D08, lịch quay FARM", "relatedCampaign": "CAM-02, CAM-04, CAM-05", "launchReadiness": "Các tập đầu xong trước mở bán", "preLaunchRequired": true },
+    "D08": { "startDate": "01/12/2026", "startIso": "2026-12-01", "deadline": "16/12/2026", "deadlineIso": "2026-12-16", "schedule": "Đợt 1: 12/2026 · Xuyên suốt", "defaultOwner": "Multimedia", "priority": "P1", "deliverable": "Thư viện ảnh/video gốc vùng nuôi gà, thảo dược, sơ chế & đóng gói", "dependencies": "Cấp phép quay tại FARM/FOOD", "relatedCampaign": "CAM-02, CAM-04, CAM-05", "launchReadiness": "Bắt buộc trước mở bán (đợt tư liệu gà)", "preLaunchRequired": true },
+    "D09": { "startDate": "15/01/2027", "startIso": "2027-01-15", "deadline": "31/12/2027", "deadlineIso": "2027-12-31", "schedule": "01–12/2027", "defaultOwner": "Content & Digital", "priority": "P2", "deliverable": "Series Bếp nhà Organic, kiến thức bảo quản & thông tin thảo dược", "dependencies": "C07, D08", "relatedCampaign": "CAM-04, CAM-05", "launchReadiness": "Duy trì từ 01/2027", "preLaunchRequired": false },
+    "D10": { "startDate": "01/04/2027", "startIso": "2027-04-01", "deadline": "30/09/2027", "deadlineIso": "2027-09-30", "schedule": "Q2–Q3/2027", "defaultOwner": "Multimedia + DISTRIBUTION", "priority": "P2", "deliverable": "Video chuỗi lạnh, kho bãi & quy trình giao nhận", "dependencies": "B08, DISTRIBUTION", "relatedCampaign": "CAM-06", "launchReadiness": "Mở rộng Q2–Q3", "preLaunchRequired": false },
+    "D11": { "startDate": "15/02/2027", "startIso": "2027-02-15", "deadline": "Theo tiến độ thực tế", "deadlineIso": null, "schedule": "Theo tiến độ", "defaultOwner": "Content + Bán lẻ + ADIGO", "priority": "P2", "deliverable": "Nội dung hướng dẫn mua hàng điểm bán & thương mại số", "dependencies": "B09, tính năng thương mại", "relatedCampaign": "CAM-08, CAM-10", "launchReadiness": "Theo tiến độ điểm bán & ADIGO", "preLaunchRequired": false },
+
+    "E01": { "startDate": "05/12/2026", "startIso": "2026-12-05", "deadline": "28/12/2026", "deadlineIso": "2026-12-28", "schedule": "12/2026–Q1", "defaultOwner": "PR & Event", "priority": "P1", "deliverable": "Danh sách đầu mối báo chí địa phương, ngành & trung ương", "dependencies": "A07, B03", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "E02": { "startDate": "10/12/2026", "startIso": "2026-12-10", "deadline": "28/12/2026", "deadlineIso": "2026-12-28", "schedule": "12/2026", "defaultOwner": "PR & Event + Content", "priority": "P1", "deliverable": "Bộ Press Kit doanh nghiệp & thông cáo báo chí ra mắt sản phẩm gà", "dependencies": "B03, C07, E01", "relatedCampaign": "CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "E03": { "startDate": "01/02/2027", "startIso": "2027-02-01", "deadline": "31/12/2027", "deadlineIso": "2027-12-31", "schedule": "03–12/2027 (Q1–Q4)", "defaultOwner": "PR & Event + FARM", "priority": "P2", "deliverable": "Chương trình Farm Tour & Media Tour (bảo đảm an toàn sinh học)", "dependencies": "Quy chuẩn an toàn sinh học FARM", "relatedCampaign": "CAM-04, CAM-05", "launchReadiness": "Trọng tâm củng cố niềm tin từ 03/2027", "preLaunchRequired": false },
+    "E04": { "startDate": "15/12/2026", "startIso": "2026-12-15", "deadline": "31/12/2026", "deadlineIso": "2026-12-31", "schedule": "Chuẩn bị 12/2026 · Tổ chức 01/2027", "defaultOwner": "PR & Event + Kinh doanh", "priority": "P1", "deliverable": "Kịch bản, khách mời & tổ chức sự kiện ra mắt sản phẩm gà phù hợp ngân sách", "dependencies": "C05, E01, E02", "relatedCampaign": "CAM-02", "launchReadiness": "Bắt buộc trước mở bán (tổ chức T0 01/2027)", "preLaunchRequired": true },
+    "E05": { "startDate": "01/01/2027", "startIso": "2027-01-01", "deadline": "Theo tiến độ thực tế", "deadlineIso": null, "schedule": "01/2027 & theo điểm bán", "defaultOwner": "PR & Event + Bán lẻ", "priority": "P1", "deliverable": "Bộ kịch bản & triển khai khai trương điểm bán / cửa hàng thực tế", "dependencies": "B09, C04", "relatedCampaign": "CAM-03, CAM-08", "launchReadiness": "Sẵn sàng cho điểm bán 01–02/2027", "preLaunchRequired": false },
+    "E06": { "startDate": "01/07/2027", "startIso": "2027-07-01", "deadline": "30/11/2027", "deadlineIso": "2027-11-30", "schedule": "Q3–Q4/2027", "defaultOwner": "PR & Event + Kinh doanh", "priority": "P2", "deliverable": "Hội nghị đối tác, đại lý & nhà phân phối", "dependencies": "B03, năng lực cung ứng", "relatedCampaign": "CAM-09", "launchReadiness": "Mở rộng Q3–Q4", "preLaunchRequired": false },
+    "E07": { "startDate": "01/04/2027", "startIso": "2027-04-01", "deadline": "Theo tiến độ thực tế", "deadlineIso": null, "schedule": "Theo tiến độ", "defaultOwner": "PR & Event + ADIGO", "priority": "P2", "deliverable": "Sự kiện trình diễn công nghệ ADIGO Demo Day", "dependencies": "B04, D06, sản phẩm ADIGO hoàn chỉnh", "relatedCampaign": "CAM-07", "launchReadiness": "Theo độ sẵn sàng ADIGO", "preLaunchRequired": false },
+    "E08": { "startDate": "01/05/2027", "startIso": "2027-05-01", "deadline": "Theo kế hoạch", "deadlineIso": null, "schedule": "Theo kế hoạch", "defaultOwner": "PR & Event + Kinh doanh", "priority": "P2", "deliverable": "Gian hàng và tài liệu tham dự hội chợ, triển lãm ngành", "dependencies": "C02, C04", "relatedCampaign": "CAM-09", "launchReadiness": "Theo lịch hội chợ", "preLaunchRequired": false },
+    "E09": { "startDate": "01/07/2027", "startIso": "2027-07-01", "deadline": "Theo tiến độ thực tế", "deadlineIso": null, "schedule": "Theo tiến độ", "defaultOwner": "PR & Event + FARM/MARKETPLACE", "priority": "P3", "deliverable": "Chương trình Supplier Connect kết nối nhà cung cấp", "dependencies": "Quy chuẩn đối tác & Marketplace", "relatedCampaign": "CAM-09, CAM-10", "launchReadiness": "Chờ điều kiện thực tế", "preLaunchRequired": false },
+
+    "F01": { "startDate": "10/12/2026", "startIso": "2026-12-10", "deadline": "28/12/2026", "deadlineIso": "2026-12-28", "schedule": "12/2026", "defaultOwner": "Giám đốc Truyền thông + QA/Pháp chế", "priority": "P1", "deliverable": "Quy trình phản ứng khủng hoảng 8 bước & danh mục rủi ro mở bán", "dependencies": "A04, QA, Pháp chế", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "F02": { "startDate": "10/12/2026", "startIso": "2026-12-10", "deadline": "28/12/2026", "deadlineIso": "2026-12-28", "schedule": "12/2026", "defaultOwner": "Giám đốc Truyền thông + Pháp chế", "priority": "P1", "deliverable": "Quy chế phát ngôn & phân cấp phê duyệt thông tin công bố", "dependencies": "A07, Pháp chế", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Bắt buộc trước mở bán", "preLaunchRequired": true },
+    "F03": { "startDate": "01/01/2027", "startIso": "2027-01-01", "deadline": "31/12/2027", "deadlineIso": "2027-12-31", "schedule": "Xuyên suốt 2027", "defaultOwner": "Giám đốc Truyền thông", "priority": "P2", "deliverable": "Tuyến bài, phỏng vấn & thông điệp lãnh đạo theo cột mốc", "dependencies": "A07, F02", "relatedCampaign": "CAM-01, CAM-11", "launchReadiness": "Triển khai xuyên suốt", "preLaunchRequired": false },
+    "F04": { "startDate": "15/12/2026", "startIso": "2026-12-15", "deadline": "31/12/2027", "deadlineIso": "2027-12-31", "schedule": "Khởi động 12/2026 · Xuyên suốt", "defaultOwner": "Nhân sự + Truyền thông", "priority": "P2", "deliverable": "Đào tạo thông điệp sản phẩm gà cho Sale/CTV & bản tin nội bộ", "dependencies": "A07, C03", "relatedCampaign": "CAM-01, CAM-02", "launchReadiness": "Đào tạo thông điệp bán hàng trước mở bán", "preLaunchRequired": false },
+    "F05": { "startDate": "01/04/2027", "startIso": "2027-04-01", "deadline": "30/11/2027", "deadlineIso": "2027-11-30", "schedule": "Q2–Q4/2027", "defaultOwner": "PR & Event + Cộng đồng", "priority": "P2", "deliverable": "Hoạt động kết nối hội phụ nữ, hội nông dân & cộng đồng địa phương", "dependencies": "E03, điểm bán ổn định", "relatedCampaign": "CAM-08, CAM-09", "launchReadiness": "Mở rộng Q2–Q4", "preLaunchRequired": false },
+    "F06": { "startDate": "01/03/2027", "startIso": "2027-03-01", "deadline": "30/11/2027", "deadlineIso": "2027-11-30", "schedule": "Đợt 1: 03/2027 · Đợt 2: Q4/2027", "defaultOwner": "Giám đốc Truyền thông + Marketing", "priority": "P1", "deliverable": "Khảo sát nhận biết, thấu hiểu mô hình & niềm tin sau mở bán / cuối năm", "dependencies": "C05, C12", "relatedCampaign": "CAM-04, CAM-11", "launchReadiness": "Đo lường sau mở bán & Q4", "preLaunchRequired": false },
+    "F07": { "startDate": "01/11/2027", "startIso": "2027-11-01", "deadline": "20/12/2027", "deadlineIso": "2027-12-20", "schedule": "Q4/2027", "defaultOwner": "Giám đốc Truyền thông", "priority": "P2", "deliverable": "Báo cáo tổng kết thương hiệu, KPI & định hướng chiến lược 2028", "dependencies": "F06, báo cáo KPI năm", "relatedCampaign": "CAM-11", "launchReadiness": "Tổng kết Q4/2027", "preLaunchRequired": false }
+  },
+  "priorities": [
+    { "title": "Chốt chiến lược truyền thông tổng thể 2027 (V2.1)", "group": "Chiến lược", "preLaunchRequired": true, "projectId": "A01" },
+    { "title": "Chuẩn hóa kiến trúc hệ sinh thái, thông điệp & quy chuẩn thuật ngữ", "group": "Thương hiệu", "preLaunchRequired": true, "projectId": "A07" },
+    { "title": "Hoàn thiện bộ nhận diện Organic Việt Nam, ADIGO và dòng sản phẩm gà", "group": "Thương hiệu", "preLaunchRequired": true, "projectId": "B01" },
+    { "title": "Thiết kế, kiểm duyệt và in ấn bao bì, tem nhãn sản phẩm gà", "group": "Sản phẩm", "preLaunchRequired": true, "projectId": "C01" },
+    { "title": "Hoàn thiện hồ sơ chất lượng, nguồn gốc xác minh và nội dung truy xuất", "group": "Chất lượng", "preLaunchRequired": true, "projectId": "C07" },
+    { "title": "Hoàn thiện catalog sản phẩm gà (quy cách, nguồn gốc, bảo quản)", "group": "Sản phẩm", "preLaunchRequired": true, "projectId": "C02" },
+    { "title": "Sản xuất TVC và video sản phẩm gà phục vụ mở bán 01/2027", "group": "Multimedia", "preLaunchRequired": true, "projectId": "D05" },
+    { "title": "Thu thập ảnh và video thực tế vùng sản xuất, mô hình ứng dụng thảo dược", "group": "Multimedia", "preLaunchRequired": true, "projectId": "D08" },
+    { "title": "Thiết kế bộ tài liệu bán hàng, bảng giá và cẩm nang Sale, CTV", "group": "Thương mại", "preLaunchRequired": true, "projectId": "C03" },
+    { "title": "Thiết kế và triển khai bộ POSM, nhận diện tại điểm bán thực tế", "group": "Thương mại", "preLaunchRequired": true, "projectId": "C04" },
+    { "title": "Hoàn thiện website Organic Việt Nam (trang sản phẩm gà & điểm bán)", "group": "Digital", "preLaunchRequired": true, "projectId": "D01" },
+    { "title": "Xây dựng mạng lưới báo chí, Press Kit và thông cáo ra mắt sản phẩm gà", "group": "Đối ngoại", "preLaunchRequired": true, "projectId": "E02" },
+    { "title": "Lập kế hoạch tác nghiệp ra mắt sản phẩm gà (T0) và chiến dịch Tết 2027", "group": "Chiến dịch", "preLaunchRequired": true, "projectId": "C05" },
+    { "title": "Xây dựng quy trình xử lý khủng hoảng và quy chế phát ngôn trước mở bán", "group": "Danh tiếng", "preLaunchRequired": true, "projectId": "F01" },
+    { "title": "Hoàn thiện hồ sơ năng lực doanh nghiệp & nội dung năng lực ADIGO sẵn sàng", "group": "Thương hiệu / Công nghệ", "preLaunchRequired": false, "projectId": "B03" },
+    { "title": "Xây dựng kịch bản phim giới thiệu doanh nghiệp và series vùng sản xuất", "group": "Multimedia", "preLaunchRequired": false, "projectId": "D04" },
+    { "title": "Xây dựng đề án tổ chức phòng Truyền thông và tuyển dụng nhân sự cốt lõi", "group": "Quản trị & Nhân sự", "preLaunchRequired": false, "projectId": "A02" },
+    { "title": "Hoàn thiện kế hoạch nội dung 30–90 ngày (gắn chu kỳ hỗ trợ bán hàng C08)", "group": "Nội dung", "preLaunchRequired": false, "projectId": "C08" },
+    { "title": "Lập dự toán ngân sách chuẩn bị 11–12/2026 và ngân sách 2027 chi tiết", "group": "Tài chính", "preLaunchRequired": false, "projectId": "A05" },
+    { "title": "Hoàn thiện Master Project Tracker và Dashboard KPI quản trị", "group": "Quản trị", "preLaunchRequired": false, "projectId": "A05" }
+  ]
+}

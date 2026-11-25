@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "npm run build && node server.js",
     "start": "npm run build && node server.js",
-    "build": "esbuild src/firebase-tracker.ts --bundle --format=iife --outfile=assets/firebase-tracker.js --minify",
-    "lint": "tsc --noEmit && node --check server.js && eslint firestore.rules"
+    "build": "node scripts/build.mjs",
+    "lint": "tsc --noEmit && node --check server.js && node --check scripts/build.mjs && eslint firestore.rules"
   },
   "dependencies": {
     "@firebase/eslint-plugin-security-rules": "^0.0.2",

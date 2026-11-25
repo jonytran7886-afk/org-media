@@ -14,6 +14,10 @@ app.use(express.static(__dirname, {
 }));
 
 app.get('*', (req, res) => {
+  if (req.path.startsWith('/assets/') || /\.[a-z0-9]+$/i.test(req.path)) {
+    res.status(404).end();
+    return;
+  }
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
