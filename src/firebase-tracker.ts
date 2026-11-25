@@ -392,7 +392,12 @@ class FirebaseTrackerBridge {
     } catch (error) {
       console.error('Sign in failed:', error);
       const code = (error as { code?: string })?.code || '';
-      if (code === 'auth/popup-blocked') {
+      if (code === 'auth/unauthorized-domain') {
+        const host = typeof window !== 'undefined' ? window.location.hostname : '';
+        this.callbacks?.onToast(
+          `Tên miền "${host}" chưa được cấp quyền trong Firebase Authorized domains.`
+        );
+      } else if (code === 'auth/popup-blocked') {
         this.callbacks?.onToast(
           'Trình duyệt đã chặn cửa sổ đăng nhập Google. Vui lòng bật cho phép pop-up và thử lại.'
         );
