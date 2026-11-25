@@ -66,11 +66,11 @@ export function renderHomePage(hostEl) {
   const onboarding = portal.onboarding || [];
 
   const requiredPriorityOrder = [
+    'DOC-STR-COM-2027-V21',
     'DOC-CORP-PROFILE',
     'DOC-HR-RULES',
     'DOC-HR-WORK-REG',
     'DOC-HR-POLICY',
-    'DOC-STR-COM-2027-V21',
     'DOC-TRN-CHICKEN-01',
   ];
 
@@ -81,7 +81,8 @@ export function renderHomePage(hostEl) {
       const ib = requiredPriorityOrder.indexOf(b.id);
       const ra = ia === -1 ? 99 : ia;
       const rb = ib === -1 ? 99 : ib;
-      return ra - rb;
+      const available = d => d.status !== 'Chưa cập nhật' && Boolean(d.internalRoute || d.filePath || d.contentPath);
+      return Number(available(b)) - Number(available(a)) || ra - rb;
     })
     .slice(0, 5);
 
@@ -260,17 +261,17 @@ export function renderHomePage(hostEl) {
                       .slice(0, 4)
                       .map(
                         (a, i) => `
-                      <article class="wp-home-ann-row">
+                      <article class="wp-home-ann-row" data-open-ann="${i}" tabindex="0" role="button" aria-label="${esc(a.title)}">
                         <div class="wp-home-ann-content">
                           <div class="wp-home-row-meta">
                             <span>${esc(a.date)}</span>
-                            <span aria-hidden="true">·</span>
-                            <span>${esc(a.departmentName)}</span>
+
                           </div>
-                          <h3><button type="button" class="wp-home-row-btn" data-open-ann="${i}">${esc(a.title)}</button></h3>
+                          <h3>${esc(a.title)}</h3>
                           <p>${esc(a.summary)}</p>
+                          <div class="wp-home-ann-department">${esc(a.departmentName)}</div>
                         </div>
-                        <button type="button" class="wp-home-row-chevron" data-open-ann="${i}" aria-label="Xem chi tiết ${esc(a.title)}">${HOME_ICONS.chevronRight}</button>
+                        <span class="wp-home-row-chevron" aria-hidden="true">${HOME_ICONS.chevronRight}</span>
                       </article>`
                       )
                       .join('')}
@@ -302,7 +303,7 @@ export function renderHomePage(hostEl) {
                         <span class="wp-home-doc-icon" aria-hidden="true">${HOME_ICONS.docSmall}</span>
                         <span class="wp-home-doc-info">
                           <span class="wp-home-doc-title">${esc(d.title)}</span>
-                          <span class="wp-home-doc-meta">${esc(d.documentCode)} · ${esc(d.status)}</span>
+                          <span class="wp-home-doc-meta">${esc(d.documentCode)}</span><span class="wp-home-doc-details"><span>${esc(d.version)}</span><span>${esc(d.status)}</span></span>
                         </span>
                         <span class="wp-home-doc-chevron" aria-hidden="true">${HOME_ICONS.chevronRight}</span>
                       </a>`
@@ -369,6 +370,7 @@ export function renderHomePage(hostEl) {
   }
 
   hostEl.querySelectorAll('[data-open-ann]').forEach((btn) => {
+    btn.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); } };
     btn.onclick = () => {
       const idx = Number(btn.dataset.openAnn);
       if (announcements[idx]) openAnnouncementModal(announcements[idx]);

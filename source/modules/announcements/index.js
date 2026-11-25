@@ -53,7 +53,7 @@ export function renderAnnouncementsPage(hostEl) {
         .map((a) => {
           const origIdx = list.indexOf(a);
           return `
-        <article class="wp-list-row">
+        <article class="wp-list-row wp-announcement-row">
           <div class="wp-list-main">
             <div class="wp-list-meta">
               <span>${esc(a.id)}</span>
@@ -61,11 +61,10 @@ export function renderAnnouncementsPage(hostEl) {
               <span>${esc(a.date)}</span>
               <span>·</span>
               <span>${esc(a.type)}</span>
-              <span>·</span>
-              <span>${esc(a.departmentName)}</span>
+
             </div>
             <h3><button type="button" class="wp-link-btn" data-ann-idx="${origIdx}">${esc(a.title)}</button></h3>
-            <p>${esc(a.summary)}</p>
+            <p>${esc(a.summary)}</p><div class="wp-announcement-department">${esc(a.departmentName)}</div>
           </div>
           <div class="wp-list-side">
             <span class="wp-status-tag">${esc(a.status)}</span>
