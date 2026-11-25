@@ -243,8 +243,7 @@ export function renderCloudBar() {
       $('#side-signin-btn', sideAuth).onclick = () => fb.signIn();
     } else {
       const subTxt = st.syncing ? 'Đang lưu lên Cloud…' : st.lastSavedAt ? `Đã lưu lúc ${fmtTime(st.lastSavedAt)}` : 'Đã kết nối Cloud';
-      sideAuth.innerHTML = `<div class="cloud-side-head"><span class="cloud-dot"></span><span class="cloud-side-title" title="${esc(st.user.email || userLabel)}">${esc(userLabel)}</span></div><small>${esc(subTxt)}</small><button type="button" class="btn small" id="side-signout-btn">Đăng xuất</button>`;
-      $('#side-signout-btn', sideAuth).onclick = () => fb.signOut();
+      sideAuth.innerHTML = `<div class="cloud-side-head"><span class="cloud-dot"></span><span class="cloud-side-title" title="${esc(st.user.email || userLabel)}">${esc(userLabel)}</span></div><small>${esc(subTxt)}</small>`;
     }
   }
   if (dashNote) {
