@@ -1,3 +1,4 @@
+import { getStrategyCapabilities } from './capabilities.js';
 'use strict';
 
 import { $, esc, statusToneClass } from '../../shared/utils.js';
@@ -145,7 +146,9 @@ export function renderDepartmentWorkspace(hostEl, deptId, tab = 'overview') {
     return;
   }
 
-  const activeTab = TABS.some((t) => t.id === tab) ? tab : 'overview';
+  const capabilities = getStrategyCapabilities(dept);
+  const visibleTabs = TABS.filter(t => capabilities[t.id]);
+  const activeTab = visibleTabs.some((t) => t.id === tab) ? tab : 'overview';
   const isComms = dept.workspaceMode === 'communications';
   const projectCount = getDepartmentProjectCount(dept);
 
@@ -165,7 +168,7 @@ export function renderDepartmentWorkspace(hostEl, deptId, tab = 'overview') {
     </div>
 
     <nav class="wp-tabs" role="tablist" aria-label="Phân khu không gian phòng ban">
-      ${TABS.map(
+      ${visibleTabs.map(
         (t) => `<a class="wp-tab ${activeTab === t.id ? 'active' : ''}" href="${esc(tabHref(t.id))}" role="tab" aria-selected="${
           activeTab === t.id ? 'true' : 'false'
         }">${esc(t.label)}</a>`
@@ -405,11 +408,7 @@ export function renderDepartmentWorkspace(hostEl, deptId, tab = 'overview') {
       </div>
     `;
   } else if (activeTab === 'strategy') {
-    body.innerHTML = renderStandardPendingNotice(
-      dept,
-      'Chiến lược phòng ban',
-      'Tài liệu chiến lược riêng của phòng ban này đang ở trạng thái Chưa cập nhật. Khi có bản chiến lược được ban hành, nội dung sẽ hiển thị đầy đủ tại tab này cùng mục tiêu, trụ cột, phiên bản và trạng thái phê duyệt.'
-    );
+    body.innerHTML = renderDeptDocumentsList(dept);
   } else if (activeTab === 'plans') {
     body.innerHTML = renderStandardPendingNotice(
       dept,

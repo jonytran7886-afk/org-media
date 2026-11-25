@@ -1,3 +1,4 @@
+import { renderHomeStrategyDirectory } from './strategy-directory.js';
 import { renderFeaturedStrategy, renderFocusTimeline } from './featured-strategy.js';
 'use strict';
 
@@ -93,42 +94,12 @@ export function renderHomePage(hostEl) {
     obDone === 0 ? 'Bắt đầu hội nhập' : obDone < obTotal ? 'Tiếp tục hội nhập' : 'Xem lại lộ trình hội nhập';
 
   const quickCards = [
-    {
-      icon: HOME_ICONS.documents,
-      title: 'Thư viện tài liệu',
-      desc: 'Tra cứu tài liệu và biểu mẫu nội bộ.',
-      route: '#documents',
-    },
-    {
-      icon: HOME_ICONS.rules,
-      title: 'Nội quy & Quy chế',
-      desc: 'Quy định, chính sách và hướng dẫn làm việc.',
-      route: '#documents/category/noi-quy-quy-che',
-    },
-    {
-      icon: HOME_ICONS.onboarding,
-      title: 'Hội nhập nhân viên',
-      desc: 'Lộ trình tìm hiểu doanh nghiệp dành cho nhân viên mới.',
-      route: '#onboarding',
-    },
-    {
-      icon: HOME_ICONS.strategies,
-      title: 'Chiến lược & Kế hoạch',
-      desc: 'Định hướng phát triển và kế hoạch các phòng ban.',
-      route: '#strategies',
-    },
-    {
-      icon: HOME_ICONS.projects,
-      title: 'Dự án & Công việc',
-      desc: 'Theo dõi tiến độ, nhiệm vụ và thời hạn.',
-      route: '#projects',
-    },
-    {
-      icon: HOME_ICONS.organization,
-      title: 'Thông tin tổ chức',
-      desc: 'Cơ cấu tổ chức, chức năng và nhiệm vụ.',
-      route: '#organization',
-    },
+    {icon:HOME_ICONS.organization,title:'Giới thiệu doanh nghiệp',desc:'Tìm hiểu Organic Việt Nam.',route:'#documents/category/tai-lieu-doanh-nghiep'},
+    {icon:HOME_ICONS.rules,title:'Nội quy & Quy chế',desc:'Quy định làm việc nội bộ.',route:'#documents/category/noi-quy-quy-che'},
+    {icon:HOME_ICONS.documents,title:'Chính sách nhân sự',desc:'Chính sách và chế độ nhân viên.',route:'#documents/category/chinh-sach-nhan-su'},
+    {icon:HOME_ICONS.documents,title:'Quy trình & Hướng dẫn',desc:'Hướng dẫn và quy trình nghiệp vụ.',route:'#documents/category/quy-trinh-huong-dan'},
+    {icon:HOME_ICONS.documents,title:'Biểu mẫu nội bộ',desc:'Biểu mẫu phục vụ công việc.',route:'#documents/category/bieu-mau-noi-bo'},
+    {icon:HOME_ICONS.onboarding,title:'Hội nhập nhân viên',desc:'Lộ trình dành cho nhân viên mới.',route:'#onboarding'},
   ];
 
   const horizon7 = collectUpcomingItems(7);
@@ -194,39 +165,11 @@ export function renderHomePage(hostEl) {
 
       ${renderFeaturedStrategy({ department: departments.find(d => d.id === 'truyen-thong'), banner: 'assets/images/banners/organicvn-strategy-banner-2027.webp?v=2' })}
 
-      <section class="wp-home-card-panel wp-home-focus-panel" aria-labelledby="home-plans-title">
-        <div class="wp-home-panel-head">
-          <h2 id="home-plans-title">Kế hoạch trọng tâm sắp tới</h2>
-          <a href="#strategies/group" class="wp-home-inline-link">Xem kế hoạch →</a>
-        </div>
-
-        ${renderFocusTimeline()}
-
-        <div class="wp-home-horizon-block">
-          <div class="wp-home-horizon-grid" role="tablist" aria-label="Mốc kế hoạch sắp tới">
-            ${[7, 15, 30]
-              .map((days) => {
-                const count = horizonMap[days].length;
-                const isActive = activeHorizon === days;
-                return `
-                  <button type="button" role="tab" aria-selected="${isActive}" class="wp-home-horizon-card ${isActive ? 'active' : ''}" data-home-horizon="${days}">
-                    <strong>${days} ngày tới</strong>
-                    <span>${count > 0 ? `Xem ${count} công việc` : 'Chưa có mốc đến hạn'}</span>
-                  </button>`;
-              })
-              .join('')}
-          </div>
-          <div id="home-upcoming-list" class="wp-home-upcoming-wrap">
-            ${renderHorizonListHtml(activeHorizon)}
-          </div>
-        </div>
-      </section>
-
       <section class="wp-home-section" aria-labelledby="home-quick-title">
         <div class="wp-home-head">
           <div class="wp-home-head-text">
-            <h2 id="home-quick-title">Không gian làm việc</h2>
-            <p class="wp-home-subtitle">Truy cập các tài liệu và công cụ làm việc nội bộ.</p>
+            <h2 id="home-quick-title">Thư viện tài liệu nội bộ</h2>
+            <p class="wp-home-subtitle">Đọc và tra cứu tài liệu, chính sách và hướng dẫn nội bộ.</p>
           </div>
           <span class="wp-home-head-meta">${quickCards.length} phân hệ</span>
         </div>
@@ -246,6 +189,8 @@ export function renderHomePage(hostEl) {
             .join('')}
         </div>
       </section>
+
+      ${renderHomeStrategyDirectory()}
 
       <section class="wp-home-split" aria-label="Thông báo và tài liệu cần đọc">
         <div class="wp-home-card-panel" aria-labelledby="home-ann-title">
@@ -289,7 +234,7 @@ export function renderHomePage(hostEl) {
 
         <div class="wp-home-card-panel" aria-labelledby="home-docs-title">
           <div class="wp-home-panel-head">
-            <h2 id="home-docs-title">Tài liệu cần đọc</h2>
+            <h2 id="home-docs-title">Tài liệu mới và cần đọc</h2>
             <span class="wp-home-panel-icon" aria-hidden="true">${HOME_ICONS.book}</span>
           </div>
           <div class="wp-home-panel-body">
@@ -321,36 +266,7 @@ export function renderHomePage(hostEl) {
         </div>
       </section>
 
-      <section class="wp-home-section" aria-labelledby="home-depts-title">
-        <div class="wp-home-head">
-          <div class="wp-home-head-text">
-            <h2 id="home-depts-title">Không gian các phòng ban</h2>
-            <p class="wp-home-subtitle">Truy cập không gian làm việc, chiến lược và tài liệu theo từng đơn vị.</p>
-          </div>
-          <a href="#departments" class="wp-home-inline-link">Xem tất cả →</a>
-        </div>
-        <div class="wp-home-dept-grid">
-          ${departments
-            .map((d) => {
-              const pCount = getDepartmentProjectCount(d);
-              const iconSvg = DEPT_ICONS[d.id] || HOME_ICONS.organization;
-              return `
-                <a class="wp-home-dept-card" href="#departments/${esc(d.id)}">
-                  <div class="wp-home-dept-top">
-                    <span class="wp-home-dept-icon" aria-hidden="true">${iconSvg}</span>
-                    <span class="wp-home-card-arrow" aria-hidden="true">${HOME_ICONS.arrowUpRight}</span>
-                  </div>
-                  <h3>${esc(d.name)}</h3>
-                  <p>${esc(d.summary)}</p>
-                  <div class="wp-home-dept-meta">
-                    <span>${esc(d.hasStrategyData ? d.strategyStatus : 'Chưa cập nhật')}</span>
-                    ${pCount !== null ? `<span>· ${pCount} dự án</span>` : ''}
-                  </div>
-                </a>`;
-            })
-            .join('')}
-        </div>
-      </section>
+
 
 
     </div>

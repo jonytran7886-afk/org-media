@@ -13,14 +13,13 @@ export function renderFeaturedStrategy({ strategy = data, department, banner } =
     [strategy.projects.length, 'dự án'],
   ];
   return `<section class="wp-home-section" aria-labelledby="home-featured-title">
-    <div class="wp-home-head"><h2 id="home-featured-title">Chiến lược trọng tâm</h2></div>
+    <div class="wp-home-head"><h2 id="home-featured-title">Chiến lược nổi bật</h2></div>
     <div class="wp-featured-strategy">
       <a class="wp-featured-art" href="#dashboard" aria-label="Xem chiến lược truyền thông"><img src="${esc(banner)}" width="2172" height="724" fetchpriority="high" alt="Chiến lược truyền thông tổng thể Organic Việt Nam 2027"></a>
       <div class="wp-featured-info"><div class="wp-featured-meta"><span>${esc(meta.version?.split(' – ')[0])}</span><span>${esc(meta.status)}</span></div>
       <h3>${esc(project?.name)}</h3><p>${esc(meta.version?.split(' – ').slice(1).join(' – '))}</p>
-      <div class="wp-featured-metrics">${metrics.map(([value,label])=>`<div><strong>${value}</strong><span>${label}</span></div>`).join('')}</div>
-      <a class="btn primary wp-featured-primary" href="#dashboard">Xem chiến lược truyền thông</a>
-      <div class="wp-featured-links"><a href="#all">Tài liệu chiến lược</a><a href="#p6">Kế hoạch triển khai</a><a href="#tracker">Danh mục dự án</a></div></div>
+      <a class="btn primary wp-featured-primary" href="#dashboard">Xem chiến lược</a>
+      <div class="wp-featured-links"><a class="btn" href="#all">Đọc tài liệu</a></div></div>
     </div></section>`;
 }
 
